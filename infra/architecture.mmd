@@ -1,0 +1,11 @@
+flowchart LR
+  Browser[Local browser UI] -->|same-origin HTTP| API[FastAPI + OpenCV 5]
+  API --> Quality[Decode, quality, foreground]
+  Quality --> Bank[Normal-only OpenCV feature bank]
+  Bank --> Agent[Bounded deterministic agent]
+  Agent -->|localized anomaly| Crop[inspect_crop on source pixels]
+  Crop --> Agent
+  Agent -->|low quality| Capture[Request new capture / review]
+  API --> SQLite[Local SQLite audit + image artifacts]
+  Eval[Seeded synthetic evaluator] -.held-out fixtures.-> Bank
+  Cloud[AWS target: not deployed] -.blocked before deployment.-> API

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "normal",
+    "title": "Reference-like plate",
+    "description": "Seeded synthetic normal surface",
+    "image_url": "/demo/samples/normal.png",
+    "sha256": "f760e95c9ae8efcc5ba3f598896908a0304145d14d35270f896c5648e94b07f2",
+    "synthetic": true,
+    "mask_path": null
+  },
+  {
+    "id": "scratch",
+    "title": "Faint surface change",
+    "description": "Seeded synthetic scratch; mask retained for evaluation only",
+    "image_url": "/demo/samples/scratch.png",
+    "sha256": "367e54087849c395660dc6abc181b6007b30e78d081889e9b0e13a332504f22d",
+    "synthetic": true,
+    "mask_path": "demo/samples/scratch_mask.png"
+  },
+  {
+    "id": "blurred",
+    "title": "Soft-focus capture",
+    "description": "Seeded synthetic low-focus image",
+    "image_url": "/demo/samples/blurred.png",
+    "sha256": "eb83c97e4a18f96bed6253b9dd69fa00434f4bf93f6fd6dc9138cafed8b9e40e",
+    "synthetic": true,
+    "mask_path": null
+  }
+]
