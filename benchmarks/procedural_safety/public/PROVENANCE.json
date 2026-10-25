@@ -1,0 +1,410 @@
+{
+  "utc": "2026-10-25T09:51:50.984494+00:00",
+  "raw_results_sha256": "d97bb98739591ffa9f16b381a4d98e638eefbf5fd388b3182118696681b4b81d",
+  "raw_run_manifest_sha256": "af994ff6a27a9d2f17e260f78bfab0b2886dd4ebae523f9c6b7655adcd9ed5a7",
+  "projections": {
+    "clip_009_single.json": {
+      "original_sha256": "dea116bc3489a6ca61ecc34542edc7978281dd2a40c24023a0ea813ff85a56cb",
+      "public_sha256": "45948a90037002586be9ee1108058ec10d0589b408f30bbca7d6f46b662c80fe",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_009_random.json": {
+      "original_sha256": "4afce187206b9c7ed38ebacf4a4a23764397bc5f4ecc76e9de70b2c434c18cbc",
+      "public_sha256": "29bda6f68e5bc2b9b26e7718c683989f0180b8bb822210ac02278be81eac91af",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_009_agent.json": {
+      "original_sha256": "bba8ad53ada8cffd69d86118e2e8b4dcc3422b548116c5651afbee61740b9f75",
+      "public_sha256": "b007387692591757a0515c3b1b3bce77746fa4ca40c6abc7fb7ac081d2ded087",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_010_single.json": {
+      "original_sha256": "c8c5abd8ee7345faab5eb4fbc295ab35c25c172f75dc3ced2a5a2e5529d33af7",
+      "public_sha256": "64f136cd820933ff24607e4f9120e70586b5d7dfe8997724ff981fd901051034",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_010_random.json": {
+      "original_sha256": "7d7c00fb4b1bb4b8bedb5ce87f95ae867b5295954804b682912b9caab78d37a2",
+      "public_sha256": "142cccf347709d4cc8fb2d078418d2ca57cafe4cd4c86bd49cba4803d33079a6",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_010_agent.json": {
+      "original_sha256": "edcfd9aef91aa7171a980828440c73453d6ea7f7f76f1d987d8c8dec24fcfecd",
+      "public_sha256": "59002b732831afda77ea03f3394edf822cffa5e61862f53b445701614119e018",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_011_single.json": {
+      "original_sha256": "5fdd49dcca947433c28ecec65bc9e97159872f163d703cc4ad5d37312ae8ad81",
+      "public_sha256": "81eebc0fae06b1f61593cb110f2df08fc921ebb1f6c0b4f5e312483c5626c638",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_011_random.json": {
+      "original_sha256": "38e1d55976ecb2a19520278db584aa7adee50ef71fece118d7c93ebb2469c5b7",
+      "public_sha256": "44d47b1def74f6be0a0683e65cec6ff674d1092f808e01dc39d7eb4bc1e49066",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_011_agent.json": {
+      "original_sha256": "a1f981a4b445294e6c9ad44642b8f62d690178a41b990b9a9848aa70ec7eaddf",
+      "public_sha256": "b14f5f2deba8cc566cf5ea53898a6b8b1b9429d5e2dea21e34230d1b07282eff",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_012_single.json": {
+      "original_sha256": "fe6ce51c8b22496cc8330d33e4f69cc43fdf7b8f1be17734f8774fdc4ec3d8cc",
+      "public_sha256": "c02e1830340d2b17ec0f2b3d74e6d19d15a580e752fa8928c5c97dc13db93485",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_012_random.json": {
+      "original_sha256": "a0758a0d9f974a114cb7c1343ac7411724bdebc1a870a3944cb5340148a7912b",
+      "public_sha256": "9ad3d2be6e08bd92f881efebe75279bbf6a09ea722ebecfa798f88e6d5757a2a",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_012_agent.json": {
+      "original_sha256": "c42b837f23fc5d0ce4a39105a9322a5d8f3a0dfde94cbf7b2254c4d3fb7908ff",
+      "public_sha256": "9a68a086ff70590320c3a418ac08fac5505b5ef66273e24aefa504787e45fa9b",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_013_single.json": {
+      "original_sha256": "0c37cd72bc315841c5536720d5c063fc83b7b90c97abd26941c541f7ca56d2f6",
+      "public_sha256": "d506eb6134472c39ce67462f7c03f817af9e6a028a2ac90a1b242aea2d860f3e",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_013_random.json": {
+      "original_sha256": "c3f5f24eabb5fe3d2c04dd091bdb678c56655e2bbc3efd6f6a218e1c653a5764",
+      "public_sha256": "e186198f9c62c1b3d5bf61e84d830bfe49ed1f10584b37e1d8a0570889e97769",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_013_agent.json": {
+      "original_sha256": "77d71446c4db9f4df43d6b3c8cfa94990d917024960f7317db97c61906588f2e",
+      "public_sha256": "7093e851db6fb56e855655000556f8fab0c9fef0c0574460d981cc197167b8a8",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_014_single.json": {
+      "original_sha256": "4e5432cee141055b33b9fff5c6203739ec517fc7caf8d82ab69bbcb464fe8ff8",
+      "public_sha256": "88c275ad69df99e7c2035ea6ac528dedffb752f95e3402f12060e5604dd8621e",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_014_random.json": {
+      "original_sha256": "209d99643720862889132345d51079723d686ace466ed4fc34d3a3e4afb6fb5e",
+      "public_sha256": "82bfcf42c2af3067a8e4e02f6f1797b719fc5f10f9115920bdc64c0509aa83c1",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_014_agent.json": {
+      "original_sha256": "878e758f707871fb5b020d0d95f4333ef7ff34ca1752ff657260d03b48311db7",
+      "public_sha256": "668a6e09bfbfd487556159af15651c36abcdb281e3d608a72be0fb29bd92474b",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_015_single.json": {
+      "original_sha256": "e00ddfeb9b840e746beff197303fa98895317a8f1a31b9e50ac91e38d710a803",
+      "public_sha256": "6ac2ad94977bc34c47d2b6282943ca907593af2a69f7452512207cfa7738de30",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_015_random.json": {
+      "original_sha256": "7d682b0d99b96127e0fcf0199feee2fdb53b213d3e34a146dec0722b69f16f7a",
+      "public_sha256": "d21ec99012c584c38ca3af7be20bc1cb1d3c28889b28e1811a2fb3ee616b01c8",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_015_agent.json": {
+      "original_sha256": "ec38979720982cda6f5ca271b6a6c14dbc02f6f318382b831b0da086082b8009",
+      "public_sha256": "e91194a78bfe5b8fa9838f35bec42df7b3afc5b3f9069ca276e5d59abdd95edf",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_016_single.json": {
+      "original_sha256": "0c7e0a811e82412e5fc6e9f840fdb461589f7d45f515f25c5d1a54d3199288c7",
+      "public_sha256": "b7417153efee4ef3b9aef090498207a28ed834811c47c59adf048fb4bba3fb8e",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_016_random.json": {
+      "original_sha256": "7293de422cc9b55fd37a2b09fbe113e8c781df70e0b316e29838705380691f89",
+      "public_sha256": "78a21e69f3953800a40f08c358e1c7c1d5d52467f30be7c6a3ecd2c7f359cd75",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_016_agent.json": {
+      "original_sha256": "ef0969a65d58995dee0934590efe1a35bb5c38384538fd572d8ca3674fcbf59d",
+      "public_sha256": "bc379904b3a566df1024aa2eba636f64e8cf551be5a5566a8bacedc572862428",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_017_single.json": {
+      "original_sha256": "8b80c09fb3d23b646fe0acea5eac2e40db09c42ada4cb468b31cf773355ac842",
+      "public_sha256": "f84c01d4225ece03b7e40c6741a4e6ca122e2cac1f7c185d5df88af413b380e1",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_017_random.json": {
+      "original_sha256": "0f8850392ab3871fee34d0b75c1c254ad9c75f2762b8da033434d0d7c370e768",
+      "public_sha256": "aa68e6923d1f9d26941f70a200ca8556858a584ba32b7c817c56b6427a0cd46a",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_017_agent.json": {
+      "original_sha256": "9a93ea97f239af635b4521652b73b66d5ac5894290c7da6a713be358dce07b9b",
+      "public_sha256": "9b9d89358ad13fbf22c171171c5e43288d4eb9148781113b8837c4a0730b9957",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_018_single.json": {
+      "original_sha256": "01e2ca1d1ac44f2689250566aaacd2002753fbb4dfdd5df03c8ed23389e2d07a",
+      "public_sha256": "f5a613801e897bd1c0dbd7c3c7581ffeedd6c5752582b42cb6af8f58c0760977",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_018_random.json": {
+      "original_sha256": "6caca23cd62f8d9e855bde4fc0e31a93a2ffb2a1b39dbc8a6844a2697aa7440c",
+      "public_sha256": "0c7c90fdf921697fa4622639ef0877cd61fb19d04e659f21cca382c0a8a74dd4",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_018_agent.json": {
+      "original_sha256": "2a59064ad190f8578ce5e92cb2c52caf3ef25b4b8353e1455ea3311e06e016d8",
+      "public_sha256": "e85033852751e8c171be3fbc0f187193e2661621711d35430c80a0d5599e60bc",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_019_single.json": {
+      "original_sha256": "e701dc1f29362b3a543393f8574760c04953cad88709179e7f48acc7d8b756ac",
+      "public_sha256": "12d0b5bec7f1d3243ac11bf530a0e509cc2d70f7f56b573b8e9630cf0be1c63e",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_019_random.json": {
+      "original_sha256": "cabe5abe2fbbc3aa742d78b9bca5d94c9cebba68c93932b0016d70c8d76a9a26",
+      "public_sha256": "c5ac1279a3a393b99b663ea626f80a230ebbe4ed2c1d8bdeeea800b253cc1770",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_019_agent.json": {
+      "original_sha256": "f40a0c06c0b00122c96bf0b4c5b4c4825618e983fe0bed6906d65a7414a1ba6c",
+      "public_sha256": "51f0fd6feb0d602b20064c217aa878c5b2db9a539a1297d39a06cb04c7227fc4",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_020_single.json": {
+      "original_sha256": "c44355cc207ff47bea897008144b9b5513e4986594d9e55e05e82c4530b3d483",
+      "public_sha256": "e02e6b3a9013026aad9c80c5647e8f6e98993104730c59522de206937441b4dc",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_020_random.json": {
+      "original_sha256": "c6bf98a77b5d6494e76741273f8d364774e526f01af7f339810cae4764d0e5c9",
+      "public_sha256": "f5ee918ab80196f954e6df538870c18b8b5d7ebfa6c11019ecb75a7a5cb1b94b",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_020_agent.json": {
+      "original_sha256": "9ad43722b383be8d8bbf086e94b14e7f1a841557d281bfef1efada3dc7c10b44",
+      "public_sha256": "c9c87439a91bb2e5433a673b064a0dc0c045be8280866531ed0d0b9d2e67768d",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_021_single.json": {
+      "original_sha256": "7e8f1bac7125ddebb1ac9a76a37fd4fc23d843f6385e34c0a926e3db64e648bc",
+      "public_sha256": "a0405feb460c3701269147f4489ad3d360e3b96d4258da2f56f261e101ca1243",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_021_random.json": {
+      "original_sha256": "3bd3ee75b140b1cac9213e97e1b7a81f62b5601435682020fbd08987dac9504e",
+      "public_sha256": "bb7f228a0b774319ce881db036a825ef8443a689cc32cd053e4c46f3a6a949a7",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_021_agent.json": {
+      "original_sha256": "c348ec4fe13db25bf6b6923f5661585fb6d92ed5e6f24e36ae25739a73f5d508",
+      "public_sha256": "bae9484dc50d9567c57fe6b2412ac0c15367aa7d6bc82bbf89af88db92ce5f79",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_022_single.json": {
+      "original_sha256": "f3d44f9d62b521fc9e3df37422698ae8028cdb25dfbd8f115ff32b48e9db4625",
+      "public_sha256": "8afa1d03c5be3b65f7c855b6eba787e247c61e5155d50d84c341faffd1f0603d",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_022_random.json": {
+      "original_sha256": "799c2f992a34f6f3d175a5235c46a3dd8bad248f6766b00fd3b046982c109d4e",
+      "public_sha256": "29c3849699c21c7e4d700eba9d17372284e18b7b016fe3f21b798dfba8347486",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_022_agent.json": {
+      "original_sha256": "1f963b7feb2619adf311af3991dd060f6f8d444e753d99375766cd9d76b11c75",
+      "public_sha256": "da9a75fd58576465f3949275ef63d3b003ec3d67843e20cc614f91f6ed28bd46",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_023_single.json": {
+      "original_sha256": "101f1a3a000c075a0f676c94b671db64effa862779290f1eead4ad37b4f93006",
+      "public_sha256": "c444f01b025eb145d88f0a9c6f8cf1d678e8223bf5e67cd2c1fb503868166896",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_023_random.json": {
+      "original_sha256": "95ed61aa4d199a8689d0f3efe9b6a3772bac7b83b1e1e15750ff90240375f764",
+      "public_sha256": "5cded62057f0a977fbfc3a41299fe0200df4f163a82075169a436e5e9c824303",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_023_agent.json": {
+      "original_sha256": "5f06da2a94b745926133a12e5ac62f86014b1a746eefc6cc3660daa05785a1b3",
+      "public_sha256": "4467c960fff0eff3571b63712bb14f991998981bfc3f76a1d90594d86f881b46",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_024_single.json": {
+      "original_sha256": "d48ae3b297bcc95ab530e352ccd5ab58256703d5f1053262afcdd82614c8b8f6",
+      "public_sha256": "dd8cb34d304917149df2c1c67705ed35e084e31c0eb1ffc8f76e63e27dc5bcea",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_024_random.json": {
+      "original_sha256": "a4941df8809f9540a70a10be0650d7d58e85c5d1e4d8569360b8b604eb68dc53",
+      "public_sha256": "2fd8d00f1d949778c674c0bf024904940cd9243e9a3ec52f7432001d9ece5a2c",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_024_agent.json": {
+      "original_sha256": "e1b985a193a34f13b0542712120aabd02884237dcf526512a083931aeaa4333c",
+      "public_sha256": "61ed35b92e1a847c2bfd3b860556aeb5d81f2a018be7e2f5c968d23ff70fd3d9",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_025_single.json": {
+      "original_sha256": "93d287baf9b43683c2eef4cd602bf678f39f36d39f3094878dc59b04519f978e",
+      "public_sha256": "4af455a9fe4201c77e318f466d5c9783bb3524e769cabe2236227af4e4f88bf7",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_025_random.json": {
+      "original_sha256": "c8f3f7f68d92a1174340e644d472050d0eacd072168dfae343df82524795da53",
+      "public_sha256": "849a33109c9c8a20a975bab4c3ddd33289b2abbcfbc4d340269f71aac5e1cbe7",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_025_agent.json": {
+      "original_sha256": "2f301aec0924f9962a2446912764c5c70b38becf6caa7991f3acdb9618a8f4d7",
+      "public_sha256": "8e5bbb888b76910c6af1158e601791cfdecad416939e292a628699167d0ee496",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_026_single.json": {
+      "original_sha256": "4dab05b58ea894bf10434c4631c8043b89aa21bff4999cc0f48b61e59973e115",
+      "public_sha256": "8ea20358888037a04d9032358aa0500b5aa1d05b2594ef4ef0b8f6a58063dd43",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_026_random.json": {
+      "original_sha256": "66f23c10324b9e3f5615c63c52a533ed8a5ad136ecaec0de436458aae2da04cb",
+      "public_sha256": "845ba85787c4e3c0ab2e15fca347ab31b0c9c79ffe97d2b858f1a55209509726",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    },
+    "clip_026_agent.json": {
+      "original_sha256": "aea83af40e1642eb15c89a6927d9711e76742577f8aaa3ade2659c3c9366e8f3",
+      "public_sha256": "94ceabab1ad6e69566cf4d27a2b862ffeffeae0153c12c766496335d1a15cee9",
+      "changes": "Absolute saved-overlay paths replaced with relative paths; all observations, events, scores and timings retained."
+    }
+  },
+  "original_verification": {
+    "status": "PASS",
+    "created_at_utc": "2026-10-25T09:43:50.009304+00:00",
+    "unique_generated_clips": 26,
+    "decoded_source_frames": 1560,
+    "held_out_clips": 18,
+    "prediction_rows": 54,
+    "actual_inference_overlay_hashes_verified": 1152,
+    "frozen_module_count": 5,
+    "all_source_frame_hashes_match_decoded_media": true,
+    "all_final_status_confusions_recounted": true,
+    "real_video_benchmark": "NOT_RUN",
+    "scope": "Independent literal hashes/counts, not a second scientific population."
+  },
+  "immutable_five_source_sha256": {
+    "module_sha256": {
+      "benchmark.py": "bdbc8078564336edb5739ff6a3eebec7c3f8f0861763b1b725ef5917ed79d814",
+      "engine.py": "348af96466807e29c71f59750d52b1a3ca84e2a4f29071bbdb63a5522001f993",
+      "fixtures.py": "f1a6052d2a1f6b79c7fb48638fb0cad418ad1d133eec29c01a453d4434774e8c",
+      "recipe.py": "286fd65092283e96d500c8357314b4089b8433fdca1e3e0e15403131ea9b844a",
+      "vision.py": "53645e37a9111a53cc420494c82133a169ec69c214b5b92b3ccb70fd7cb35aae"
+    },
+    "recipe": {
+      "confirmation": {
+        "maximum_observation_gap_ms": 750,
+        "minimum_supporting_frames": 3,
+        "minimum_temporal_gap_ms": 150
+      },
+      "name": "Demo Sensor Panel \u2014 colored teaching fixture",
+      "parts": {
+        "bolt": {
+          "classes": [
+            "fastener"
+          ],
+          "count": 2
+        },
+        "cover": {
+          "classes": [
+            "cover_plate"
+          ],
+          "count": 1
+        },
+        "spacer_short": {
+          "classes": [
+            "short_spacer"
+          ],
+          "count": 2
+        }
+      },
+      "recipe_id": "demo_panel_v1",
+      "scope": "Calibrated nonhazardous tabletop panel only. Blue short spacers, green cover, yellow fasteners. No general industrial part recognition or certified safety decision.",
+      "slots": {
+        "cover": {
+          "rect": [
+            0.36,
+            0.45,
+            0.64,
+            0.62
+          ],
+          "requires": "cover"
+        },
+        "left_fastener": {
+          "rect": [
+            0.18,
+            0.67,
+            0.38,
+            0.87
+          ],
+          "requires": "bolt"
+        },
+        "right_fastener": {
+          "rect": [
+            0.62,
+            0.67,
+            0.82,
+            0.87
+          ],
+          "requires": "bolt"
+        },
+        "spacer_left": {
+          "rect": [
+            0.18,
+            0.22,
+            0.38,
+            0.42
+          ],
+          "requires": "spacer_short"
+        },
+        "spacer_right": {
+          "rect": [
+            0.62,
+            0.22,
+            0.82,
+            0.42
+          ],
+          "requires": "spacer_short"
+        }
+      },
+      "steps": [
+        {
+          "id": "mount_spacers",
+          "requires": [],
+          "slots": [
+            "spacer_left",
+            "spacer_right"
+          ],
+          "title": "Place both blue short spacers"
+        },
+        {
+          "id": "install_cover",
+          "requires": [
+            "mount_spacers"
+          ],
+          "slots": [
+            "cover"
+          ],
+          "title": "Place the green cover"
+        },
+        {
+          "id": "fit_fasteners",
+          "requires": [
+            "install_cover"
+          ],
+          "slots": [
+            "left_fastener",
+            "right_fastener"
+          ],
+          "title": "Place both yellow fasteners"
+        }
+      ],
+      "version": "1.0.0"
+    }
+  }
+}

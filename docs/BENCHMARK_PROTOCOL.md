@@ -1,0 +1,3 @@
+# Benchmark protocol entry point
+
+The executed, predeclared v2 study uses reports/improvement_v2_20261024/PROTOCOL.md, its pre-inference addenda, the frozen source/model/manifests in freeze.json and PROTOCOL_EVALUATOR_ADDENDUM.md. No protocol or frozen experiment file was rewritten during final reporting. See IMPROVEMENT_V2_GUIDE.md for executed command order, exact host environment and portability limits; AGENT_ABLATIONS.md for causal controls; DATA_LICENSES.md for source rights; and reports/improvement_v2_20261024/CLOSURE.md for every completion boundary. Earlier benchmarks remain separate historical studies.

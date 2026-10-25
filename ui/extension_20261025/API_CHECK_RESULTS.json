@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-25T09:45:20.347490+00:00",
+  "status": "PASS",
+  "scope": "Actual FastAPI wrapper, static assets and OpenCV pixel evidence; not rendered browser, physical camera or physical-assembly validation",
+  "checks": [
+    "legacy_studio_and_additive_entry_serve",
+    "page_keeps_solar_assets_and_isolated_script",
+    "safety.js_served_exact_bytes",
+    "safety.css_served_exact_bytes",
+    "shared_asset_/styles.css",
+    "shared_asset_/assets-ui/reflex-solar-logo.webp",
+    "shared_asset_/assets-ui/reflex-space-background.webp",
+    "shared_asset_/assets-ui/reflex-orbital-planet.webp",
+    "session_capability_required",
+    "actual_pixel_frame_processed",
+    "evidence_uses_actual_cv5_pixels",
+    "protected_original_url",
+    "protected_overlay_url",
+    "still_abstains_instead_of_inventing_temporal_pass",
+    "review_appended_original_decision_retained",
+    "actual_report_json",
+    "actual_report_html",
+    "second_view_requires_real_child_input",
+    "parent_capability_cannot_read_child",
+    "explicit_real_video_benchmark_not_run"
+  ],
+  "check_count": 20,
+  "session_ids": [
+    "42f1bbb7b16e485899461f95b1011170",
+    "9656c7431d934451b59bb73ebef9b223"
+  ],
+  "no_tokens_recorded": true,
+  "original_app_js_sha256": "2b3dbf8dcf2a8808b2e66f1590f92e48ef5edb903606b3aea58c290dcccd828d",
+  "original_styles_css_sha256": "1c161914108d1c1ab9a783aca693c7882e3eaf4cb91550bbd698d0a74b3e8f0d"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_COPIED_AND_HASH_VERIFIED",
+  "utc": "2026-10-25T09:55:10.891029+00:00",
+  "files_verified": 49,
+  "manifest_sha256": "59544d6bfd9c2c2d2f5e5f2f2019da56cbca90e7391e12db2077b1884d39c86a",
+  "pptx_sha256": "4f0a6b3d77613c82d43d1d59c20afba32e063d3e36ee9d0a9f6f9930d207722f",
+  "visual_review_sha256": "ebbf406a56e7c0d675516932bb4a57639753e6128722a42f1e37f35c8d4a00c5",
+  "native_slide_counts": {
+    "slides": 10,
+    "charts": 1,
+    "tables": 6,
+    "workbooks": 1
+  },
+  "publication_performed": false,
+  "submission_performed": false
+}

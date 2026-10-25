@@ -1,0 +1,66 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: One bounded public HTTPS ECS Express service for the REFLEX synthetic demo.
+Parameters:
+  ImageUri:
+    Type: String
+    AllowedPattern: '^\d{12}\.dkr\.ecr\.ap-southeast-2\.amazonaws\.com/reflex/inspection:reflex-[a-z0-9tz]+$'
+  BuildTag:
+    Type: String
+    AllowedPattern: '^reflex-[a-z0-9tz]+$'
+  ClusterName:
+    Type: String
+  ExecutionRoleArn:
+    Type: String
+  ExpressInfrastructureRoleArn:
+    Type: String
+  AppLogGroupName:
+    Type: String
+  PublicSubnets:
+    Type: CommaDelimitedList
+Resources:
+  ReflexExpressService:
+    Type: AWS::ECS::ExpressGatewayService
+    Properties:
+      ServiceName: reflex-submission
+      Cluster: !Ref ClusterName
+      InfrastructureRoleArn: !Ref ExpressInfrastructureRoleArn
+      ExecutionRoleArn: !Ref ExecutionRoleArn
+      Cpu: '1024'
+      Memory: '2048'
+      HealthCheckPath: /api/health
+      NetworkConfiguration:
+        Subnets: !Ref PublicSubnets
+      ScalingTarget:
+        MinTaskCount: 1
+        MaxTaskCount: 1
+        AutoScalingMetric: AVERAGE_CPU
+        AutoScalingTargetValue: 70
+      PrimaryContainer:
+        Image: !Ref ImageUri
+        ContainerPort: 8000
+        AwsLogsConfiguration:
+          LogGroup: !Ref AppLogGroupName
+          LogStreamPrefix: ecs
+        Environment:
+          - Name: REFLEX_RUNTIME
+            Value: aws
+          - Name: BUILD_COMMIT
+            Value: !Ref BuildTag
+          - Name: INSPECTION_RETENTION_DAYS
+            Value: '1'
+          - Name: INSPECTION_CLEANUP_INTERVAL_SECONDS
+            Value: '900'
+          - Name: UPLOADS_PER_WINDOW
+            Value: '10'
+          - Name: UPLOAD_RATE_WINDOW_SECONDS
+            Value: '600'
+      Tags:
+        - Key: Project
+          Value: REFLEX
+        - Key: Purpose
+          Value: competition-demo
+Outputs:
+  Endpoint:
+    Value: !GetAtt ReflexExpressService.Endpoint
+  ServiceArn:
+    Value: !GetAtt ReflexExpressService.ServiceArn

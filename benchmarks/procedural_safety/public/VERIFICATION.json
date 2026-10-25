@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "created_at_utc": "2026-10-25T09:43:50.009304+00:00",
+  "unique_generated_clips": 26,
+  "decoded_source_frames": 1560,
+  "held_out_clips": 18,
+  "prediction_rows": 54,
+  "actual_inference_overlay_hashes_verified": 1152,
+  "frozen_module_count": 5,
+  "all_source_frame_hashes_match_decoded_media": true,
+  "all_final_status_confusions_recounted": true,
+  "real_video_benchmark": "NOT_RUN",
+  "scope": "Independent literal hashes/counts, not a second scientific population."
+}

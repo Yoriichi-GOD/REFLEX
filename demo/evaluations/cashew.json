@@ -1,0 +1,537 @@
+{
+  "category": "cashew",
+  "source": "VisA official one-class test split, reused after baseline diagnosis",
+  "image_metrics": {
+    "sample_count": 150,
+    "positive_count": 100,
+    "negative_count": 50,
+    "auroc": 0.9476000000000001,
+    "average_precision": 0.9743777727212694,
+    "threshold": 2.5547800064086914,
+    "confusion_matrix": {
+      "TP": 70,
+      "FP": 2,
+      "FN": 30,
+      "TN": 48
+    },
+    "precision": 0.9722222222222222,
+    "recall": 0.7,
+    "f1": 0.813953488372093,
+    "false_positive_rate_on_negatives": 0.04
+  },
+  "pixel_metrics": {
+    "pixel_auroc": 0.988475781870747,
+    "pixel_average_precision": 0.5209439575426819,
+    "pixel_iou_at_frozen_normal_threshold": 0.23360169158915184,
+    "pixel_dice_at_frozen_normal_threshold": 0.3787311466608338,
+    "pixel_precision": 0.2375625831011283,
+    "pixel_recall": 0.9333810326577018,
+    "pixel_confusion_matrix": {
+      "TP": 95231,
+      "FP": 305636,
+      "FN": 6797,
+      "TN": 8654736
+    },
+    "pixel_sample_count": 9062400,
+    "pixel_image_count": 150,
+    "au_pro_fpr_0_30": 0.9149131770230816,
+    "pixel_threshold": 2.0101919174194336
+  },
+  "region_metrics": {
+    "defect_image_count": 100,
+    "component_count": 147,
+    "component_recall_any_overlap": 0.8367346938775511,
+    "mean_component_iou": 0.05541049579356733
+  },
+  "area_slices": {
+    "lt_0_1pct": {
+      "anomaly_count": 38,
+      "recall_at_frozen_threshold": 0.7631578947368421
+    },
+    "0_1_to_1pct": {
+      "anomaly_count": 56,
+      "recall_at_frozen_threshold": 0.625
+    },
+    "1_to_5pct": {
+      "anomaly_count": 0,
+      "recall_at_frozen_threshold": null
+    },
+    "ge_5pct": {
+      "anomaly_count": 6,
+      "recall_at_frozen_threshold": 1.0
+    }
+  },
+  "decisions": {
+    "sample_count": 150,
+    "resolved_count": 150,
+    "abstention_count": 0,
+    "coverage": 1.0,
+    "confusion_matrix_on_resolved": {
+      "TP": 70,
+      "FP": 2,
+      "FN": 30,
+      "TN": 48
+    },
+    "precision_on_resolved": 0.9722222222222222,
+    "recall_on_resolved": 0.7,
+    "f1_on_resolved": 0.813953488372093,
+    "false_clear_count": 30,
+    "false_defect_count": 2,
+    "needs_review_count": 0,
+    "needs_input_count": 0
+  },
+  "latency": {
+    "count": 150,
+    "mean_ms": 132.134042000204,
+    "std_ms": 11.262752174897335,
+    "p50_ms": 130.212299998675,
+    "p90_ms": 144.55712999770185,
+    "p95_ms": 150.15189499972615,
+    "max_ms": 202.34839999466203
+  },
+  "agent_note": "Crop-to-spatial-bank comparison disabled for patch model; no claimed reinspection benefit",
+  "model_sha256": "e21be3d30858ff3e1f1948b5fbcde020a7a9f3b87cbf763308746277c9bbe512",
+  "baseline_image": {
+    "sample_count": 150,
+    "positive_count": 100,
+    "negative_count": 50,
+    "auroc": 0.5988,
+    "average_precision": 0.7133894475646871,
+    "threshold": 14.092521667480469,
+    "confusion_matrix": {
+      "TP": 5,
+      "FP": 3,
+      "FN": 95,
+      "TN": 47
+    },
+    "precision": 0.625,
+    "recall": 0.05,
+    "f1": 0.09259259259259259,
+    "false_positive_rate_on_negatives": 0.06
+  },
+  "robustness": {
+    "blur_5x5_sigma1_2": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.9438,
+        "average_precision": 0.973701908917143,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 70,
+          "FP": 1,
+          "FN": 30,
+          "TN": 49
+        },
+        "precision": 0.9859154929577465,
+        "recall": 0.7,
+        "f1": 0.8187134502923976,
+        "false_positive_rate_on_negatives": 0.02
+      },
+      "pixel": {
+        "pixel_auroc": 0.9885183418439558,
+        "pixel_average_precision": 0.519894282590495,
+        "pixel_iou_at_frozen_normal_threshold": 0.22909123278904658,
+        "pixel_dice_at_frozen_normal_threshold": 0.37278149363931934,
+        "pixel_precision": 0.23290489060646455,
+        "pixel_recall": 0.9332928215783902,
+        "pixel_confusion_matrix": {
+          "TP": 95222,
+          "FP": 313623,
+          "FN": 6806,
+          "TN": 8646749
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.9112656072571872,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 89.64971066617484,
+        "std_ms": 5.6627319015076205,
+        "p50_ms": 88.63854999799514,
+        "p90_ms": 97.37167000494081,
+        "p95_ms": 100.20305499856477,
+        "max_ms": 109.92489999625832
+      }
+    },
+    "gaussian_noise_sigma12": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.9429999999999998,
+        "average_precision": 0.972747062454501,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 69,
+          "FP": 2,
+          "FN": 31,
+          "TN": 48
+        },
+        "precision": 0.971830985915493,
+        "recall": 0.69,
+        "f1": 0.8070175438596492,
+        "false_positive_rate_on_negatives": 0.04
+      },
+      "pixel": {
+        "pixel_auroc": 0.9881973395899278,
+        "pixel_average_precision": 0.5178982582862695,
+        "pixel_iou_at_frozen_normal_threshold": 0.24093125903204335,
+        "pixel_dice_at_frozen_normal_threshold": 0.38830718023813116,
+        "pixel_precision": 0.24516984727909552,
+        "pixel_recall": 0.9330477908025248,
+        "pixel_confusion_matrix": {
+          "TP": 95197,
+          "FP": 293093,
+          "FN": 6831,
+          "TN": 8667279
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.908462801907599,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 90.81953733359114,
+        "std_ms": 7.372423631684432,
+        "p50_ms": 89.40554999935557,
+        "p90_ms": 99.85902999833343,
+        "p95_ms": 103.72475999793096,
+        "max_ms": 130.4569999992964
+      }
+    },
+    "jpeg_quality35": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.9374000000000001,
+        "average_precision": 0.9710973171040753,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 72,
+          "FP": 1,
+          "FN": 28,
+          "TN": 49
+        },
+        "precision": 0.9863013698630136,
+        "recall": 0.72,
+        "f1": 0.8323699421965317,
+        "false_positive_rate_on_negatives": 0.02
+      },
+      "pixel": {
+        "pixel_auroc": 0.9869089645626262,
+        "pixel_average_precision": 0.5265468337898543,
+        "pixel_iou_at_frozen_normal_threshold": 0.22368685993640922,
+        "pixel_dice_at_frozen_normal_threshold": 0.365594936515104,
+        "pixel_precision": 0.22713829240922837,
+        "pixel_recall": 0.9363900105853296,
+        "pixel_confusion_matrix": {
+          "TP": 95538,
+          "FP": 325078,
+          "FN": 6490,
+          "TN": 8635294
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.8979555636679051,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 90.36025733376543,
+        "std_ms": 7.159849578895477,
+        "p50_ms": 89.16680000402266,
+        "p90_ms": 98.18465000062133,
+        "p95_ms": 102.95315999974264,
+        "max_ms": 124.43720000010217
+      }
+    },
+    "brightness_0_78_plus30": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.9434,
+        "average_precision": 0.9729615688096855,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 72,
+          "FP": 1,
+          "FN": 28,
+          "TN": 49
+        },
+        "precision": 0.9863013698630136,
+        "recall": 0.72,
+        "f1": 0.8323699421965317,
+        "false_positive_rate_on_negatives": 0.02
+      },
+      "pixel": {
+        "pixel_auroc": 0.9891249996628495,
+        "pixel_average_precision": 0.5207835712023052,
+        "pixel_iou_at_frozen_normal_threshold": 0.2333665102379689,
+        "pixel_dice_at_frozen_normal_threshold": 0.3784219991394813,
+        "pixel_precision": 0.23719486278301546,
+        "pixel_recall": 0.9353118751715216,
+        "pixel_confusion_matrix": {
+          "TP": 95428,
+          "FP": 306891,
+          "FN": 6600,
+          "TN": 8653481
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.9158894199283587,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 90.6880859999607,
+        "std_ms": 7.493640633295086,
+        "p50_ms": 89.02419999867561,
+        "p90_ms": 98.46738999694935,
+        "p95_ms": 105.79027999992825,
+        "max_ms": 125.77100000635255
+      }
+    },
+    "contrast_1_25": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.9454,
+        "average_precision": 0.9729570523926976,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 78,
+          "FP": 5,
+          "FN": 22,
+          "TN": 45
+        },
+        "precision": 0.9397590361445783,
+        "recall": 0.78,
+        "f1": 0.8524590163934427,
+        "false_positive_rate_on_negatives": 0.1
+      },
+      "pixel": {
+        "pixel_auroc": 0.9863804261058646,
+        "pixel_average_precision": 0.4924111185619492,
+        "pixel_iou_at_frozen_normal_threshold": 0.14269229931854302,
+        "pixel_dice_at_frozen_normal_threshold": 0.24974754691816708,
+        "pixel_precision": 0.14346651645319133,
+        "pixel_recall": 0.9635590230132904,
+        "pixel_confusion_matrix": {
+          "TP": 98310,
+          "FP": 586937,
+          "FN": 3718,
+          "TN": 8373435
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.9130009688955134,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 90.2335073336629,
+        "std_ms": 6.5390170930476685,
+        "p50_ms": 88.52390000174637,
+        "p90_ms": 100.34192999592051,
+        "p95_ms": 103.86042499594622,
+        "max_ms": 110.52630000631325
+      }
+    },
+    "rotation_7deg": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.8618,
+        "average_precision": 0.9421832639192752,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 72,
+          "FP": 2,
+          "FN": 28,
+          "TN": 48
+        },
+        "precision": 0.972972972972973,
+        "recall": 0.72,
+        "f1": 0.8275862068965518,
+        "false_positive_rate_on_negatives": 0.04
+      },
+      "pixel": {
+        "pixel_auroc": 0.9832329888413947,
+        "pixel_average_precision": 0.5027060244206575,
+        "pixel_iou_at_frozen_normal_threshold": 0.1852234773293002,
+        "pixel_dice_at_frozen_normal_threshold": 0.31255451967028164,
+        "pixel_precision": 0.18818301500982382,
+        "pixel_recall": 0.9217373408727865,
+        "pixel_confusion_matrix": {
+          "TP": 94055,
+          "FP": 405751,
+          "FN": 7986,
+          "TN": 8554608
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.8842946786250383,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 91.18280600028811,
+        "std_ms": 9.822512403793004,
+        "p50_ms": 88.8315500014869,
+        "p90_ms": 99.53671999610378,
+        "p95_ms": 102.67034500502632,
+        "max_ms": 162.42139999667415
+      }
+    },
+    "resize_0_55_down_up": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.9466,
+        "average_precision": 0.97396029541725,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 70,
+          "FP": 2,
+          "FN": 30,
+          "TN": 48
+        },
+        "precision": 0.9722222222222222,
+        "recall": 0.7,
+        "f1": 0.813953488372093,
+        "false_positive_rate_on_negatives": 0.04
+      },
+      "pixel": {
+        "pixel_auroc": 0.9883983352580755,
+        "pixel_average_precision": 0.5209409083716754,
+        "pixel_iou_at_frozen_normal_threshold": 0.23379108260855683,
+        "pixel_dice_at_frozen_normal_threshold": 0.37898001680197163,
+        "pixel_precision": 0.2377877260213743,
+        "pixel_recall": 0.9329301760301094,
+        "pixel_confusion_matrix": {
+          "TP": 95185,
+          "FP": 305109,
+          "FN": 6843,
+          "TN": 8655263
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.9135687605645956,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 90.47103000014128,
+        "std_ms": 8.04459293427117,
+        "p50_ms": 88.6282499996014,
+        "p90_ms": 100.03698000582517,
+        "p95_ms": 102.92935499819576,
+        "max_ms": 142.79240000178106
+      }
+    },
+    "defect_downsize_0_5": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.921,
+        "average_precision": 0.961155510412629,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 62,
+          "FP": 2,
+          "FN": 38,
+          "TN": 48
+        },
+        "precision": 0.96875,
+        "recall": 0.62,
+        "f1": 0.7560975609756097,
+        "false_positive_rate_on_negatives": 0.04
+      },
+      "pixel": {
+        "pixel_auroc": 0.9921976631487867,
+        "pixel_average_precision": 0.17966509464007263,
+        "pixel_iou_at_frozen_normal_threshold": 0.06166238968209251,
+        "pixel_dice_at_frozen_normal_threshold": 0.11616195559222342,
+        "pixel_precision": 0.06173484217734665,
+        "pixel_recall": 0.9813226829554799,
+        "pixel_confusion_matrix": {
+          "TP": 25062,
+          "FP": 380900,
+          "FN": 477,
+          "TN": 8655961
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.8674907492871525,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 90.81447666637057,
+        "std_ms": 8.964448860578273,
+        "p50_ms": 88.53754999654484,
+        "p90_ms": 99.65771000424866,
+        "p95_ms": 106.33272500017483,
+        "max_ms": 141.08529999793973
+      }
+    },
+    "center_occlusion_20pct": {
+      "image": {
+        "sample_count": 150,
+        "positive_count": 100,
+        "negative_count": 50,
+        "auroc": 0.8268,
+        "average_precision": 0.9110960353292028,
+        "threshold": 2.5547800064086914,
+        "confusion_matrix": {
+          "TP": 100,
+          "FP": 50,
+          "FN": 0,
+          "TN": 0
+        },
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "false_positive_rate_on_negatives": 1.0
+      },
+      "pixel": {
+        "pixel_auroc": 0.9330432711831069,
+        "pixel_average_precision": 0.11859320252514406,
+        "pixel_iou_at_frozen_normal_threshold": 0.06069615676644186,
+        "pixel_dice_at_frozen_normal_threshold": 0.11444588797507399,
+        "pixel_precision": 0.06074685971618389,
+        "pixel_recall": 0.9864350962480888,
+        "pixel_confusion_matrix": {
+          "TP": 100644,
+          "FP": 1556133,
+          "FN": 1384,
+          "TN": 7404239
+        },
+        "pixel_sample_count": 9062400,
+        "pixel_image_count": 150,
+        "au_pro_fpr_0_30": 0.8109664174928495,
+        "pixel_threshold": 2.0101919174194336
+      },
+      "latency": {
+        "count": 150,
+        "mean_ms": 90.87999133310707,
+        "std_ms": 7.813399925363846,
+        "p50_ms": 88.75840000109747,
+        "p90_ms": 102.59443999966606,
+        "p95_ms": 107.5687549990107,
+        "max_ms": 118.4519000016735
+      }
+    }
+  }
+}

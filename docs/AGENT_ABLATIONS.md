@@ -1,0 +1,11 @@
+# Agent inspection: measured controls and limits
+
+The frozen v2 protocol is reports/improvement_v2_20261024/PROTOCOL.md. All eight groups compare static, chosen, equal-budget seeded random, quality-gate-off and ROI-off selective policies on identical cases. Forced all-case controls compare one chosen crop, one random crop and all four crops. Each detail bank has separate normal-only calibration. Crops reuse available source pixels; they are not a new camera view.
+
+Exact results: report/AGENT_POLICIES.csv (40 rows), DETAIL_FUSION.csv (24 rows), policy-contribution/RESULTS.json and ACTIVE_CASES.csv. Every selected image and map is retained in the complete real gallery and verified map exports. Only 46 cases activated a selective crop across the eight groups; some categories had zero, and no group reached the intended 30-trigger target. Forced all-case controls do not fix that evidence shortage.
+
+Chosen, random and ROI-off selective policies have identical false-clear case sets in all eight groups. Review routing accounts for the automatic-pass reduction. The chosen crop resolves 17 true alerts and four false alerts from those reviews; the seeded random crop resolves 12 and two. These are descriptive totals across separate populations, not independent trials or a broad superiority test. Review remains unresolved; it is never counted as successful defect detection. Quality-gate-off controls were also reported. Suitability validation uses dependent transformations and remains advisory.
+
+Fixed-budget full+crop fusion is an additional experimental comparison, not the deployed adaptive policy. Maximum normalized component scores do not retain a joint 5% false-alert guarantee. Every fixed arm/seed is reported and no final-test winner is promoted. Native masks and pixel metrics have their stated spatial denominators. The all-case gallery deliberately includes false clears, false alerts and unresolved reviews.
+
+Dedicated AWS primary-v2 vs v1 runtime was measured separately on the same 100 real fixtures with verified code/bank hashes. Full-handler p95 rose 17.35%; peak process RSS rose 43.90%. Per-policy saturation throughput and new-camera-view benefits were not established. The v2 candidate remains local under HOLD_CANDIDATE_LOCAL.

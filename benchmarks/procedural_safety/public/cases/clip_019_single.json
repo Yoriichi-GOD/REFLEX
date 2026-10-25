@@ -1,0 +1,1076 @@
+{
+  "agent_trace": [],
+  "benchmark_scope": "Not a real-world procedure benchmark. Upload provenance and evaluator labels must be supplied separately.",
+  "cv_version": "5.0.0",
+  "decision": {
+    "reason_codes": [
+      "LOW_EXPOSURE",
+      "LOW_FOCUS",
+      "OCCLUDED",
+      "SLOT_OCCLUDED_OR_GLARE",
+      "UNCONFIRMED_OR_OCCLUDED",
+      "PARTIAL_OBSERVATION"
+    ],
+    "required_human_action": "Review the supporting frames; correct the fixture or provide a fresh unobstructed view. This is an advisory teaching-fixture gate.",
+    "status": "HOLD_FOR_REVIEW",
+    "supporting_observation_ids": [
+      "frame-00000-ff01591742dc:0",
+      "frame-00003-207a000a0f0f:0",
+      "frame-00000-ff01591742dc:1",
+      "frame-00003-207a000a0f0f:1",
+      "frame-00000-ff01591742dc:2",
+      "frame-00003-207a000a0f0f:2",
+      "frame-00000-ff01591742dc:3",
+      "frame-00003-207a000a0f0f:3",
+      "frame-00000-ff01591742dc:4",
+      "frame-00003-207a000a0f0f:4"
+    ],
+    "time_to_alert_ms": null
+  },
+  "events": [],
+  "evidence": [
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00000.jpg",
+      "benchmark_overlay_sha256": "3294b2296d8e96cfc7d3e490deeb6ba7a6321851609870e7db8d9cfc47d13230",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 0,
+      "frame_sha256": "ff01591742dc65f7ce069b996ba139f4c11632439db5f9177420a1f07d75f4f3",
+      "id": "frame-00000-ff01591742dc",
+      "processing_ms": 5.4373000166378915,
+      "quality": {
+        "flags": [],
+        "focus_variance": 566.5894775390625,
+        "mean_gray": 217.68274088541668,
+        "usable": true
+      },
+      "source_timestamp_ms": 0.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00003.jpg",
+      "benchmark_overlay_sha256": "dfdd0dceae1ac72710d328f1c8f7bd9f06398a2a0a1a012c97bf346362ef5163",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 3,
+      "frame_sha256": "207a000a0f0f1f641900990939602eb32f39a2f5e083d73c7d7e97642f9537b9",
+      "id": "frame-00003-207a000a0f0f",
+      "processing_ms": 5.0823999918065965,
+      "quality": {
+        "flags": [],
+        "focus_variance": 570.5222778320312,
+        "mean_gray": 217.68973307291665,
+        "usable": true
+      },
+      "source_timestamp_ms": 300.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00006.jpg",
+      "benchmark_overlay_sha256": "d0fe352af40d82a882a53b707b4444b57d034b4dbde527ae891038803bfe6ea2",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 6,
+      "frame_sha256": "a826ef5932e5172bef464f838f6ae34b5f50dcf2bc4279db4cf4068666c5b8cb",
+      "id": "frame-00006-a826ef5932e5",
+      "processing_ms": 5.603099998552352,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 4.805032730102539,
+        "mean_gray": 34.73994140625,
+        "usable": false
+      },
+      "source_timestamp_ms": 600.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00009.jpg",
+      "benchmark_overlay_sha256": "f394728cd97f9df301e6329157fcaf48b69c977517613780175672df6acfd206",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 9,
+      "frame_sha256": "88721fc4e20abf31d5e33b2a34a1c0e53172333327188b76fccb43e77091d0f6",
+      "id": "frame-00009-88721fc4e20a",
+      "processing_ms": 4.358500009402633,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.1981964111328125,
+        "mean_gray": 34.58279296875,
+        "usable": false
+      },
+      "source_timestamp_ms": 900.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00012.jpg",
+      "benchmark_overlay_sha256": "e4598867f24a460c4b24a706233c2e5f9aa0a8d13d20592a38988759a90a3180",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 12,
+      "frame_sha256": "b69107d4c59c804ebeb296ce593aeb0e12c79e75f5067091e03833ebeef92ce1",
+      "id": "frame-00012-b69107d4c59c",
+      "processing_ms": 5.2100000029895455,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.160377502441406,
+        "mean_gray": 34.584794921875,
+        "usable": false
+      },
+      "source_timestamp_ms": 1200.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00015.jpg",
+      "benchmark_overlay_sha256": "8ee89e6377c5178ee622aa2c290bc2ebd2aac8580cf2e65e9d6a196c0bc5eeb3",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 15,
+      "frame_sha256": "867e63c5bc4e2f02a507ba3210fc747e76cd12a5b80a6a8bad23aad8359db6d0",
+      "id": "frame-00015-867e63c5bc4e",
+      "processing_ms": 5.096900014905259,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.16141939163208,
+        "mean_gray": 34.58660807291667,
+        "usable": false
+      },
+      "source_timestamp_ms": 1500.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00018.jpg",
+      "benchmark_overlay_sha256": "b6445928b099af261f4efec27451744e5bd33ff9387d7249e1499d4af33a3642",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 18,
+      "frame_sha256": "842a2aa6b1ba40c8bc50005ac259c3c2f492f2f30376badb7e1991a14c655085",
+      "id": "frame-00018-842a2aa6b1ba",
+      "processing_ms": 5.144399998243898,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.173059940338135,
+        "mean_gray": 34.58435872395833,
+        "usable": false
+      },
+      "source_timestamp_ms": 1800.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00021.jpg",
+      "benchmark_overlay_sha256": "6cdae92814cb5705e8d561655878fba2cfaa37763ae9314208903aeeaa408161",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 21,
+      "frame_sha256": "52b5eb6e2735740570ab98b3b5040c58726ccdf6883ae0c032a2ffc79ced62f5",
+      "id": "frame-00021-52b5eb6e2735",
+      "processing_ms": 5.344500008504838,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.562148571014404,
+        "mean_gray": 34.423671875,
+        "usable": false
+      },
+      "source_timestamp_ms": 2100.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00024.jpg",
+      "benchmark_overlay_sha256": "1aef248aef1a27ea6bd4153b2c05534cbc270b86e9ef95eaea89043ba452bdbe",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 24,
+      "frame_sha256": "fa119c62f87a912b384f3aee095e8eee86accd3c7de1ae50bb696ffee6f81f83",
+      "id": "frame-00024-fa119c62f87a",
+      "processing_ms": 5.2943000046070665,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.518834590911865,
+        "mean_gray": 34.42273111979166,
+        "usable": false
+      },
+      "source_timestamp_ms": 2400.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00027.jpg",
+      "benchmark_overlay_sha256": "75687535aae3055897b04e9674338ffba825eeadc0de2cf28b49df9ea36f327d",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 27,
+      "frame_sha256": "75940a876bd0e9b612a2ed1819244fcf73546d0af36623c0d3aee08021f37d91",
+      "id": "frame-00027-75940a876bd0",
+      "processing_ms": 5.717199994251132,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.551595211029053,
+        "mean_gray": 34.42141927083333,
+        "usable": false
+      },
+      "source_timestamp_ms": 2700.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00030.jpg",
+      "benchmark_overlay_sha256": "b7a9f5f32f57b5e5ffbc85cd33423f548bbfbfdfcad4ee7c5beedcfdaeeed033",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 30,
+      "frame_sha256": "2a139e38da847fc8e308c177f5097d22859cc501418283436c4bf91b682234e6",
+      "id": "frame-00030-2a139e38da84",
+      "processing_ms": 5.324099998688325,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.500898361206055,
+        "mean_gray": 34.422333984375,
+        "usable": false
+      },
+      "source_timestamp_ms": 3000.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00033.jpg",
+      "benchmark_overlay_sha256": "925b2b015e52f49add08788a60a68bde957f8462cc94dd8f8c4982fcc6a121f2",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 33,
+      "frame_sha256": "85fca184d6078929abd0ffa74575736ebde9b36a704dcb4582e1a1f59acbd88f",
+      "id": "frame-00033-85fca184d607",
+      "processing_ms": 5.326300015440211,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.5244598388671875,
+        "mean_gray": 34.38490234375,
+        "usable": false
+      },
+      "source_timestamp_ms": 3300.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00036.jpg",
+      "benchmark_overlay_sha256": "f2c7ca4f1dea19658330d65bd00d0c2a88db62dca3df5c5c1c6c8d0683a1b580",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 36,
+      "frame_sha256": "b923876c3d4996852acb26ba71dfcb752030e3a72a9ea193422ace3ea49886b6",
+      "id": "frame-00036-b923876c3d49",
+      "processing_ms": 5.933499982347712,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.575651168823242,
+        "mean_gray": 34.38619140625,
+        "usable": false
+      },
+      "source_timestamp_ms": 3600.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00039.jpg",
+      "benchmark_overlay_sha256": "538dff4657d14b9fb90198e8ff5c2b0f9c4dd9886cacab8e83c0e1dd4535ea88",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 39,
+      "frame_sha256": "e8c1be03dc2bea0ad16271a134d9dbff4a47e071889ca7dcf1e59cc1e4b2191e",
+      "id": "frame-00039-e8c1be03dc2b",
+      "processing_ms": 3.823399980319664,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.608626365661621,
+        "mean_gray": 34.384280598958334,
+        "usable": false
+      },
+      "source_timestamp_ms": 3900.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00042.jpg",
+      "benchmark_overlay_sha256": "d125b88d558705bb76667289ce55eac0eb52f9a5683bcf4993d2630d509de874",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 42,
+      "frame_sha256": "6b5f23f8634a32d056093b627690316aed1a2629ea322b8e0fdb3c63e166c983",
+      "id": "frame-00042-6b5f23f8634a",
+      "processing_ms": 6.250599981285632,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.525390625,
+        "mean_gray": 34.38226236979167,
+        "usable": false
+      },
+      "source_timestamp_ms": 4200.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00045.jpg",
+      "benchmark_overlay_sha256": "73eda2a50a107c2f91be879cb823a316f75ab57cf853f397b4c9ffc7576cb77b",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 45,
+      "frame_sha256": "e5b959c3427df7745d9d90608227703a4e1e85eb98b2ce71008700baf6a48da5",
+      "id": "frame-00045-e5b959c3427d",
+      "processing_ms": 5.471399985253811,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.436491012573242,
+        "mean_gray": 34.386676432291665,
+        "usable": false
+      },
+      "source_timestamp_ms": 4500.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00048.jpg",
+      "benchmark_overlay_sha256": "c40242da3398a7a27e59897d9ca34d5dff889ca078dd98266a5ddd47731768f1",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 48,
+      "frame_sha256": "aeb89a32718819ca9f287b792072ac8e78f9b35b64dfeb9e18653891a523ae2d",
+      "id": "frame-00048-aeb89a327188",
+      "processing_ms": 5.17670001136139,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.511881351470947,
+        "mean_gray": 34.38687825520833,
+        "usable": false
+      },
+      "source_timestamp_ms": 4800.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00051.jpg",
+      "benchmark_overlay_sha256": "5d7120fa2624a8718b54e4b789aa2c1ee42fd5ae6f538353cf1f6856addafc9e",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 51,
+      "frame_sha256": "7e338e8148d589dbca6ee60f8035655efe01f39b24919d539597f37bc1f3d480",
+      "id": "frame-00051-7e338e8148d5",
+      "processing_ms": 4.748000006657094,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.558014392852783,
+        "mean_gray": 34.38474934895833,
+        "usable": false
+      },
+      "source_timestamp_ms": 5100.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00054.jpg",
+      "benchmark_overlay_sha256": "36bdecc05e3ae6d0e76c6ea165a3202834e41cf4fafb75ea18ca638f02cb0799",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 54,
+      "frame_sha256": "a1dbc36b2476a6fe57d0107a100cc5f715f85a16ac684643ca5020369dbf5bb4",
+      "id": "frame-00054-a1dbc36b2476",
+      "processing_ms": 6.147400010377169,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.529967308044434,
+        "mean_gray": 34.386865234375,
+        "usable": false
+      },
+      "source_timestamp_ms": 5400.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_019_single/00057.jpg",
+      "benchmark_overlay_sha256": "9e7a34e5c96c85a924d15b2438c68de3a6925c52c02c2474e623d35ebef29c3d",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 57,
+      "frame_sha256": "d0576cf9bdec0d7e4d4c7be6ba8c1f34d0ea30a368faad69e902a2f64d07b7e3",
+      "id": "frame-00057-d0576cf9bdec",
+      "processing_ms": 5.490100011229515,
+      "quality": {
+        "flags": [
+          "LOW_EXPOSURE",
+          "LOW_FOCUS",
+          "OCCLUDED",
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 5.657454490661621,
+        "mean_gray": 34.38649739583333,
+        "usable": false
+      },
+      "source_timestamp_ms": 5700.0
+    }
+  ],
+  "model_version": "reflex-colored-panel-cv5-1.0.0",
+  "observations": [
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-ff01591742dc",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-ff01591742dc:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-ff01591742dc",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-ff01591742dc:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-ff01591742dc",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-ff01591742dc:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-ff01591742dc",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-ff01591742dc:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-ff01591742dc",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-ff01591742dc:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-207a000a0f0f",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-207a000a0f0f:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-207a000a0f0f",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-207a000a0f0f:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-207a000a0f0f",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-207a000a0f0f:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-207a000a0f0f",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-207a000a0f0f:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-207a000a0f0f",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-207a000a0f0f:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    }
+  ],
+  "policy": "single",
+  "processing": {
+    "analyzed_frames": 20,
+    "base_stride_frames": 3,
+    "cancelled": false,
+    "decoded_fps": 265.8149954278312,
+    "decoded_frames": 60,
+    "elapsed_ms": 225.7192999823019,
+    "extra_frame_budget": 2,
+    "extra_inspections": 0,
+    "fps_declared": 10.0,
+    "frame_processing_ms": [
+      5.4373000166378915,
+      5.0823999918065965,
+      5.603099998552352,
+      4.358500009402633,
+      5.2100000029895455,
+      5.096900014905259,
+      5.144399998243898,
+      5.344500008504838,
+      5.2943000046070665,
+      5.717199994251132,
+      5.324099998688325,
+      5.326300015440211,
+      5.933499982347712,
+      3.823399980319664,
+      6.250599981285632,
+      5.471399985253811,
+      5.17670001136139,
+      4.748000006657094,
+      6.147400010377169,
+      5.490100011229515
+    ],
+    "live_capture_to_alert_ms": null,
+    "source_duration_ms": 6000.0,
+    "timestamp_basis": "OpenCV POS_MSEC when monotonic, otherwise frame_index/declared_fps; not verified live capture timing",
+    "truncated": false
+  },
+  "recipe_sha256": "40a2aa6f9c1e32fc1570f23611025c609e135cc9a7a544d007cb1d5f649e78ae",
+  "recipe_state": {
+    "current_step": "mount_spacers",
+    "empty_start_verified": false,
+    "partial_observation": true,
+    "recipe_id": "demo_panel_v1",
+    "recipe_sha256": "40a2aa6f9c1e32fc1570f23611025c609e135cc9a7a544d007cb1d5f649e78ae",
+    "slots": [
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "short_spacer"
+        ],
+        "observed_class": "missing",
+        "slot_id": "spacer_left",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-ff01591742dc:0",
+          "frame-00003-207a000a0f0f:0"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "short_spacer"
+        ],
+        "observed_class": "missing",
+        "slot_id": "spacer_right",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-ff01591742dc:1",
+          "frame-00003-207a000a0f0f:1"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "cover_plate"
+        ],
+        "observed_class": "missing",
+        "slot_id": "cover",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-ff01591742dc:2",
+          "frame-00003-207a000a0f0f:2"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "fastener"
+        ],
+        "observed_class": "missing",
+        "slot_id": "left_fastener",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-ff01591742dc:3",
+          "frame-00003-207a000a0f0f:3"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "fastener"
+        ],
+        "observed_class": "missing",
+        "slot_id": "right_fastener",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-ff01591742dc:4",
+          "frame-00003-207a000a0f0f:4"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "requires": [],
+        "slot_ids": [
+          "spacer_left",
+          "spacer_right"
+        ],
+        "state": "PENDING",
+        "step_id": "mount_spacers",
+        "title": "Place both blue short spacers"
+      },
+      {
+        "requires": [
+          "mount_spacers"
+        ],
+        "slot_ids": [
+          "cover"
+        ],
+        "state": "PENDING",
+        "step_id": "install_cover",
+        "title": "Place the green cover"
+      },
+      {
+        "requires": [
+          "install_cover"
+        ],
+        "slot_ids": [
+          "left_fastener",
+          "right_fastener"
+        ],
+        "state": "PENDING",
+        "step_id": "fit_fasteners",
+        "title": "Place both yellow fasteners"
+      }
+    ]
+  },
+  "source_mode": "STREAM_REPLAY",
+  "source_sha256": "e11d57eca373b25788cfc014fb300ef2895cf8a6fae3afaf3c4e90595372d74b"
+}

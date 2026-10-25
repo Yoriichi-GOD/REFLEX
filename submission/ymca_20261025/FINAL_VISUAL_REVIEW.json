@@ -1,0 +1,99 @@
+{
+  "status": "PASS_REVIEW_MATERIAL",
+  "reviewed_at_utc": "2026-10-25T09:55:10.830408+00:00",
+  "presentation": "REFLEX_YMCA_Theme04_10_Slides.pptx",
+  "sha256": "4f0a6b3d77613c82d43d1d59c20afba32e063d3e36ee9d0a9f6f9930d207722f",
+  "slide_count": 10,
+  "slides": [
+    {
+      "slide": 1,
+      "file": "renders/slide-01.png",
+      "sha256": "c6dd90f74837c70aada04f01e3fa648b6f77cefddde21b3b6bcf86489ceb3193",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R2 directly inspected; R3 pixels SHA-identical"
+    },
+    {
+      "slide": 2,
+      "file": "renders/slide-02.png",
+      "sha256": "d2ccaa88cd75a69e975f707aeefbf6635f97fceb26ba4e1ef235c7b2802e9428",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R2 directly inspected; R3 pixels SHA-identical"
+    },
+    {
+      "slide": 3,
+      "file": "renders/slide-03.png",
+      "sha256": "1b512a4c1c94cf4d545cafd5ddba39ee02a5182034911c2be49da8dd3a53bc10",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R3 directly inspected"
+    },
+    {
+      "slide": 4,
+      "file": "renders/slide-04.png",
+      "sha256": "9fa86045766a19708424a261d86cdba668821adfdf3b2faa126cf35c2e4cbbc6",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R2 directly inspected; R3 pixels SHA-identical"
+    },
+    {
+      "slide": 5,
+      "file": "renders/slide-05.png",
+      "sha256": "72973df046691cd25f507a5b3f1b65e25e3fcb775821f236b9c2486a65e5d482",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R2 directly inspected; R3 pixels SHA-identical"
+    },
+    {
+      "slide": 6,
+      "file": "renders/slide-06.png",
+      "sha256": "bb3061f4a375e5f595815b06b1a4a2bd516b4e0624d2da14527f5f4e8d9bc74f",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R2 directly inspected; R3 pixels SHA-identical"
+    },
+    {
+      "slide": 7,
+      "file": "renders/slide-07.png",
+      "sha256": "f844e80e458b07e98236bb158eae1242e1cf296e6d3b9297820b064e1fb855c6",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R3 directly inspected"
+    },
+    {
+      "slide": 8,
+      "file": "renders/slide-08.png",
+      "sha256": "af039e4d8ec1a36f9d7e04625391724c9fe1d8072f25de2f962b1bfb5c7fa73d",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R3 directly inspected"
+    },
+    {
+      "slide": 9,
+      "file": "renders/slide-09.png",
+      "sha256": "479b52375d8931d9c9624699f656011611fbc93c75145fc927e0bd91d2745f06",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R3 directly inspected"
+    },
+    {
+      "slide": 10,
+      "file": "renders/slide-10.png",
+      "sha256": "1d58ba5c6cf7610a8d44dc7439f32ce5e24fb31c578552652a9f0886c4571a7f",
+      "visual_review": "PASS_FULL_SIZE",
+      "method": "R3 directly inspected"
+    }
+  ],
+  "native_editable_charts": 1,
+  "native_editable_tables": 6,
+  "embedded_chart_workbooks": 1,
+  "chart_values_verified": [
+    15,
+    15,
+    15
+  ],
+  "source_ledger_sha256": "3de24e34c54b9f0017dbf6c65f22a2cfb36a1386b62a97203dc7a0a00622253c",
+  "numeric_scope": "18 generated held-out clips, 54 repeated-policy rows, SYNTHETIC SOFTWARE TEST. No physical procedural benchmark or observed agent accuracy gain.",
+  "source_template_direction": "Prior REFLEX academic pitch style with user-supplied solar emblem; separate new deck, no old slide overwritten.",
+  "limitations": [
+    "Team details intentionally blank",
+    "No organizer submission or receipt",
+    "No recorded presenter video",
+    "No native PowerPoint or Google Slides interaction verification",
+    "No UI/CUA verification claimed",
+    "No extension AWS video run or real recorded benchmark"
+  ],
+  "authoring_history": "R1 stopped on missing explicit native-table validation flags. R2 exported and all10slides reviewed. R3 corrects labels and selects actual earlier wrong-order frame; affected5slides directly reviewed, other5pixel-identical to reviewedR2."
+}

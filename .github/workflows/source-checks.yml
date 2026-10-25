@@ -1,0 +1,17 @@
+name: Source checks
+on: [push, pull_request]
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python -m pip install -r backend/requirements.txt
+      - run: python -m pytest backend/tests/test_safety.py backend/tests/test_safety_benchmark.py backend/tests/test_core.py backend/tests/test_api.py backend/tests/test_frontend_assets.py -q
+      - run: node --test ui/extension_20261025/test_safety_core.cjs ui/extension_20261025/test_safety_lifecycle.cjs
+      - run: python ui/extension_20261025/test_safety_markup.py

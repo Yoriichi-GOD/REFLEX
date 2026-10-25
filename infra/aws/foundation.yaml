@@ -1,0 +1,348 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: REFLEX submission foundation for a single-region ECS Express demo.
+Parameters:
+  ProjectTag:
+    Type: String
+    Default: REFLEX
+    AllowedPattern: '^[A-Za-z0-9_-]{1,32}$'
+Resources:
+  BuildSourceBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      LifecycleConfiguration:
+        Rules:
+          - Id: ExpireSourceBundle
+            Status: Enabled
+            Prefix: build/
+            ExpirationInDays: 1
+            AbortIncompleteMultipartUpload:
+              DaysAfterInitiation: 1
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+        - Key: Purpose
+          Value: short-lived-container-source
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+  BuildSourceBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref BuildSourceBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: DenyInsecureTransport
+            Effect: Deny
+            Principal: '*'
+            Action: s3:*
+            Resource:
+              - !GetAtt BuildSourceBucket.Arn
+              - !Sub '${BuildSourceBucket.Arn}/*'
+            Condition:
+              Bool:
+                aws:SecureTransport: false
+  ImageRepository:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: reflex/inspection
+      EmptyOnDelete: true
+      ImageTagMutability: IMMUTABLE
+      ImageScanningConfiguration:
+        ScanOnPush: true
+      EncryptionConfiguration:
+        EncryptionType: AES256
+      LifecyclePolicy:
+        LifecyclePolicyText: |
+          {"rules":[{"rulePriority":1,"description":"Keep the three most recent tagged REFLEX build images","selection":{"tagStatus":"tagged","tagPrefixList":["reflex-"],"countType":"imageCountMoreThan","countNumber":3},"action":{"type":"expire"}}]}
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+        - Key: Purpose
+          Value: OpenCV5-container
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+  BuildLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/codebuild/reflex-image-builder
+      RetentionInDays: 7
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+    DeletionPolicy: Delete
+  AppLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/ecs/reflex
+      RetentionInDays: 7
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+    DeletionPolicy: Delete
+  ImageBuildRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: reflex-image-builder
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: codebuild.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: BuildOnlyReflexImage
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Sid: EcrAuth
+                Effect: Allow
+                Action: ecr:GetAuthorizationToken
+                Resource: '*'
+              - Sid: PushOnlyReflexRepository
+                Effect: Allow
+                Action:
+                  - ecr:BatchCheckLayerAvailability
+                  - ecr:CompleteLayerUpload
+                  - ecr:InitiateLayerUpload
+                  - ecr:PutImage
+                  - ecr:UploadLayerPart
+                Resource: !GetAtt ImageRepository.Arn
+              - Sid: ReadBuildSource
+                Effect: Allow
+                Action:
+                  - s3:GetBucketLocation
+                  - s3:ListBucket
+                Resource: !GetAtt BuildSourceBucket.Arn
+              - Sid: ReadOnlyPackagedSource
+                Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:GetObjectVersion
+                Resource: !Sub '${BuildSourceBucket.Arn}/build/source.zip'
+              - Sid: WriteBuildLogEvents
+                Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !Sub '${BuildLogGroup.Arn}:*'
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+  ImageBuilder:
+    Type: AWS::CodeBuild::Project
+    Properties:
+      Name: reflex-image-builder
+      Description: Builds the allowlisted REFLEX source bundle and pushes an immutable image to ECR.
+      ServiceRole: !GetAtt ImageBuildRole.Arn
+      TimeoutInMinutes: 30
+      QueuedTimeoutInMinutes: 30
+      Source:
+        Type: S3
+        Location: !Sub '${BuildSourceBucket}/build/source.zip'
+        BuildSpec: |
+          version: 0.2
+          phases:
+            pre_build:
+              commands:
+                - aws ecr get-login-password --region "$AWS_DEFAULT_REGION" | docker login --username AWS --password-stdin "$IMAGE_REPO"
+            build:
+              commands:
+                - docker build --pull --build-arg BUILD_COMMIT="$IMAGE_TAG" -f docker/backend.Dockerfile -t "$IMAGE_REPO:$IMAGE_TAG" .
+                - docker run --rm --entrypoint python "$IMAGE_REPO:$IMAGE_TAG" -m pytest -q -p no:cacheprovider /app/backend/tests
+            post_build:
+              commands:
+                - if [ "$CODEBUILD_BUILD_SUCCEEDING" = "1" ]; then docker push "$IMAGE_REPO:$IMAGE_TAG"; fi
+      Artifacts:
+        Type: NO_ARTIFACTS
+      Environment:
+        Type: LINUX_CONTAINER
+        Image: aws/codebuild/standard:7.0
+        ComputeType: BUILD_GENERAL1_MEDIUM
+        PrivilegedMode: true
+        EnvironmentVariables:
+          - Name: IMAGE_REPO
+            Type: PLAINTEXT
+            Value: !GetAtt ImageRepository.RepositoryUri
+          - Name: AWS_DEFAULT_REGION
+            Type: PLAINTEXT
+            Value: !Ref AWS::Region
+      LogsConfig:
+        CloudWatchLogs:
+          Status: ENABLED
+          GroupName: !Ref BuildLogGroup
+          StreamName: build
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+  TaskExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: reflex-ecs-task-execution
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ecs-tasks.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: PullReflexImageAndWriteAppLogs
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Sid: EcrAuth
+                Effect: Allow
+                Action: ecr:GetAuthorizationToken
+                Resource: '*'
+              - Sid: PullOnlyReflexRepository
+                Effect: Allow
+                Action:
+                  - ecr:BatchCheckLayerAvailability
+                  - ecr:BatchGetImage
+                  - ecr:GetDownloadUrlForLayer
+                Resource: !GetAtt ImageRepository.Arn
+              - Sid: WriteOnlyReflexAppLogs
+                Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !Sub '${AppLogGroup.Arn}:*'
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+  ExpressInfrastructureRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: reflex-ecs-express-infrastructure
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AllowEcsExpressInfrastructure
+            Effect: Allow
+            Principal:
+              Service: ecs.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonECSInfrastructureRoleforExpressGatewayServices
+      Policies:
+        - PolicyName: ManageOnlyReflexExpressService
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Sid: DescribeAndUpdateReflexExpressService
+                Effect: Allow
+                Action:
+                  - ecs:DescribeServices
+                  - ecs:UpdateService
+                Resource: !Sub 'arn:${AWS::Partition}:ecs:${AWS::Region}:${AWS::AccountId}:service/reflex/reflex-submission'
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+  Cluster:
+    Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName: reflex
+      Tags:
+        - Key: Project
+          Value: !Ref ProjectTag
+  Vpc:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.240.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: reflex-vpc
+        - Key: Project
+          Value: !Ref ProjectTag
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: reflex-internet-gateway
+        - Key: Project
+          Value: !Ref ProjectTag
+  VpcGatewayAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref Vpc
+      InternetGatewayId: !Ref InternetGateway
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref Vpc
+      Tags:
+        - Key: Name
+          Value: reflex-public-routes
+        - Key: Project
+          Value: !Ref ProjectTag
+  DefaultRoute:
+    Type: AWS::EC2::Route
+    DependsOn: VpcGatewayAttachment
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+  PublicSubnetA:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      AvailabilityZone: !Select [0, !GetAZs '']
+      CidrBlock: 10.240.0.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: reflex-public-a
+        - Key: Project
+          Value: !Ref ProjectTag
+  PublicSubnetB:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      AvailabilityZone: !Select [1, !GetAZs '']
+      CidrBlock: 10.240.1.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: reflex-public-b
+        - Key: Project
+          Value: !Ref ProjectTag
+  SubnetARouteAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnetA
+      RouteTableId: !Ref PublicRouteTable
+  SubnetBRouteAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnetB
+      RouteTableId: !Ref PublicRouteTable
+Outputs:
+  SourceBucketName:
+    Value: !Ref BuildSourceBucket
+  ImageRepositoryUri:
+    Value: !GetAtt ImageRepository.RepositoryUri
+  ImageBuildProject:
+    Value: !Ref ImageBuilder
+  ExecutionRoleArn:
+    Value: !GetAtt TaskExecutionRole.Arn
+  ExpressInfrastructureRoleArn:
+    Value: !GetAtt ExpressInfrastructureRole.Arn
+  ClusterName:
+    Value: !Ref Cluster
+  AppLogGroupName:
+    Value: !Ref AppLogGroup
+  PublicSubnets:
+    Value: !Join [',', [!Ref PublicSubnetA, !Ref PublicSubnetB]]

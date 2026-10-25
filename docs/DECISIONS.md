@@ -1,0 +1,12 @@
+# DECISIONS — REFLEX build
+1. Scope: one synthetic component profile, upload, scored overlays, bounded trace, review, and JSON export first.
+2. Detector: OpenCV-only spatial normal feature bank; PatchCore weights are unavailable locally and are not claimed.
+3. Data: seeded synthetic normal training/calibration and disjoint synthetic evaluation; no MVTec download or redistribution.
+4. OpenCV: require runtime major version 5; fail startup rather than falling back to v4.
+5. Agent: deterministic policy chooses crop inspection for localized anomalies and retake guidance for low-quality images.
+6. Storage: SQLite audit records plus local image artifacts. The AWS demo uses the same ephemeral task-local storage, one-day cleanup, no inspection S3 writes, and seven-day CloudWatch metadata logs.
+7. UI: dependency-free responsive HTML/CSS/JS served by the API to avoid a build-time network requirement.
+8. Runtime: Python 3.14 is the only installed interpreter. GNU make and WSL are unavailable; Docker CLI is installed but the Docker Desktop engine did not start.
+9. AWS: the allowlisted CodeBuild→ECR→ECS Express path is deployed in `ap-southeast-2`. The public endpoint is synthetic-only, uses task-local ephemeral storage with one-day cleanup, and sends metadata logs to CloudWatch. It is billable and has no user sign-in; no production image data is allowed.
+10. Submission: report synthetic and measured VisA results with their scope and failures. The endpoint and smoke proof exist; MVTec evaluation, public/judge archive URL, team/presenter, video, and Devpost receipt remain outstanding.
+11. Real-data benchmark: MVTec AD v1 remains the contract's primary dataset, but its official page reported downloads temporarily unavailable (checked 2026-10-24). Use official VisA 2022-09-22 as a supplemental real-image benchmark, with Amazon Science's published one-class split. The official archive transfer was incomplete; the retrieved portion contained the complete `candle` and `cashew` categories, verified against the split file. These cover multiple-instance and single-instance scenes. Fit only on each official train/normal subset, reserve a deterministic 20% of those normals for calibration, and keep official test data untouched until thresholds are frozen. Per-file SHA256s and the split-file SHA256 are recorded in the benchmark reports. No complete archive SHA256 is claimed. Raw images, models, and derived failure overlays remain in the external local VisA data tree, outside this repository.

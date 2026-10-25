@@ -1,0 +1,3742 @@
+{
+  "agent_trace": [],
+  "benchmark_scope": "Not a real-world procedure benchmark. Upload provenance and evaluator labels must be supplied separately.",
+  "cv_version": "5.0.0",
+  "decision": {
+    "reason_codes": [
+      "MISSING_COMPONENT"
+    ],
+    "required_human_action": "Review the supporting frames; correct the fixture or provide a fresh unobstructed view. This is an advisory teaching-fixture gate.",
+    "status": "REJECT_RECOMMENDATION",
+    "supporting_observation_ids": [
+      "frame-00051-3501df47189b:0",
+      "frame-00054-b4c09980d7c2:0",
+      "frame-00057-4ba2861c939e:0",
+      "frame-00051-3501df47189b:1",
+      "frame-00054-b4c09980d7c2:1",
+      "frame-00057-4ba2861c939e:1",
+      "frame-00051-3501df47189b:2",
+      "frame-00054-b4c09980d7c2:2",
+      "frame-00057-4ba2861c939e:2",
+      "frame-00051-3501df47189b:3",
+      "frame-00054-b4c09980d7c2:3",
+      "frame-00057-4ba2861c939e:3",
+      "frame-00051-3501df47189b:4",
+      "frame-00054-b4c09980d7c2:4",
+      "frame-00057-4ba2861c939e:4"
+    ],
+    "time_to_alert_ms": null
+  },
+  "events": [
+    {
+      "event_id": "ac4133381d1b49ed84027d5e4ae4aab7",
+      "evidence_ids": [
+        "frame-00000-d3e261e21c86:0",
+        "frame-00003-473b73d4f61b:0",
+        "frame-00006-1bd4e0343577:0"
+      ],
+      "observed_at_ms": 600.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 600.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "7edb730fdc6b44e7bd8ec6530ecc460f",
+      "evidence_ids": [
+        "frame-00000-d3e261e21c86:1",
+        "frame-00003-473b73d4f61b:1",
+        "frame-00006-1bd4e0343577:1"
+      ],
+      "observed_at_ms": 600.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 600.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "ab5ef9b4924341cba8505cf96eb57cdc",
+      "evidence_ids": [
+        "frame-00000-d3e261e21c86:2",
+        "frame-00003-473b73d4f61b:2",
+        "frame-00006-1bd4e0343577:2"
+      ],
+      "observed_at_ms": 600.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 600.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "c9ce438fdb9d42eebea4f617027897ab",
+      "evidence_ids": [
+        "frame-00000-d3e261e21c86:3",
+        "frame-00003-473b73d4f61b:3",
+        "frame-00006-1bd4e0343577:3"
+      ],
+      "observed_at_ms": 600.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 600.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "ca5f6de06f56459b8af22bb5f5f158c5",
+      "evidence_ids": [
+        "frame-00000-d3e261e21c86:4",
+        "frame-00003-473b73d4f61b:4",
+        "frame-00006-1bd4e0343577:4"
+      ],
+      "observed_at_ms": 600.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 600.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "9bcd5750834f47bcab1ad5b237213ea4",
+      "evidence_ids": [
+        "frame-00000-d3e261e21c86:0",
+        "frame-00003-473b73d4f61b:0",
+        "frame-00006-1bd4e0343577:0",
+        "frame-00000-d3e261e21c86:1",
+        "frame-00003-473b73d4f61b:1",
+        "frame-00006-1bd4e0343577:1",
+        "frame-00000-d3e261e21c86:2",
+        "frame-00003-473b73d4f61b:2",
+        "frame-00006-1bd4e0343577:2",
+        "frame-00000-d3e261e21c86:3",
+        "frame-00003-473b73d4f61b:3",
+        "frame-00006-1bd4e0343577:3",
+        "frame-00000-d3e261e21c86:4",
+        "frame-00003-473b73d4f61b:4",
+        "frame-00006-1bd4e0343577:4"
+      ],
+      "observed_at_ms": 600.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "EMPTY_START_OBSERVED",
+      "source_timestamp_ms": 600.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "7e7a437d43cc425cb1762c7d744dd9f1",
+      "evidence_ids": [
+        "frame-00009-e752fe07f589:0",
+        "frame-00012-abe420aa6a4f:0",
+        "frame-00015-4222c2599f37:0"
+      ],
+      "observed_at_ms": 1500.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 1500.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "9ea0acd3acd44a9199f77aeb9170fed7",
+      "evidence_ids": [
+        "frame-00009-e752fe07f589:1",
+        "frame-00012-abe420aa6a4f:1",
+        "frame-00015-4222c2599f37:1"
+      ],
+      "observed_at_ms": 1500.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 1500.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "5106ae3f7f14441cab305448a900d74e",
+      "evidence_ids": [
+        "frame-00009-e752fe07f589:0",
+        "frame-00012-abe420aa6a4f:0",
+        "frame-00015-4222c2599f37:0",
+        "frame-00009-e752fe07f589:1",
+        "frame-00012-abe420aa6a4f:1",
+        "frame-00015-4222c2599f37:1",
+        "frame-00009-e752fe07f589:2",
+        "frame-00012-abe420aa6a4f:2",
+        "frame-00015-4222c2599f37:2",
+        "frame-00009-e752fe07f589:3",
+        "frame-00012-abe420aa6a4f:3",
+        "frame-00015-4222c2599f37:3",
+        "frame-00009-e752fe07f589:4",
+        "frame-00012-abe420aa6a4f:4",
+        "frame-00015-4222c2599f37:4"
+      ],
+      "observed_at_ms": 1500.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STEP_CONFIRMED",
+      "source_timestamp_ms": 1500.0,
+      "state": "CONFIRMED",
+      "step_id": "mount_spacers"
+    },
+    {
+      "event_id": "92d56aa212e74b7a817ca05c913d91ff",
+      "evidence_ids": [
+        "frame-00021-5317cd84ceb7:2",
+        "frame-00024-69091e7e6d5d:2",
+        "frame-00027-d2ce5dc84ebf:2"
+      ],
+      "observed_at_ms": 2700.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 2700.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "d55d6cb9d752485980d0548d66072239",
+      "evidence_ids": [
+        "frame-00021-5317cd84ceb7:0",
+        "frame-00024-69091e7e6d5d:0",
+        "frame-00027-d2ce5dc84ebf:0",
+        "frame-00021-5317cd84ceb7:1",
+        "frame-00024-69091e7e6d5d:1",
+        "frame-00027-d2ce5dc84ebf:1",
+        "frame-00021-5317cd84ceb7:2",
+        "frame-00024-69091e7e6d5d:2",
+        "frame-00027-d2ce5dc84ebf:2",
+        "frame-00021-5317cd84ceb7:3",
+        "frame-00024-69091e7e6d5d:3",
+        "frame-00027-d2ce5dc84ebf:3",
+        "frame-00021-5317cd84ceb7:4",
+        "frame-00024-69091e7e6d5d:4",
+        "frame-00027-d2ce5dc84ebf:4"
+      ],
+      "observed_at_ms": 2700.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STEP_CONFIRMED",
+      "source_timestamp_ms": 2700.0,
+      "state": "CONFIRMED",
+      "step_id": "install_cover"
+    },
+    {
+      "event_id": "85d903db75214e3587064389ac1c8004",
+      "evidence_ids": [
+        "frame-00033-373e27c252fb:3",
+        "frame-00036-810c80b42e19:3",
+        "frame-00039-3ebf66d0e252:3"
+      ],
+      "observed_at_ms": 3900.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "STABLE_SLOT_OBSERVATION",
+      "source_timestamp_ms": 3900.0,
+      "state": "CONFIRMED",
+      "step_id": null
+    },
+    {
+      "event_id": "7bbe6d3497674854964dfbe4800f6acb",
+      "evidence_ids": [
+        "frame-00051-3501df47189b:0",
+        "frame-00054-b4c09980d7c2:0",
+        "frame-00057-4ba2861c939e:0",
+        "frame-00051-3501df47189b:1",
+        "frame-00054-b4c09980d7c2:1",
+        "frame-00057-4ba2861c939e:1",
+        "frame-00051-3501df47189b:2",
+        "frame-00054-b4c09980d7c2:2",
+        "frame-00057-4ba2861c939e:2",
+        "frame-00051-3501df47189b:3",
+        "frame-00054-b4c09980d7c2:3",
+        "frame-00057-4ba2861c939e:3",
+        "frame-00051-3501df47189b:4",
+        "frame-00054-b4c09980d7c2:4",
+        "frame-00057-4ba2861c939e:4"
+      ],
+      "observed_at_ms": 5700.0,
+      "procedure_id": "demo_panel_v1",
+      "reason_code": "MISSING_COMPONENT",
+      "source_timestamp_ms": 5700.0,
+      "state": "VIOLATION",
+      "step_id": null
+    }
+  ],
+  "evidence": [
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00000.jpg",
+      "benchmark_overlay_sha256": "b94779cd5ea4d35cee9f9e57a2fed1571b1490d0541de57380fff5f52f6180d9",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 0,
+      "frame_sha256": "d3e261e21c86db1ef2fbdeba852c26cbc1cbe4a7a05fbaba5fdb2ea3e4c00de6",
+      "id": "frame-00000-d3e261e21c86",
+      "processing_ms": 5.69969997741282,
+      "quality": {
+        "flags": [],
+        "focus_variance": 565.3515625,
+        "mean_gray": 217.68645833333332,
+        "usable": true
+      },
+      "source_timestamp_ms": 0.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00003.jpg",
+      "benchmark_overlay_sha256": "239e9ac468ec2e8fd45ca8fc268765d16caa7e8d5b81054595543c05771dfdbc",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 3,
+      "frame_sha256": "473b73d4f61bca5d31670797fd10f42689fb7e67d717cce76ce0c3efc034940b",
+      "id": "frame-00003-473b73d4f61b",
+      "processing_ms": 5.00050000846386,
+      "quality": {
+        "flags": [],
+        "focus_variance": 572.9432373046875,
+        "mean_gray": 217.69171875,
+        "usable": true
+      },
+      "source_timestamp_ms": 300.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00006.jpg",
+      "benchmark_overlay_sha256": "69052371167d8a5d53b2bf6407860b81039c13a18ef5878f3dcada0491170163",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 6,
+      "frame_sha256": "1bd4e0343577ee32cb3375699368d7d6cee8d718ff56a5471077aa004decbfa1",
+      "id": "frame-00006-1bd4e0343577",
+      "processing_ms": 5.420600005891174,
+      "quality": {
+        "flags": [],
+        "focus_variance": 570.6107177734375,
+        "mean_gray": 217.69584309895833,
+        "usable": true
+      },
+      "source_timestamp_ms": 600.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00009.jpg",
+      "benchmark_overlay_sha256": "d1bc20d63b21a3942ae34c352a03d26f3e377072d116526365621d570b72bec4",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 9,
+      "frame_sha256": "e752fe07f589a7e94a84f59dbc201792d7563cb045c3fc32798d2d809bbebfe0",
+      "id": "frame-00009-e752fe07f589",
+      "processing_ms": 5.2404000016395,
+      "quality": {
+        "flags": [],
+        "focus_variance": 583.0269165039062,
+        "mean_gray": 216.79923502604166,
+        "usable": true
+      },
+      "source_timestamp_ms": 900.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00012.jpg",
+      "benchmark_overlay_sha256": "4b45c17a16afca312485fb6dc4a94eaf32f47c224b3123b57aca1490f04a9072",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 12,
+      "frame_sha256": "abe420aa6a4fb398e2db6bbee9ea578a16dd9bf5ffa01e7fa7b62e677027c105",
+      "id": "frame-00012-abe420aa6a4f",
+      "processing_ms": 4.481200012378395,
+      "quality": {
+        "flags": [],
+        "focus_variance": 575.3645629882812,
+        "mean_gray": 216.81783528645835,
+        "usable": true
+      },
+      "source_timestamp_ms": 1200.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00015.jpg",
+      "benchmark_overlay_sha256": "8aa4e22ce661b019e8cf1b73d77979d797db6c75647a142e36bdb9370a147e40",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 15,
+      "frame_sha256": "4222c2599f37e550239697873a989ed0c71609e045b132a1fdee183d20965b55",
+      "id": "frame-00015-4222c2599f37",
+      "processing_ms": 5.218500009505078,
+      "quality": {
+        "flags": [],
+        "focus_variance": 574.8120727539062,
+        "mean_gray": 216.81777018229167,
+        "usable": true
+      },
+      "source_timestamp_ms": 1500.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00018.jpg",
+      "benchmark_overlay_sha256": "da727c7daad6bfcccd941facc0f602a5a84ea90d58a52e8dfb5f5f6e474088d9",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 18,
+      "frame_sha256": "76f3efba153468e14ca2b9b8fff735ce8119a10ac7d1126699b49ad14cb8997a",
+      "id": "frame-00018-76f3efba1534",
+      "processing_ms": 5.471500015119091,
+      "quality": {
+        "flags": [],
+        "focus_variance": 582.2877197265625,
+        "mean_gray": 216.8114453125,
+        "usable": true
+      },
+      "source_timestamp_ms": 1800.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00021.jpg",
+      "benchmark_overlay_sha256": "af6ff3f33caecbaac0a91757d1d6987b0876322645bab1723a2f2b2b2281f0c5",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 21,
+      "frame_sha256": "5317cd84ceb7a24f2b12b75701578aece6881c68ddfd537ffd2cb2e0105f7f5d",
+      "id": "frame-00021-5317cd84ceb7",
+      "processing_ms": 6.875999999465421,
+      "quality": {
+        "flags": [],
+        "focus_variance": 592.3134155273438,
+        "mean_gray": 215.90311197916665,
+        "usable": true
+      },
+      "source_timestamp_ms": 2100.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00024.jpg",
+      "benchmark_overlay_sha256": "21b27b78ff51e454fe703d4cbc5b625984dca5b9ffcb4d0dedf12b2ad8a113ab",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 24,
+      "frame_sha256": "69091e7e6d5d70d94700b98215014c1db04dc2cc2ab345f2ee482cabc2380cf1",
+      "id": "frame-00024-69091e7e6d5d",
+      "processing_ms": 5.243099993094802,
+      "quality": {
+        "flags": [],
+        "focus_variance": 595.6521606445312,
+        "mean_gray": 215.89617513020832,
+        "usable": true
+      },
+      "source_timestamp_ms": 2400.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00027.jpg",
+      "benchmark_overlay_sha256": "8eee4eb61325203709c429f092ea71ce7d27c000457cab6538273daf52af29d6",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 27,
+      "frame_sha256": "d2ce5dc84ebf162b555b09278aa0ac5ea49034b9a3f260687b2746f8daf3934b",
+      "id": "frame-00027-d2ce5dc84ebf",
+      "processing_ms": 4.233699990436435,
+      "quality": {
+        "flags": [],
+        "focus_variance": 591.3350219726562,
+        "mean_gray": 215.90387369791668,
+        "usable": true
+      },
+      "source_timestamp_ms": 2700.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00030.jpg",
+      "benchmark_overlay_sha256": "4c0aabc9d9828ba345e9d3556c0124f872662d9d833afa13545b81da1a92b9c5",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 30,
+      "frame_sha256": "488280bbb2a9db5340152d0a484c2af65f48b6d5a4c715d6a55abf37ae558d70",
+      "id": "frame-00030-488280bbb2a9",
+      "processing_ms": 4.328800016082823,
+      "quality": {
+        "flags": [],
+        "focus_variance": 602.6478881835938,
+        "mean_gray": 215.88222330729167,
+        "usable": true
+      },
+      "source_timestamp_ms": 3000.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00033.jpg",
+      "benchmark_overlay_sha256": "afbc7313319ae71b50b506cb8c5db5bf89d1e363db34a2a74271a47211fe32c8",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 33,
+      "frame_sha256": "373e27c252fba334f2580332c4daf8361931435cf75a3f9fc6e1672158456853",
+      "id": "frame-00033-373e27c252fb",
+      "processing_ms": 4.444300022441894,
+      "quality": {
+        "flags": [],
+        "focus_variance": 600.09912109375,
+        "mean_gray": 215.80853841145833,
+        "usable": true
+      },
+      "source_timestamp_ms": 3300.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00036.jpg",
+      "benchmark_overlay_sha256": "a9d88b08aa2728342df400e2de089fe8d5035142327a3ddf6ef3a2a716374ddf",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 36,
+      "frame_sha256": "810c80b42e198fa40e0b58cfba58b0a8005588a652e483392a2bcb0193d8b909",
+      "id": "frame-00036-810c80b42e19",
+      "processing_ms": 5.256400007056072,
+      "quality": {
+        "flags": [],
+        "focus_variance": 598.619873046875,
+        "mean_gray": 215.81315104166666,
+        "usable": true
+      },
+      "source_timestamp_ms": 3600.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00039.jpg",
+      "benchmark_overlay_sha256": "8192c0cd9df013c81a5d17b23df15e7e8b4dea8b3740751117bc11461c54e500",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 39,
+      "frame_sha256": "3ebf66d0e252b3ccc590deddaed2f8c7250a398af8245f929d70f417e31c3b16",
+      "id": "frame-00039-3ebf66d0e252",
+      "processing_ms": 4.4809999817516655,
+      "quality": {
+        "flags": [],
+        "focus_variance": 596.9503173828125,
+        "mean_gray": 215.80946614583334,
+        "usable": true
+      },
+      "source_timestamp_ms": 3900.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00042.jpg",
+      "benchmark_overlay_sha256": "6ef5a493b48a760fb2fcd573b7419557d8a9ecb7d94b694a1ef1042ac5f1887f",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 42,
+      "frame_sha256": "3f4eeb9ff4f0548e6dfb89450ea9d18929daccbff9b4ba20678f79b21553179b",
+      "id": "frame-00042-3f4eeb9ff4f0",
+      "processing_ms": 4.702300007920712,
+      "quality": {
+        "flags": [],
+        "focus_variance": 596.3453369140625,
+        "mean_gray": 215.80718098958334,
+        "usable": true
+      },
+      "source_timestamp_ms": 4200.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00045.jpg",
+      "benchmark_overlay_sha256": "fce795eda2e50b40feb5db24cc173404ebf5cbd9ee674d076f827c94143d262a",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 45,
+      "frame_sha256": "09366de0cde70c9cfd510b05f8203047743ff89d06b7e8ce7fc20ec187fc3bb1",
+      "id": "frame-00045-09366de0cde7",
+      "processing_ms": 3.899499977706,
+      "quality": {
+        "flags": [],
+        "focus_variance": 593.8622436523438,
+        "mean_gray": 215.811015625,
+        "usable": true
+      },
+      "source_timestamp_ms": 4500.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00048.jpg",
+      "benchmark_overlay_sha256": "c989cd1048b4dd194cf32ff1a2313125435acf7084b81d2cf5db7aea7b1f6765",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 48,
+      "frame_sha256": "97bf883064fb4fe3a7f58919de95317ca7aa76e4ab302d2a2f2686e30b982824",
+      "id": "frame-00048-97bf883064fb",
+      "processing_ms": 4.68039998668246,
+      "quality": {
+        "flags": [],
+        "focus_variance": 599.9281005859375,
+        "mean_gray": 215.80208333333334,
+        "usable": true
+      },
+      "source_timestamp_ms": 4800.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00051.jpg",
+      "benchmark_overlay_sha256": "d0f617d136a24726ecc0039e1317a84ee8beb2ddcfe8de42699a7bd0730a90e4",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 51,
+      "frame_sha256": "3501df47189bfd6a5ee1bc044aaed2420ffc1f0347ebc2cf6da3bce13289c7ba",
+      "id": "frame-00051-3501df47189b",
+      "processing_ms": 5.143799993675202,
+      "quality": {
+        "flags": [],
+        "focus_variance": 589.9744262695312,
+        "mean_gray": 215.81303059895833,
+        "usable": true
+      },
+      "source_timestamp_ms": 5100.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00054.jpg",
+      "benchmark_overlay_sha256": "11dbc54dca246ce26560840061f1be2f359235cbe5df4363f84df1215b51e1fe",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 54,
+      "frame_sha256": "b4c09980d7c2c3e2055c0e658c72cd6bfb0a93ab772fa7f4a3bd94a0dc190d12",
+      "id": "frame-00054-b4c09980d7c2",
+      "processing_ms": 5.589499982306734,
+      "quality": {
+        "flags": [],
+        "focus_variance": 592.969482421875,
+        "mean_gray": 215.807724609375,
+        "usable": true
+      },
+      "source_timestamp_ms": 5400.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_014_single/00057.jpg",
+      "benchmark_overlay_sha256": "a5fe9ba93479b8611a24e69ecdee2301129967a21681927ebeae1e4fe20cd075",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 57,
+      "frame_sha256": "4ba2861c939ed72936a04338d42165f3a0909d2122c559fbb9e86d301e23e4b1",
+      "id": "frame-00057-4ba2861c939e",
+      "processing_ms": 5.439300002763048,
+      "quality": {
+        "flags": [],
+        "focus_variance": 589.0406494140625,
+        "mean_gray": 215.81653971354166,
+        "usable": true
+      },
+      "source_timestamp_ms": 5700.0
+    }
+  ],
+  "model_version": "reflex-colored-panel-cv5-1.0.0",
+  "observations": [
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-d3e261e21c86",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-d3e261e21c86:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-d3e261e21c86",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-d3e261e21c86:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-d3e261e21c86",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-d3e261e21c86:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-d3e261e21c86",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-d3e261e21c86:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-d3e261e21c86",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-d3e261e21c86:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-473b73d4f61b",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-473b73d4f61b:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-473b73d4f61b",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-473b73d4f61b:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-473b73d4f61b",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-473b73d4f61b:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-473b73d4f61b",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-473b73d4f61b:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-473b73d4f61b",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-473b73d4f61b:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00006-1bd4e0343577",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 6,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00006-1bd4e0343577:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 600.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00006-1bd4e0343577",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 6,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00006-1bd4e0343577:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 600.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00006-1bd4e0343577",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 6,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00006-1bd4e0343577:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 600.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00006-1bd4e0343577",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 6,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00006-1bd4e0343577:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 600.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00006-1bd4e0343577",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 6,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00006-1bd4e0343577:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 600.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        138,
+        197,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7768,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00009-e752fe07f589",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 9,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00009-e752fe07f589:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 900.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        138,
+        480,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7767,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00009-e752fe07f589",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 9,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00009-e752fe07f589:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 900.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00009-e752fe07f589",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 9,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00009-e752fe07f589:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 900.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00009-e752fe07f589",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 9,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00009-e752fe07f589:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 900.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00009-e752fe07f589",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 9,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00009-e752fe07f589:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 900.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7767,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00012-abe420aa6a4f",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 12,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00012-abe420aa6a4f:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 1200.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        443,
+        137,
+        478,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7757,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00012-abe420aa6a4f",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 12,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00012-abe420aa6a4f:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 1200.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00012-abe420aa6a4f",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 12,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00012-abe420aa6a4f:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 1200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00012-abe420aa6a4f",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 12,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00012-abe420aa6a4f:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 1200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00012-abe420aa6a4f",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 12,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00012-abe420aa6a4f:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 1200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7769,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00015-4222c2599f37",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 15,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00015-4222c2599f37:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 1500.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        443,
+        136,
+        478,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7763,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00015-4222c2599f37",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 15,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00015-4222c2599f37:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 1500.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00015-4222c2599f37",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 15,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00015-4222c2599f37:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 1500.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00015-4222c2599f37",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 15,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00015-4222c2599f37:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 1500.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00015-4222c2599f37",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 15,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00015-4222c2599f37:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 1500.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        138,
+        198,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7768,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00018-76f3efba1534",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 18,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00018-76f3efba1534:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 1800.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        136,
+        480,
+        171
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7756,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00018-76f3efba1534",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 18,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00018-76f3efba1534:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 1800.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00018-76f3efba1534",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 18,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00018-76f3efba1534:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 1800.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00018-76f3efba1534",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 18,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00018-76f3efba1534:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 1800.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00018-76f3efba1534",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 18,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00018-76f3efba1534:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 1800.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        138,
+        198,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7766,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00021-5317cd84ceb7",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 21,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00021-5317cd84ceb7:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 2100.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        445,
+        136,
+        480,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7763,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00021-5317cd84ceb7",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 21,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00021-5317cd84ceb7:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 2100.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        238,
+        362,
+        274
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00021-5317cd84ceb7",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 21,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00021-5317cd84ceb7:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 2100.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00021-5317cd84ceb7",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 21,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00021-5317cd84ceb7:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 2100.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00021-5317cd84ceb7",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 21,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00021-5317cd84ceb7:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 2100.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7761,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00024-69091e7e6d5d",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 24,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00024-69091e7e6d5d:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 2400.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        443,
+        136,
+        478,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7759,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00024-69091e7e6d5d",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 24,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00024-69091e7e6d5d:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 2400.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        362,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00024-69091e7e6d5d",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 24,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00024-69091e7e6d5d:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 2400.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00024-69091e7e6d5d",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 24,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00024-69091e7e6d5d:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 2400.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00024-69091e7e6d5d",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 24,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00024-69091e7e6d5d:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 2400.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        138,
+        198,
+        173
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7769,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00027-d2ce5dc84ebf",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 27,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00027-d2ce5dc84ebf:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 2700.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        138,
+        480,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7762,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00027-d2ce5dc84ebf",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 27,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00027-d2ce5dc84ebf:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 2700.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        279,
+        240,
+        360,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00027-d2ce5dc84ebf",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 27,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00027-d2ce5dc84ebf:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 2700.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00027-d2ce5dc84ebf",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 27,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00027-d2ce5dc84ebf:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 2700.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00027-d2ce5dc84ebf",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 27,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00027-d2ce5dc84ebf:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 2700.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7766,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00030-488280bbb2a9",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 30,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00030-488280bbb2a9:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 3000.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        136,
+        480,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.776,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00030-488280bbb2a9",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 30,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00030-488280bbb2a9:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 3000.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        362,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00030-488280bbb2a9",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 30,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00030-488280bbb2a9:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 3000.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00030-488280bbb2a9",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 30,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00030-488280bbb2a9:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 3000.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00030-488280bbb2a9",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 30,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00030-488280bbb2a9:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 3000.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7765,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00033-373e27c252fb",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 33,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00033-373e27c252fb:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 3300.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        443,
+        137,
+        478,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7757,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00033-373e27c252fb",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 33,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00033-373e27c252fb:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 3300.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        362,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00033-373e27c252fb",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 33,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00033-373e27c252fb:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 3300.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        160,
+        352,
+        196,
+        388
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.7806,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00033-373e27c252fb",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 33,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00033-373e27c252fb:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 3300.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00033-373e27c252fb",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 33,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00033-373e27c252fb:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 3300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        138,
+        197,
+        173
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7765,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00036-810c80b42e19",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 36,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00036-810c80b42e19:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 3600.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        445,
+        136,
+        480,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7765,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00036-810c80b42e19",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 36,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00036-810c80b42e19:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 3600.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        278,
+        238,
+        360,
+        274
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00036-810c80b42e19",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 36,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00036-810c80b42e19:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 3600.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        160,
+        352,
+        196,
+        388
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.7815,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00036-810c80b42e19",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 36,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00036-810c80b42e19:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 3600.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00036-810c80b42e19",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 36,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00036-810c80b42e19:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 3600.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        138,
+        198,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.777,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00039-3ebf66d0e252",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 39,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00039-3ebf66d0e252:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 3900.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        136,
+        480,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7763,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00039-3ebf66d0e252",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 39,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00039-3ebf66d0e252:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 3900.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        278,
+        238,
+        360,
+        274
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00039-3ebf66d0e252",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 39,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00039-3ebf66d0e252:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 3900.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        160,
+        354,
+        196,
+        390
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.7808,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00039-3ebf66d0e252",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 39,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00039-3ebf66d0e252:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 3900.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00039-3ebf66d0e252",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 39,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00039-3ebf66d0e252:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 3900.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        137,
+        197,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7759,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00042-3f4eeb9ff4f0",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 42,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00042-3f4eeb9ff4f0:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 4200.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        138,
+        480,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7762,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00042-3f4eeb9ff4f0",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 42,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00042-3f4eeb9ff4f0:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 4200.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        362,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00042-3f4eeb9ff4f0",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 42,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00042-3f4eeb9ff4f0:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 4200.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        160,
+        352,
+        196,
+        388
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.7815,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00042-3f4eeb9ff4f0",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 42,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00042-3f4eeb9ff4f0:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 4200.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00042-3f4eeb9ff4f0",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 42,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00042-3f4eeb9ff4f0:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 4200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7764,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00045-09366de0cde7",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 45,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00045-09366de0cde7:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 4500.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        137,
+        479,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7761,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00045-09366de0cde7",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 45,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00045-09366de0cde7:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 4500.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        362,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00045-09366de0cde7",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 45,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00045-09366de0cde7:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 4500.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        352,
+        198,
+        388
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.7808,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00045-09366de0cde7",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 45,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00045-09366de0cde7:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 4500.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00045-09366de0cde7",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 45,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00045-09366de0cde7:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 4500.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7765,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00048-97bf883064fb",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 48,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00048-97bf883064fb:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 4800.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        138,
+        480,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7768,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00048-97bf883064fb",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 48,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00048-97bf883064fb:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 4800.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        361,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00048-97bf883064fb",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 48,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00048-97bf883064fb:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 4800.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        352,
+        198,
+        388
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.7808,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00048-97bf883064fb",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 48,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00048-97bf883064fb:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 4800.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00048-97bf883064fb",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 48,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00048-97bf883064fb:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 4800.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7769,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00051-3501df47189b",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 51,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00051-3501df47189b:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 5100.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        442,
+        136,
+        478,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.777,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00051-3501df47189b",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 51,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00051-3501df47189b:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 5100.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        361,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00051-3501df47189b",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 51,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00051-3501df47189b:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 5100.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        352,
+        198,
+        388
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.7814,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00051-3501df47189b",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 51,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00051-3501df47189b:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 5100.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00051-3501df47189b",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 51,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00051-3501df47189b:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 5100.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        138,
+        198,
+        174
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7768,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00054-b4c09980d7c2",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 54,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00054-b4c09980d7c2:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 5400.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        444,
+        136,
+        480,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7768,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00054-b4c09980d7c2",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 54,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00054-b4c09980d7c2:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 5400.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        361,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00054-b4c09980d7c2",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 54,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00054-b4c09980d7c2:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 5400.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        352,
+        198,
+        388
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.7811,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00054-b4c09980d7c2",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 54,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00054-b4c09980d7c2:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 5400.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00054-b4c09980d7c2",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 54,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00054-b4c09980d7c2:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 5400.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        136,
+        198,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.7767,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00057-4ba2861c939e",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 57,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_left:short_spacer",
+      "observation_id": "frame-00057-4ba2861c939e:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 5700.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        445,
+        136,
+        480,
+        172
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "short_spacer",
+      "confidence": 0.776,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00057-4ba2861c939e",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 57,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "spacer_right:short_spacer",
+      "observation_id": "frame-00057-4ba2861c939e:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 5700.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        280,
+        240,
+        362,
+        276
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "cover_plate",
+      "confidence": 0.99,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00057-4ba2861c939e",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 57,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "cover:cover_plate",
+      "observation_id": "frame-00057-4ba2861c939e:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 5700.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        162,
+        354,
+        198,
+        390
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "fastener",
+      "confidence": 0.782,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00057-4ba2861c939e",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 57,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": "left_fastener:fastener",
+      "observation_id": "frame-00057-4ba2861c939e:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 5700.0,
+      "status": "matched"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00057-4ba2861c939e",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 57,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00057-4ba2861c939e:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 5700.0,
+      "status": "missing"
+    }
+  ],
+  "policy": "single",
+  "processing": {
+    "analyzed_frames": 20,
+    "base_stride_frames": 3,
+    "cancelled": false,
+    "decoded_fps": 269.9940736046027,
+    "decoded_frames": 60,
+    "elapsed_ms": 222.22650001640432,
+    "extra_frame_budget": 2,
+    "extra_inspections": 0,
+    "fps_declared": 10.0,
+    "frame_processing_ms": [
+      5.69969997741282,
+      5.00050000846386,
+      5.420600005891174,
+      5.2404000016395,
+      4.481200012378395,
+      5.218500009505078,
+      5.471500015119091,
+      6.875999999465421,
+      5.243099993094802,
+      4.233699990436435,
+      4.328800016082823,
+      4.444300022441894,
+      5.256400007056072,
+      4.4809999817516655,
+      4.702300007920712,
+      3.899499977706,
+      4.68039998668246,
+      5.143799993675202,
+      5.589499982306734,
+      5.439300002763048
+    ],
+    "live_capture_to_alert_ms": null,
+    "source_duration_ms": 6000.0,
+    "timestamp_basis": "OpenCV POS_MSEC when monotonic, otherwise frame_index/declared_fps; not verified live capture timing",
+    "truncated": false
+  },
+  "recipe_sha256": "40a2aa6f9c1e32fc1570f23611025c609e135cc9a7a544d007cb1d5f649e78ae",
+  "recipe_state": {
+    "current_step": "fit_fasteners",
+    "empty_start_verified": true,
+    "partial_observation": false,
+    "recipe_id": "demo_panel_v1",
+    "recipe_sha256": "40a2aa6f9c1e32fc1570f23611025c609e135cc9a7a544d007cb1d5f649e78ae",
+    "slots": [
+      {
+        "confidence": 0.7767,
+        "expected_classes": [
+          "short_spacer"
+        ],
+        "observed_class": "short_spacer",
+        "slot_id": "spacer_left",
+        "state": "CONFIRMED",
+        "supporting_observation_ids": [
+          "frame-00051-3501df47189b:0",
+          "frame-00054-b4c09980d7c2:0",
+          "frame-00057-4ba2861c939e:0"
+        ]
+      },
+      {
+        "confidence": 0.776,
+        "expected_classes": [
+          "short_spacer"
+        ],
+        "observed_class": "short_spacer",
+        "slot_id": "spacer_right",
+        "state": "CONFIRMED",
+        "supporting_observation_ids": [
+          "frame-00051-3501df47189b:1",
+          "frame-00054-b4c09980d7c2:1",
+          "frame-00057-4ba2861c939e:1"
+        ]
+      },
+      {
+        "confidence": 0.99,
+        "expected_classes": [
+          "cover_plate"
+        ],
+        "observed_class": "cover_plate",
+        "slot_id": "cover",
+        "state": "CONFIRMED",
+        "supporting_observation_ids": [
+          "frame-00051-3501df47189b:2",
+          "frame-00054-b4c09980d7c2:2",
+          "frame-00057-4ba2861c939e:2"
+        ]
+      },
+      {
+        "confidence": 0.782,
+        "expected_classes": [
+          "fastener"
+        ],
+        "observed_class": "fastener",
+        "slot_id": "left_fastener",
+        "state": "CONFIRMED",
+        "supporting_observation_ids": [
+          "frame-00051-3501df47189b:3",
+          "frame-00054-b4c09980d7c2:3",
+          "frame-00057-4ba2861c939e:3"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "fastener"
+        ],
+        "observed_class": "missing",
+        "slot_id": "right_fastener",
+        "state": "CONFIRMED",
+        "supporting_observation_ids": [
+          "frame-00051-3501df47189b:4",
+          "frame-00054-b4c09980d7c2:4",
+          "frame-00057-4ba2861c939e:4"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "requires": [],
+        "slot_ids": [
+          "spacer_left",
+          "spacer_right"
+        ],
+        "state": "CONFIRMED",
+        "step_id": "mount_spacers",
+        "title": "Place both blue short spacers"
+      },
+      {
+        "requires": [
+          "mount_spacers"
+        ],
+        "slot_ids": [
+          "cover"
+        ],
+        "state": "CONFIRMED",
+        "step_id": "install_cover",
+        "title": "Place the green cover"
+      },
+      {
+        "requires": [
+          "install_cover"
+        ],
+        "slot_ids": [
+          "left_fastener",
+          "right_fastener"
+        ],
+        "state": "PENDING",
+        "step_id": "fit_fasteners",
+        "title": "Place both yellow fasteners"
+      }
+    ]
+  },
+  "source_mode": "STREAM_REPLAY",
+  "source_sha256": "b98ac4aca734aca8ef320f087af0f012110f1ac05b597ae746d1191bf7fdd0ad"
+}

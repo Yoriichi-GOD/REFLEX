@@ -1,0 +1,16 @@
+policy:
+  mode: deterministic_bounded
+  max_post_initial_tools: 3
+  max_realign_attempts: 1
+  max_second_view_attempts: 1
+  quality_flags:
+    LOW_FOCUS: request_new_capture
+    LOW_RESOLUTION: request_new_capture
+    EXPOSURE_LIMIT: request_new_capture
+    EXTREME_ASPECT_RATIO: request_new_capture
+  normal_score_below_threshold: PASS
+  localized_score_above_threshold: inspect_crop_native_pixels
+  crop_corroborated: DEFECT_FOUND
+  crop_not_corroborated: NEEDS_REVIEW
+  unlocalized_above_threshold: request_human_review
+  loop_limit_note: Current shipped policy uses at most one post-initial CV tool call per inspection.

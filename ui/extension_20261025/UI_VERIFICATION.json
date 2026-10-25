@@ -1,0 +1,99 @@
+{
+  "utc": "2026-10-25T09:49:21.456888+00:00",
+  "status": "IMPLEMENTED_SOFTWARE_AND_API_VERIFIED_BROWSER_GATE_OPEN",
+  "entrypoint": "app.extension_main:app /safety",
+  "scope": "Additive frontend only; no scientific method/model/evidence or deployment edits",
+  "checks": {
+    "javascript_tests_passed": 14,
+    "markup_tests_passed": 5,
+    "actual_wrapper_api_checks_passed": 20,
+    "syntax_check": "PASS",
+    "existing_app_js_and_styles_css": "HASH_UNCHANGED",
+    "index_change": "ONE_ADDITIVE_LINK_ONLY",
+    "brand_assets_hash_verified": 11,
+    "browser_render_and_interactive_flow": "NOT_RUN",
+    "physical_camera": "NOT_RUN",
+    "real_assembly_benchmark": "NOT_RUN"
+  },
+  "browser_blocker": "Local browser use is disabled in Work settings; no alternate browser-control path was used",
+  "done": [
+    "isolated solar-themed page",
+    "real API/session/evidence/review/report integration",
+    "protected header-only per-session capabilities",
+    "bounded camera lifecycle with denied-permission fallback",
+    "strict saved-policy comparison",
+    "synthetic provenance and replay/live scope labels"
+  ],
+  "remaining": [
+    "rendered desktop/tablet/mobile review",
+    "real browser upload/process/report and timeline interaction",
+    "actual browser camera permission and disconnect behavior",
+    "native playback of available codecs"
+  ],
+  "files": {
+    "frontend/safety.html": {
+      "sha256": "bfbc8c4d6ebfe7a44329c387cb640237b368b8ed4694c9cf952b37235dbb75b3",
+      "bytes": 12626
+    },
+    "frontend/safety.css": {
+      "sha256": "aec2a9a40f6684e65b1089f6da7532d4c693993e25c85823660363262de02831",
+      "bytes": 12279
+    },
+    "frontend/safety.js": {
+      "sha256": "025a9db92e084791817588b91ab1eacc950d3c90b1955e87756814da4b61949a",
+      "bytes": 39485
+    },
+    "frontend/index.html": {
+      "sha256": "d420667d4dc044f5ecf01821a27b71ca0ec2f99b135f3564214a9ace13d8456e",
+      "bytes": 15853
+    },
+    "ui/extension_20261025/API_CHECK_RESULTS.json": {
+      "sha256": "f88d7ede8748604a3b94e7fc83d366a5293c7de689481e1d69e352160bde8872",
+      "bytes": 1453
+    },
+    "ui/extension_20261025/check_api_integration.py": {
+      "sha256": "019a4cc332d02584c7b2b711805db7befd4845fe82111698ce66c03bf5e65d12",
+      "bytes": 5248
+    },
+    "ui/extension_20261025/INTEGRATION_RECEIPT.json": {
+      "sha256": "610a266710c73a011ddfa0964dc202a63ca06931085bb095c7481ed60ba121d6",
+      "bytes": 1167
+    },
+    "ui/extension_20261025/markup-tests-final.log": {
+      "sha256": "fd066b6efa8a759f5d4e421c8aa2bdd6a70a3decac360d1e440912e7a9cb51cb",
+      "bytes": 108
+    },
+    "ui/extension_20261025/markup-tests.log": {
+      "sha256": "a61344b045e606f8c60b7bedd5887cf9bc54b365f7688b9445a5ec8eab25f7e3",
+      "bytes": 108
+    },
+    "ui/extension_20261025/node-tests-final.log": {
+      "sha256": "11ff317407f47822cf628be341e004b43fd9d71a0d2ab165150aa810a0a45691",
+      "bytes": 1426
+    },
+    "ui/extension_20261025/node-tests.log": {
+      "sha256": "a8b5dc9693486c0939d775761b429d6a5de3eebf156333052929f03e55df2052",
+      "bytes": 1231
+    },
+    "ui/extension_20261025/README.md": {
+      "sha256": "fb64382a8ae550051a374f1912e095b2e46a41b51c3edfd7de9822680d663d21",
+      "bytes": 4281
+    },
+    "ui/extension_20261025/syntax-check.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "ui/extension_20261025/test_safety_core.cjs": {
+      "sha256": "2a1d4d120194be1691bee01b949ad4e4b5abee8f5ffadabeec40e4153042226c",
+      "bytes": 4347
+    },
+    "ui/extension_20261025/test_safety_lifecycle.cjs": {
+      "sha256": "94f5de7d3717798b38fb8401c93049fdf2d1d944426a09b7c9c35bcb9185a965",
+      "bytes": 7574
+    },
+    "ui/extension_20261025/test_safety_markup.py": {
+      "sha256": "953513f5c4b3c4055a990c47415dbb13d5c935b50792f715142e9ed1a7191162",
+      "bytes": 2526
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "original_sha256": "7828217ebf0470f68ef562c32d3196064ac03c778c7720c2602151307dd428bb",
+  "scope": "Public path-redacted projection; values/checks retained",
+  "record": {
+    "passed": true,
+    "url": "http://127.0.0.1:54140",
+    "source": "Actual loopback HTTP, not browser rendering",
+    "checks": [
+      "same_origin_safety_page",
+      "18_actual_generated_fixture_entries",
+      "actual_generated_video_bytes",
+      "six_real_photo_inspections_through_unchanged_legacy_app",
+      "actual_opencv5_health"
+    ],
+    "real_samples": [
+      {
+        "case_id": "visa-candle-1",
+        "category": "candle",
+        "source_sha256": "5c8fef83f6ea25d8659789cf2ffc5c3b17eaa7b8a0a8222e1b6a68682d67ff80",
+        "decision": "PASS",
+        "score": 1.546706,
+        "request_id": "6226d39070ec41f5ac90855be4675e34",
+        "inspection_id": "02d84381-4a00-4a37-ae2d-a5d5eb7a5de7"
+      },
+      {
+        "case_id": "visa-candle-2",
+        "category": "candle",
+        "source_sha256": "fd8588391603a3189beac07aa2b29b771657f02d9de4f5d412dc5d89dadbb9d4",
+        "decision": "DEFECT_FOUND",
+        "score": 4.448913,
+        "request_id": "a28e58dec33d41cba62daef1e2201e05",
+        "inspection_id": "901f4a1d-3ff9-414b-b235-44d26edb6bde"
+      },
+      {
+        "case_id": "visa-candle-3",
+        "category": "candle",
+        "source_sha256": "6b8ace3cb4bd8cfeb10706d70635d038f9e32fec6b002cd354fc8a195223987e",
+        "decision": "PASS",
+        "score": 1.755247,
+        "request_id": "ae93b46ae3004490954b482a19fcd0b0",
+        "inspection_id": "21c703d2-ff24-4416-96d9-efd3f6e32a5d"
+      },
+      {
+        "case_id": "visa-cashew-1",
+        "category": "cashew",
+        "source_sha256": "85a066d105d04caba4e3010297580174546a9394552035fc9c58c8517ccd2cae",
+        "decision": "PASS",
+        "score": 1.902788,
+        "request_id": "11f925eb763945cdb73a697a62b9ea1a",
+        "inspection_id": "3b269f27-a57e-452b-8e81-9a6b700abe1b"
+      },
+      {
+        "case_id": "visa-cashew-2",
+        "category": "cashew",
+        "source_sha256": "da562ca3791862ac9b24d2de94ad43aee47dff52f85bf704f0c0344f4d7bc3f6",
+        "decision": "DEFECT_FOUND",
+        "score": 5.171353,
+        "request_id": "a0e801e125964b58b0d960df55c8a264",
+        "inspection_id": "0a6068e2-3fbf-4bdc-8176-50f83f1b0134"
+      },
+      {
+        "case_id": "visa-cashew-3",
+        "category": "cashew",
+        "source_sha256": "0ff644948f103d0a81d7d46e569e8f95d23c48bd5ef4c9f9c391bf75964e7bae",
+        "decision": "PASS",
+        "score": 2.10389,
+        "request_id": "5899257993aa426c92620d90579623c5",
+        "inspection_id": "a6dbc495-2d08-45f2-9e10-128635118d37"
+      }
+    ],
+    "health": {
+      "status": "ok",
+      "app_version": "0.1.0",
+      "opencv_version": "5.0.0",
+      "model_ready": true,
+      "model_mode": "opencv_dnn_patch_memory",
+      "build_revision": "working-tree",
+      "runtime": "local",
+      "renderer": "opencv-python-headless",
+      "uptime_seconds": 0.778
+    },
+    "own_child_pid": 23568,
+    "only_own_child_stopped": true
+  }
+}

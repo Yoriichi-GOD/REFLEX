@@ -1,0 +1,860 @@
+{
+  "utc": "2026-10-25T09:51:51.019436+00:00",
+  "files": {
+    "AGENT_POLICIES.csv": "8e68aeaf688d226d4baba40de02547154f1eb6316ef2dc25179d5284f76db8e3",
+    "ALL_RESULTS.csv": "3bfd2e5cb290b0b19a467b6f15006bda719b7a495ee178438ce7885cd153a814",
+    "CLOSURE.md": "6ade49a46900588f1105841a5b48eb324eaecaf9f83a594d7e5fd824e1661834",
+    "DETAIL_FUSION.csv": "448042d1d8d1bfcbede17f4041e0185c3e990274f6cfb96029ab09374429dade",
+    "LOCALIZATION_ABLATIONS.csv": "982b229c5887765fde78acb0a68ec081cb6c05acc5f75c99ea2e01a7bb048dae",
+    "MACRO_RESULTS.csv": "18096cb82ffa154c9b6e501663c258d37840771eb5abb935f424e1b05df85efd",
+    "METRIC_CORRECTION.md": "e124a92a0237a8a67732b190f2937ff92dee194136e5e7c779e593696050dc14",
+    "NATIVE_LOCALIZATION.csv": "5c787782abd6f3097c1df7baaad3c88fe5a9a3b664994557af131d9d1e4709b0",
+    "PROTOCOL.md": "de6cd620b51bdaae1b4d579cddd5be0978c972da1bcb2319d26b3c93541ef0e4",
+    "PROTOCOL_EVALUATOR_ADDENDUM.md": "5f18fca0c35ff150e665a0248c394e6eefe650c5ddedac8d522ce191ce052218",
+    "README.md": "a4f401cc3b0e8b0531cc065008d38a02a89e8718b2cac94d0d06c45987324552",
+    "REFERENCE_COMPARISON.csv": "330fdbc41bc5f6196350e22fb1cc017427f48448cb72b14ffa9a6d581587a79c",
+    "REFERENCE_COMPARISON.md": "66de7d1792342215d1dceea6324c21959c7868f39fa12c2bdc5bbdb896db1ee5",
+    "RELEASE_ASSESSMENT.json": "0f7158479ce4b069ed84907dea7c33055d37d6e8f31d82e4ca25b528a0252c1d",
+    "RELEASE_ASSESSMENT.md": "726ea75dc58da82055f4b05df97787a8b40d2549e5e87a89aa764520f2590341",
+    "ROBUSTNESS.csv": "5a8e2c6b2719910aba6b2cc0d6a51f3e15277213e289c4407e31b04d1cada788",
+    "RUNTIME.csv": "5e3b87942c75e70241035a33407a7a4222317d3f3a0ad42d0132ee3c82a5d328",
+    "STAGE_TIMINGS.csv": "f9601dba209cc5948ecfd0767d24ff7921ee775936c54b267039d110350581b8",
+    "THROUGHPUT.csv": "3e6ef1f87ad2cec31d1ee40cb743f948e5662320779ea99303dbbce7432f9fb7"
+  },
+  "current_freeze_sha256": "62d81cbc0e38f5fe158cd9506cadbdffe97ae24b593b4289aca510c9c60e6dbb",
+  "metric_bundle_verification": {
+    "passed": true,
+    "utc": "2026-10-25T02:47:08.317694+00:00",
+    "image_result_rows_checked": 88,
+    "table_row_counts": {
+      "AGENT_POLICIES.csv": 40,
+      "DETAIL_FUSION.csv": 24,
+      "ROBUSTNESS.csv": 45,
+      "LOCALIZATION_ABLATIONS.csv": 48,
+      "NATIVE_LOCALIZATION.csv": 8,
+      "MACRO_RESULTS.csv": 33,
+      "THROUGHPUT.csv": 4
+    },
+    "gallery_cases_checked": 860,
+    "actual_detail_crop_files_checked": 46,
+    "scientific_graphs_three_formats": 9,
+    "source_hashes_verified": 108,
+    "scope": "Data/export/image-file checks, not rendered browser interaction or all-slide visual approval. Map-reproduction receipts remain separate.",
+    "verifier_sha256": "58cb9be9159fb26c8f11974a2a6822f97828f73385798854bb6697287af11018"
+  },
+  "image_oracle": {
+    "passed": true,
+    "method_rows": 88,
+    "unique_population_cases": 860,
+    "prediction_rows": 9460,
+    "oracle": "Pairwise positive-negative ROC with half-credit ties; grouped precision-recall AP; literal strict-threshold and decision counts. Independent of application metric functions.",
+    "scope": "Image metric and membership check only. Pixel/map replay has separate receipts. Reused published images do not establish factory independence.",
+    "checks": [
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "classical_cv5",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "fc6077161d8ecccd3c1f481d0ad30acc5ab4e6fc315650ecd45ca6658cd96489",
+        "records_sha256": "088b0b23ea0cbd3cbccfc77e6c8a315129424d3a4e5710b25d202280b853308b"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense128_max",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "40d8cae5cd706c64ee3413a1a6936f2836e0803fee42ee2140c408dd8214cb8c",
+        "records_sha256": "41a26f11bd1251cde796f60f5ddc2729c6cbb36b1ca64abad4e30a5853a8da7f"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense128_pose",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "485b86f0c8f1f9011b2456f177db1fe205e3a692ee485eca58a8de2f99b36e3e",
+        "records_sha256": "4da9e705bf6c82fb9fefcdea8a94bdb355f6ca3e085cc49d2be64a95afe8f3a4"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense128_region",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "f7339f16fc23b066cfcdaaf5a0b888bba7438200faa968670f4b96f14ae5c26d",
+        "records_sha256": "2adadd0013127de2ecd6693eca192edf11b2a225186a0943de956b0c4da9bfb6"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense128_seed20261025",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "34545efdc622bcc81d9093779bc5ba3004791b659d5b3beadcf513d4f9da2295",
+        "records_sha256": "4eb871d3aa53c557071544d6745691bf7f08bd110d91e1e63554276807350a4f"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense128_seed20261026",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "2fe72635b627fd55b35e7b694efbfb19d25847c7be974460f407ceae9eae725f",
+        "records_sha256": "f19618425319a7984d4e6625773e7fd5603fff32ce5fcd105636c451a7d8e62e"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense128_top4",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "cd247a280dddef15fab54920fdf503b0d38aaf0483f1c019b9af8d89ba51416d",
+        "records_sha256": "4cfc55f14da4c51b66318a5875e3aa9c117a5083da5521cc2c590f24ff3483ff"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense512_max",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "21fa97967a793453e22dc9af8e4c16926b0cdc73bbcc392bbe6a803ac8c07311",
+        "records_sha256": "ab1a814a6fcf9767d479ed1d0b3ec37084c7956d0aa5e1ae9ce49bd50f029d0b"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense512_seed20261025",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "e17a783e0cba452b053065d011f43773aeebbbccc38b360ea3a8880119f20126",
+        "records_sha256": "91e4b38c5cd4a597b32647b2f281411f923f9c11f609a745076685cb946bab6b"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "dense512_seed20261026",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "dfcf8b8246fa7c2b33b17c89f96d19864f4abc99ff1dc7226c24e1373733fa8c",
+        "records_sha256": "7b10df3964a0bec07d82efbfe676ed339855e683ed0514ef01d53ed86a7c43a1"
+      },
+      {
+        "category": "candle",
+        "population": "replay",
+        "arm": "v1_recomputed_metrics",
+        "cases": 200,
+        "passed": true,
+        "metrics_sha256": "0d3698ff4141b91d7c14cee218675fbe35b897e96196002798a211e648122d40",
+        "records_sha256": "49263f13e12c72e91dd8b990f1e623807d25be0a856c28a9a8633eaef341c93b"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "classical_cv5",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "e409d552bba32f324f88531efae2c00c1a7cb7cf63dc3219e8db24137fa5f7a5",
+        "records_sha256": "f68355e7061982714fef1a97cc2ed89df4e791d2fdaa1bcf2e3d6090c50d08d8"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense128_max",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "06be3945e77192e307ac9c069ec2237b56e50adf50b442acc6dcd544d62173ef",
+        "records_sha256": "e708cac0dafb0f6007cbb4f0279eb6a88c5813fe5d171bcb172fa277a888285a"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense128_pose",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "103051608f0a552be617b0784f0e73dc5e75a60023798058c9cc378b620a38aa",
+        "records_sha256": "ca9f1e9b991e93065aa20b12b0e5eff1552bee62ff0b3e89af5a7e0fe160baec"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense128_region",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "35548fcbac4c0bff5c4c07bdeb140cfb362a736e50dc340e9a0cca34cac3740d",
+        "records_sha256": "594757676f1895e8054623413cf383d1b091bcd29b39fb977e0249bc561fc27f"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense128_seed20261025",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "7e3fa424053ebc8e31f3b71a6f824759a4a64f74e6114567ef5730f351582f87",
+        "records_sha256": "1e6f9109efc6fc99f3f2449274d6a9091136092b87a9aa9cf93a03cac2992f12"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense128_seed20261026",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "158b19bc9e6f372eb6a09d291182ddec08fe3392e2a60d87defedeb52a95640f",
+        "records_sha256": "34e4674f9b5702f92ea2ad37312c010d6fe88d7b422670846701100332fffd25"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense128_top4",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "2bf25403b15433d1cb89ac9611df2935633138a40a997c5fa85f15bae80dc7a9",
+        "records_sha256": "45d9793a12ec238d615bd8862be8d618a20a7b807bb53155c92ca33ea30c1203"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense512_max",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "716d4f21e9ea543176dda55ba41bdd976a034d3901aa3b457cf93e6b21220f02",
+        "records_sha256": "132b8266b8980bb3a121924e669156749929e158217fa0df26b8e832352b899d"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense512_seed20261025",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "832f06f399d20b1ace28ac52d9d698c3814f48d3fe7e41bf734e8d9e78e3b0c0",
+        "records_sha256": "f9845e9b74a9b09d2e5529d018fbe29c98d2f5db33fa4bf1a273fd0c8a87b619"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "dense512_seed20261026",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "3743929b31c62439b464bd9e80755b6973dd233b07e84956bcd1738301ab7e76",
+        "records_sha256": "00a5a60527d9586286e9444f9a714454aca37c411b170aa9bcca9ef9d7e96e66"
+      },
+      {
+        "category": "capsules",
+        "population": "development",
+        "arm": "v1_fresh",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "b7ccaad68b43efd6cb91d52779773b161f97db3737a193758d0fc4cd740a9936",
+        "records_sha256": "182fac032cee93009f3028ef6932c432471efde64d0b263ac2a8a2176bbbc1a9"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "classical_cv5",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "9c1ea9edc96bfd4ee30f55b253d8568a36b290d0118427b6107a9ce220e13172",
+        "records_sha256": "11afbca82b81b246a36fe2e8f2e801d19bc389d55b1a31e7f62586c3713e2c4a"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense128_max",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "12a3ff3133fef31bde71f932f5731614ec1960c442d112908e620b763cf33b50",
+        "records_sha256": "3e17e1f79cd09ee7f730f08fd8ae7e9eaacc41803930b2dd20391a88c5895cb5"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense128_pose",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "ba1f20eff84c3b8a74a6b5632e4328e11553f72b862fcdb5822aa59072a1f582",
+        "records_sha256": "a92801786ce8a8111ab549f595acf6d9852f3754243c7333c33f22b428a4fe66"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense128_region",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "d8f58f9c69adc515addcf857d479e7a4a40c2666cb3e1b9597d68d2dd658381d",
+        "records_sha256": "998998ef6163751de5c34d9e4f58628814e4b2fe0d90c9fb90f541b045530a8f"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense128_seed20261025",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "ef85d168284331bad4c5a36abb4f07275e502fa5141fd523a1383719dcf10113",
+        "records_sha256": "2214f8d0187c7b83f04ba9cadeca6dc3a2f9626483614411eab1a28251b4212e"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense128_seed20261026",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "d4bc0bb4c8dc53481367c4a82374338306457b45c7c98694bea88976b05f4c9d",
+        "records_sha256": "af7d43d955b756dd082abef4dd48a33ffc23d95a9e431264a69219e857a882a8"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense128_top4",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "a34c337d4fa4f132965e5c4466534ad8ff1932ab01406d0b4aeefe2cea3d3391",
+        "records_sha256": "d83fc58eec45f284b311e08a2eff50c185ba7940eb5728a6ed8ba5da6bdbb039"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense512_max",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "7de65c34f570d3cee4809f04af00ecfe7a4d6b06a0c5ac2260e056f8818a4e39",
+        "records_sha256": "7617c3c699f45787633085d47ea48c969793d7f63a05826dee7265e2e7a4faff"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense512_seed20261025",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "09f5de6edd9ab2d40c935f53bfb6e489ec09c963f96859212f2df185bbbccfc7",
+        "records_sha256": "3f47acfca76a7f138738f3fe71d6d4dc1d4d4102745939a0cc9062d0dd83283f"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "dense512_seed20261026",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "c2d6b8de2b80a14effa998ad6d8b445a8f0ac86b8523ad8a03b66b4e654b7bc6",
+        "records_sha256": "9439408d03418a129b2bc70f20a676ceb7bd9359cfaf16752bee684f312490b2"
+      },
+      {
+        "category": "capsules",
+        "population": "final",
+        "arm": "v1_fresh",
+        "cases": 80,
+        "passed": true,
+        "metrics_sha256": "4599ad13987d254d450ce097e639fbe749ace65481ee3317c573f8a3153400a9",
+        "records_sha256": "587f0adcfc4b7a6a24ae00797c3065498f7092e0eb05ee2e18a10f074609cef5"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "classical_cv5",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "6680b1c59f3f6919a6fd76a22873c8286bfcdc32ae942c204a18519120d8f9b1",
+        "records_sha256": "0766d13c89b43c5c1f2d7155d6d8b99b28ac46acad38f8938f699f00bb869575"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense128_max",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "fe83549d8cb2f1c1d1c69ca21d889909fb53d5a88cc1fa030893692d3372bafb",
+        "records_sha256": "5bf2f0c18d6fb90f195ca711d01dd58b6c14b753edaeba5c8671134e6f90ad7e"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense128_pose",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "df161dbc87efae832f4e563be44bbba5d4afe974c63417475f83ba8637a18390",
+        "records_sha256": "6d7b88557a37dfaee97a9c499c45a5bf925d6494d6f31bd33c86e6dce44f529e"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense128_region",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "57d4e3d92cfa309b7e7f51febcdd0b51d571331dca20ff687e4bd3f31cc98a5f",
+        "records_sha256": "5c12c80261f853b3047b1436fcdc7b4650b687ca6c5fcd9dd07e269cdfaa7457"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense128_seed20261025",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "5e8fbdd1eb0bda586fc180db02304710c3bf992717c63ec78a73aa9949902a58",
+        "records_sha256": "d333c733d16fed2958eed4701e7bd8512cefd5029ef0797809edd59a26dcc137"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense128_seed20261026",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "4f1d4ea38c1ea3ef406ea03c1341c4a3d4e2f3283a11471b11cfbe44177ff1be",
+        "records_sha256": "98bca17b89c25f11621c71a88cb33ce63001671b0ec07428f99b4beb41e4cfb6"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense128_top4",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "51b021f8ba34eecbfd15d5af3e3a7818387bd9b1c1ee0e127df4804c2a9b249c",
+        "records_sha256": "a7be988ed5feb0bfa1ab2560d7c279140e8baafa04a0b82a320a549d3ff4bad4"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense512_max",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "7c80111d60fddf6f2b8faf8df0d882f9561173cc0d944846453e55c380053881",
+        "records_sha256": "e685990f6aecdf01e9a0ae252b0a954faf7a07807eb15ed78bd1d5b58b740445"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense512_seed20261025",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "154fcc25602d78a7b75d29dfd563a031b4a46c164584c50735ee3fc92f5244d5",
+        "records_sha256": "2f2eb78f95ad1813bb23881090650c526de6167fe5dc29f0922070de8adae431"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "dense512_seed20261026",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "031b8f91b3b783d3a61b9eafa9240f6ce81b9e4ebd2f805be2a3c408cb1bfb6b",
+        "records_sha256": "37d7ff86d9a54d066f32a16ca721fd8dbf8cad619c0327b8f121d5aec3379180"
+      },
+      {
+        "category": "cashew",
+        "population": "replay",
+        "arm": "v1_recomputed_metrics",
+        "cases": 150,
+        "passed": true,
+        "metrics_sha256": "2ab5daf917686c38fbd2fe45f5486acdbca184b56446d720a290105b50ed3d64",
+        "records_sha256": "30b7df5854a231a8a523ff0a717bba65fed7ac92af4fbbae110333424a938c61"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "classical_cv5",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "2b2e1b9b879caf15efe880ad680b6ffa5eefa57a10bf70943d3a7a606ab941c9",
+        "records_sha256": "dbfd3e14a7af701bcd8764380162e089b076de590c870efa8e9596dcff5c7711"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense128_max",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "63e6f483563b1089d9e224b5afeed7dd35f440a7593400f2d15ef05e3152fad5",
+        "records_sha256": "1283c20f915d05c9dfb5cf07252cafb434fb6f3c1756f588a427da0fde563979"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense128_pose",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "111dbcc26ec3ea90269422f0bcfb32d46842973b779dd1f803027c6ef885abb8",
+        "records_sha256": "582ece932ada87dca4798e8bb05030189f379eaade5b098bc897cd3e02064e95"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense128_region",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "e8ec77cd8756fd92073e71c4982e75c4e0d09f4a1aac1a0da8746f52ff73b928",
+        "records_sha256": "78b921b410f5ac9a01bcfc43d905c5d6c0ff79faceebf59e8ca000ca2f6e4700"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense128_seed20261025",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "615c3ba1fc61c712040f2d66daa9bc4c31b58c7cd1cd6ca9caabc34e2563c654",
+        "records_sha256": "32bce2458ebd1a63c8ea82a7c616c3f445dfda2985595c1e29fbcfbc54bb9894"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense128_seed20261026",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "ff3f4c84a6a87f8050f321cf95ad46cf931e349aa4f638f6358d5b4d9a8e7dd4",
+        "records_sha256": "f01dbf195926b86cf39ab71666939603dd4b704729a94fac2235dc3309743754"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense128_top4",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "d45ad50a6f22abd103ac9f021754c847e1537b61494c6f438f88830f82d4249b",
+        "records_sha256": "bbc7ac832ada3a5653589c04d41e4dc7516d76c22c9c79c2f5daa093ee997c5c"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense512_max",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "5a7a9a590a087f3daaeeb79f87b251e7aa07984b2133f27aca13eec43fb5c488",
+        "records_sha256": "eb88fafb9026cad26b5e8a7e291047bf22fb1f16f303766ad742509b6fbd26ca"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense512_seed20261025",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "770dac058490f825827daf03780abb33c3dc04b17098af66333b6453486b52b2",
+        "records_sha256": "03a26035d61d3dd54e1de6216f5c5faf0e56452653349b12923f6dec156eda8e"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "dense512_seed20261026",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "3906fed36bf4399c594f00e75e4286eacb4f8e24119907a6f9b1d6df57789fb5",
+        "records_sha256": "8bbf5ca6206985ff44e1a744741a5d2ff337352c951d7328d6b577b543ced5dc"
+      },
+      {
+        "category": "chewinggum",
+        "population": "development",
+        "arm": "v1_fresh",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "c157dea365f272456620ebfd677b71927980904c3c98c0b31a9be1be2f3e31a3",
+        "records_sha256": "4168b2fb26e508065b1b0df537181198ff7cdbe47d0b1b233b51a1318c2ff87e"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "classical_cv5",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "5d9b51745469a5f5de31b61637e5ce445abac41d499347423f2a1256da420678",
+        "records_sha256": "7b305db5917ee63f689b1297e26afc703497f5cff1de983bf1661362aef84e95"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense128_max",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "87ee732b6d7a76c32c79a1007e2248c726c146dfffb5970456bda3c58c416a1e",
+        "records_sha256": "b9eac3583c0ac1c88f11e40fd5ca18b406c66f45865dc21bb1b95dc395f1bca5"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense128_pose",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "0f09ec7b3735deefa4257fa1858ab78ebdccdf06bd7cc6e8ba02ea82e3ae7a45",
+        "records_sha256": "b5ff0679c67c9ee6785f0f52c716805a68b071b63e6a95707acd73f37fe39a2f"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense128_region",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "2b6a035f22ad0f8cbe78dba3a9ff6b478714a053f7880964b1b1d524ae2d0e8f",
+        "records_sha256": "df83d5b072eb43b01dc5c24e6a2839dd1dc0c7c5cd30d1ed5d68b98e145eb237"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense128_seed20261025",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "0f4f7d4118d4fb8412b2aa3fc8808e31f979a48b6180181fdfccb43f46be27c5",
+        "records_sha256": "3636a022ae4b8567404e065eed5bf4ef52de83e0925e7c03ef866a141aaf631c"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense128_seed20261026",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "7f78e522dd7cd79c0540e0837bf3ed55f30a8d517f2ba6c39c59fe641df3a97c",
+        "records_sha256": "c43cf02b0776c83001545c693fab0b5d48b519d1600b9f4556d0433ca9c02f56"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense128_top4",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "ce62fe339892882993bfa5cff7dac6057cff6cd64db014c5dbcc557f83bef689",
+        "records_sha256": "f2be8ff1ada9af7f8ddf544b13eccb68f5852e48b0d117503796b6ddfced254b"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense512_max",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "201882dfeb731f543681413db943f2b15f0ac3d8d75218cbc19602cdf99469f9",
+        "records_sha256": "49b5448e28ac7d07da7192690363b9cf588b482d72d42c24191afc43e7ae944e"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense512_seed20261025",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "3a043a88d533bd7cfb01df2b727f809df305d597a921e69309e3a66537230c6f",
+        "records_sha256": "9f46a704860b15c2692b57299c9001c5c63cd5f1b322ef69069aa699052c5032"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "dense512_seed20261026",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "166f32bc18a32d005e176742170bbf22bbe0bd0ce77a2ae7a5b4f50714a87c23",
+        "records_sha256": "8a27b2d64538e84b4508dadade0c03a16748a93d2e76aa7d6167a02ad996186e"
+      },
+      {
+        "category": "chewinggum",
+        "population": "final",
+        "arm": "v1_fresh",
+        "cases": 75,
+        "passed": true,
+        "metrics_sha256": "4117fb61be74526099a1d54d300a166ac0975bc2519690bd8e33ab0cdb0617c0",
+        "records_sha256": "92e1f48827319188ad2ea84bbacab4d6955bf148966b162a3b15e38471d096a2"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "classical_cv5",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "3732efc1d0e0b319d8d39240ab3e77666dc3779ebc0025d026f8588414c1df13",
+        "records_sha256": "06272e5facd7855356bf1eb38afef1c47585b52931cc9536281b9f32a2129904"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense128_max",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "bfde0e4444c5c5b09785cd46d75420b542a18f235e7385e84d61986b1bc5cf1f",
+        "records_sha256": "b656e78ff59b5694bc812e3e6af18d8a975e066444c42f4434b9c5a313672359"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense128_pose",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "b27689cb6663f950e124646fbcae55ec0492ff51ad0f2dcb0f04c9bb6abf6ab9",
+        "records_sha256": "59997b8b63604f6ed0943bb611c55836d08dfcdd13508f43af4da20c0b49a7aa"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense128_region",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "f5780f399507c20d1ad5efbaf7da85ab95f09bac452ae0f6f697c718dbb29880",
+        "records_sha256": "2e4c6f5d7083c490859029305a4f378cf78348f6b30d3f66a4355c202f4ef1b4"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense128_seed20261025",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "69fb8ea918c19617159578df6504d5b9733b531c1434ba2513667ecce27ef721",
+        "records_sha256": "8707249731d279b1b24ed4c0f69eb2dd36c8df03c22dad9da78ffea2b2efcae4"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense128_seed20261026",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "dbb7c8831e87d839f3ad966b8c63efec361278e0ebdc50ef7a7f4b7566734b2b",
+        "records_sha256": "4ec1464839b8934e5b365e2e469c55f7c0c35b4d2eb874de796c19c7dd50a713"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense128_top4",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "6fb3b581bce6d13321437cb5c37ee532ea52c875cbd7a2fb44b36289fce62885",
+        "records_sha256": "d5bf3dc98eebc1d1b4fc1613224df76b014a1f1b2d125997a11ecfdab72639ea"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense512_max",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "16dda1128010324e4c12905b02d47340185c1d49ee70413efaa3431e67c63121",
+        "records_sha256": "51959d5f83acf6d67bebc46fcf181c407d64d51d7f74990abd57bdf038f2dfda"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense512_seed20261025",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "b15cde2675c985b5e0e8acfa88b73c3228e1b71f15ee94ea71dff99fec2e56a5",
+        "records_sha256": "d4f79c6d4566bbc0540d1fc8e15cf480337a9d2e1e4acc28a93360e0fd67e1b4"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "dense512_seed20261026",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "c94cc36ecdd9c9ac40613c826f6839d96bb13a02fe5357678c1844792ee49925",
+        "records_sha256": "555b1b412337674b1d8138d098b5aaa2042fedbfb32cf138de0bac9187a42a2a"
+      },
+      {
+        "category": "pcb1",
+        "population": "development",
+        "arm": "v1_fresh",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "149e99e81071efd161bd0049967149f95c82f9f18c6c19f64d6936ca171c6849",
+        "records_sha256": "6ff2696c1053045cae5299bdee44cd366f6aaa76190c81a282e7af516278439b"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "classical_cv5",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "6c930121e7e6cdcde428c2804edf67294370411e89f883e50d7a933267b56803",
+        "records_sha256": "db17effb6be8c8307a671212861790bb4fe93e59c490d225f7d12bd71aefa067"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense128_max",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "b6405a1a1c1ea5f3673b11c1a8a0db4f78c982623bc8560417426db67c542bb8",
+        "records_sha256": "a36cac7d685e509dbdf12734f88a449da9dbf32592ae0df0f3675ebc09cb8219"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense128_pose",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "df7416ee5d90fb6f35f4f6df1a5eb2b4ffe2f79db6e681c7e1ec4b51cedd8303",
+        "records_sha256": "0c0bdb08a592c06e6bb7aa25d12768eae486cde463bd1d7adb7247e48704707b"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense128_region",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "c225ba92b9b1093ac342e438e151e22280390fcaf2dfef7fdfdaf662f663c7ee",
+        "records_sha256": "f5987815ef612fd3fccc1306f2c8c1967bbf5108e5d413d919ebbc1012e2781e"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense128_seed20261025",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "24de8081ad7a105fa82b86ed6e804dc6082501106a400db32c91187f05098034",
+        "records_sha256": "b24cc2efbf837b206aa59798e4c7b3791ff31b876e65cbd707c7d3d235f97b24"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense128_seed20261026",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "93ce20028e6347d3b6f6d012ab961c7858f0f593fea5591e42afaa972a3c840d",
+        "records_sha256": "1127d726b1faf003de001818e404956934447dc6e42892c0c557d2a5c0ec8523"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense128_top4",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "2bc9627a1a0e481dbcd2738ea960bc848a90d436011ab0a2c383b1f598802311",
+        "records_sha256": "d7bc6060e6c33c77230a5469ab28b6c35b12ed5133e81759fb3f37160085b5e4"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense512_max",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "f710af81ca64f770d19bebf19d7b43a3cd53bcb58576b20ff73dcf30272cb1c3",
+        "records_sha256": "5b6eafec75d5372ff34828d735a3d51b219842312f0bddff401bc4d241f3c326"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense512_seed20261025",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "d8b436db083473531cff9beff24f1467a6bf51f43c43f70f2452da391432269d",
+        "records_sha256": "fdd59fb5c963f235c72b1b4c76fca19691255c614ce0200284d703b34606fb0c"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "dense512_seed20261026",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "fda1ebc4be6e7e7d5e0ace787356ee4c8d41aae8f9562bdd9cec123a855f4efa",
+        "records_sha256": "0029671bb910e4df6d62020997a39a568fffea674d9ba6adc137c4bdac384906"
+      },
+      {
+        "category": "pcb1",
+        "population": "final",
+        "arm": "v1_fresh",
+        "cases": 100,
+        "passed": true,
+        "metrics_sha256": "7455250d6e68b9a9e8f56335108b95f9c82914e2a9af242a906b558a1b54c9d8",
+        "records_sha256": "202d88955a4eaef66593d345be1872a47634ff05c621199b920b2bae4dbca14f"
+      }
+    ],
+    "verifier_sha256": "ba25b9f8659a1dd152f91e74c8b0525e2f0ea691b86fa3b656faed573ff3a865"
+  },
+  "reference_verification": {
+    "passed": true,
+    "utc": "2026-10-25T02:48:44.662294+00:00",
+    "bundle_files_verified": 2604,
+    "bundle_bytes_verified": 1251341790,
+    "paired_groups": 8,
+    "paired_unique_cases": 860,
+    "bundle_manifest_sha256": "41ed9f5e1a12e7d96ff5afed5793cdceb16eeede7dd4991e318c7ef906055e0e",
+    "reference_export_manifest_sha256": "ed9749bb34ac12d8c089f15c2b9ce94b4157de4f343adbdf97e6fea0e64cc21f",
+    "reference_root": "C:\\Users\\nrgen\\.codex\\scratch\\reflex\\reports\\reference_20261024\\final_bundle_20261024T223543Z",
+    "source_sha256": "b9f74c5d2bcdb9c00d9306ee93646d0659d46257f1c12e5653fc30fb526c0eb5"
+  }
+}

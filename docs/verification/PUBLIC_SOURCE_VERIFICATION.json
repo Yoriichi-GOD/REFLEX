@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "utc": "2026-10-25T10:00:09.504702+00:00",
+  "six_real_photo_scores_match_prior_within": 1e-06,
+  "source_only_export": {
+    "python_core_passed": 47,
+    "deprecation_warnings": 86,
+    "seconds": 4.61,
+    "javascript_passed": 14,
+    "markup_passed": 5,
+    "scope": "Exact reviewed Git index exported into a clean source-only directory, using existing pinned host Python environment. No private weights/datasets; not a fresh dependency installation or rendered browser test."
+  },
+  "logs": {
+    "public-clean-core-tests.log": "eea77cca2a6f915e1c494bad6601b185f9dac4137326a4b340cbba3c52c6534d",
+    "public-clean-node-tests.log": "f97b9f231a7e3e379c387c352b5f5548fd30d97edec5de8abdcc95c106566fe2",
+    "public-clean-markup-tests.log": "45c108b8354c88b4b75a885633d9a4026be8f62a24cda87bc0aec560d0c6edab"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-25T09:42:57.918169+00:00",
+  "status": "ADDITIVE_UI_COPIED",
+  "source": "C:\\Users\\nrgen\\OneDrive\\Documents\\ChatGPT\\reflex aws\\safety_ui_work",
+  "destination": "C:\\Users\\nrgen\\.codex\\scratch\\reflex",
+  "existing_app_js_unchanged": true,
+  "existing_styles_css_unchanged": true,
+  "index_change": "one link outside .navigation; original bytes restored exactly by removing this link",
+  "original_sha256": {
+    "app.js": "2b3dbf8dcf2a8808b2e66f1590f92e48ef5edb903606b3aea58c290dcccd828d",
+    "styles.css": "1c161914108d1c1ab9a783aca693c7882e3eaf4cb91550bbd698d0a74b3e8f0d",
+    "index.html": "010e22de4eb0278b11327fa385707d1623f433cfb36888cfec4cbde4a9ab2380"
+  },
+  "files": {
+    "safety.html": "bfbc8c4d6ebfe7a44329c387cb640237b368b8ed4694c9cf952b37235dbb75b3",
+    "safety.css": "aec2a9a40f6684e65b1089f6da7532d4c693993e25c85823660363262de02831",
+    "safety.js": "f97c17304aab03da7abe6b65f440ae306ad370ad07e21e6d0ce38409baca7bb8",
+    "index.html": "d420667d4dc044f5ecf01821a27b71ca0ec2f99b135f3564214a9ace13d8456e"
+  },
+  "browser_visual_verification": "NOT_RUN: Local browser use disabled in Work settings"
+}

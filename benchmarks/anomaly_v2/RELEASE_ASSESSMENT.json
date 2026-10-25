@@ -1,0 +1,100 @@
+{
+  "decision": "HOLD_CANDIDATE_LOCAL",
+  "utc": "2026-10-24T20:50:50.912673+00:00",
+  "primary": "dense128_region",
+  "population_outcomes": {
+    "replay": {
+      "v1": {
+        "n": 350,
+        "normal": 150,
+        "defect": 200,
+        "TP": 112,
+        "FP": 5,
+        "automatic_false_clears": 88,
+        "TN": 145,
+        "reviews": 0,
+        "macro_auroc": 0.92405,
+        "final_detected_fraction": 0.56,
+        "normal_false_alert_fraction": 0.03333333333333333,
+        "review_fraction": 0.0
+      },
+      "dense128_region": {
+        "n": 350,
+        "normal": 150,
+        "defect": 200,
+        "TP": 155,
+        "FP": 6,
+        "automatic_false_clears": 41,
+        "TN": 144,
+        "reviews": 4,
+        "macro_auroc": 0.9582999999999999,
+        "final_detected_fraction": 0.775,
+        "normal_false_alert_fraction": 0.04,
+        "review_fraction": 0.011428571428571429
+      }
+    },
+    "development": {
+      "v1": {
+        "n": 255,
+        "normal": 105,
+        "defect": 150,
+        "TP": 94,
+        "FP": 4,
+        "automatic_false_clears": 56,
+        "TN": 101,
+        "reviews": 0,
+        "macro_auroc": 0.8546222222222223,
+        "final_detected_fraction": 0.6266666666666667,
+        "normal_false_alert_fraction": 0.0380952380952381,
+        "review_fraction": 0.0
+      },
+      "dense128_region": {
+        "n": 255,
+        "normal": 105,
+        "defect": 150,
+        "TP": 101,
+        "FP": 9,
+        "automatic_false_clears": 44,
+        "TN": 91,
+        "reviews": 10,
+        "macro_auroc": 0.8568000000000001,
+        "final_detected_fraction": 0.6733333333333333,
+        "normal_false_alert_fraction": 0.08571428571428572,
+        "review_fraction": 0.0392156862745098
+      }
+    },
+    "final": {
+      "v1": {
+        "n": 255,
+        "normal": 105,
+        "defect": 150,
+        "TP": 92,
+        "FP": 9,
+        "automatic_false_clears": 58,
+        "TN": 96,
+        "reviews": 0,
+        "macro_auroc": 0.8520444444444445,
+        "final_detected_fraction": 0.6133333333333333,
+        "normal_false_alert_fraction": 0.08571428571428572,
+        "review_fraction": 0.0
+      },
+      "dense128_region": {
+        "n": 255,
+        "normal": 105,
+        "defect": 150,
+        "TP": 105,
+        "FP": 14,
+        "automatic_false_clears": 42,
+        "TN": 83,
+        "reviews": 11,
+        "macro_auroc": 0.8409777777777778,
+        "final_detected_fraction": 0.7,
+        "normal_false_alert_fraction": 0.13333333333333333,
+        "review_fraction": 0.043137254901960784
+      }
+    }
+  },
+  "dedicated_aws_handler_p95_relative_change": 0.17352308441224618,
+  "dedicated_aws_peak_rss_relative_change": 0.4389840429593057,
+  "scope": "Image outcomes independently checked. This release hold already follows from recorded weaknesses; remaining reference, robustness and map-verification work must still finish. No test-best arm or seed is selected."
+}

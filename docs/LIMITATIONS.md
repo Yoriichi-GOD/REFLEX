@@ -1,0 +1,14 @@
+# Limitations
+
+- The deployed/bundled model profile is a fictional synthetic machined plate. Its normal reference and demo pixels are generated, not photographed. The separate VisA benchmark uses real captured images offline.
+- Two controlled real-image VisA classes were evaluated offline. At frozen thresholds, image recall was 0.16 on candle and 0.05 on cashew (84/100 and 95/100 anomalies falsely cleared). These results are poor and rule out a practical defect-detection claim for this baseline. They do not establish factory performance. MVTec AD was not evaluated because the official download page currently reports downloads unavailable.
+- Two of 20 synthetic defects were false clears and one of 12 synthetic normals was a false defect. Pixel IoU was 0.291960, so regions are broad triage evidence rather than precise segmentation.
+- The held-out agent decisions exactly matched threshold-only decisions; the second pass did not reduce measured error on this fixed set.
+- The model is spatially indexed. Camera pose, object alignment, background, lighting, material, and normal-production variation can cause score changes.
+- No pretrained deep patch model or model weights are packaged. The shipped mode is explicitly `opencv_normal_bank`.
+- Quality thresholds are fixed heuristics, not calibrated probabilities. Anomaly scores are distances, not defect probabilities.
+- The agent performs at most one second-pass crop operation in the shipped policy. ECC registration is a separate API and does not currently drive the anomaly policy. No physical camera or robot is controlled.
+- The reviewer interface does not provide a typed production identity; local review actions are unauthenticated unless `REFLEX_REVIEW_TOKEN` is set.
+- The public AWS service has a verified synthetic smoke and matching CloudWatch events, but has no user sign-in; it is for synthetic samples only, retains task-local records under a one-day cleanup policy, and uses per-process rate limits. It is not suitable for private or production imagery. A 10-warm-up/100-measurement sequential synthetic latency profile completed under the upload guard. Exact-window ECS CPU/memory metrics, saturation throughput, and cost were not measured.
+- Docker Compose was authored but not run because Docker Desktop's engine did not start. The live AWS page and one synthetic scratch result were captured in [`../demo/screenshots/`](../demo/screenshots/).
+- Concurrent throughput, AWS cost, full video, public repository access, and Devpost receipt are not measured or available. VisA timing and process working-set measurements are sequential offline evaluator measurements on one Windows host; they are not service capacity or AWS latency benchmarks. The AWS profile is single-client and paced by the service upload guard; it measures request latency, not saturation capacity. Exact-window CloudWatch CPU/memory and application-log counts remain unavailable.

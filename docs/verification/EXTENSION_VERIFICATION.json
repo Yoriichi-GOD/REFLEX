@@ -1,0 +1,26 @@
+{
+  "original_sha256": "3c2d52983493165c03d65584498acc830cdeca4397e8da2be41bf77a0ccb89f8",
+  "scope": "Public path-redacted projection; values/checks retained",
+  "record": {
+    "utc": "2026-10-25T09:56:15.820747+00:00",
+    "status": "SOFTWARE_VERIFIED_PHYSICAL_AND_BROWSER_GATES_OPEN",
+    "frozen_current_files_unchanged": 143,
+    "prior_scientific_files_unchanged": 13,
+    "full_regression": {
+      "passed": 138,
+      "warnings": 86,
+      "seconds": 16.79,
+      "sha256": "0cb8a7dc4b5da3198dc6b5d08f72ff0bab92a362b6a0f28fb28248de626c90d8"
+    },
+    "ui_receipt_sha256": "029ce506bf8cb87724249f5b7817a80c046fb05e7b2cb3086099384c9df17e22",
+    "dynamic_http_receipt_sha256": "7828217ebf0470f68ef562c32d3196064ac03c778c7720c2602151307dd428bb",
+    "procedure_results_sha256": "d97bb98739591ffa9f16b381a4d98e638eefbf5fd388b3182118696681b4b81d",
+    "procedure_source_unchanged": true,
+    "no_observed_agent_accuracy_gain": true,
+    "real_procedural_benchmark": "NOT_RUN",
+    "browser_rendering": "NOT_RUN",
+    "extension_aws": "NOT_RUN",
+    "physical_camera": "NOT_RUN",
+    "no_deployment": true
+  }
+}

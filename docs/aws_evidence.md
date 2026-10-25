@@ -1,0 +1,5 @@
+# AWS evidence boundary
+
+Existing REFLEX anomaly inference ran on actual ECS/Fargate in ap-southeast-2, using OpenCV 5. Retained dedicated/local HTTP comparisons each have 820 correlated request/inspection records; the public v1 run has 110, including 100 measured. The dedicated task stopped with exit 0. The current v2 candidate stays local and the live v1 release is not replaced.
+
+This Safety Station extension has not executed video inference on AWS and has no cloud-video latency/cost claim. No new resource, permission, cross-Region action or deployment was created. Local HTTP and generated-video results cannot substitute for cloud proof. A future deployment must keep the selected Region ap-southeast-2, use an isolated decoder/worker and actual input/build/log identity, then measure with a separately registered run. Existing scalar performance tables are in benchmarks/anomaly_v2 and retain their scope. Raw project identities/task overrides/source bundles/credentials are excluded from public source.

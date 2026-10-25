@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050304">
+  <meta name="description" content="REFLEX visual inspection studio. Inspect the evidence, understand uncertainty, and choose the next look.">
+  <title>REFLEX · Inspection Studio</title>
+  <link rel="icon" type="image/png" href="/assets-ui/favicon.png">
+  <link rel="preload" as="image" href="/assets-ui/reflex-space-background.webp">
+  <link rel="stylesheet" href="/styles.css?v=solar-real-1">
+</head>
+<body>
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-inspect" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2.5 7M3 4v7h7m2-4v5l3 2"/></symbol>
+    <symbol id="i-report" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Zm0 0v6h6M8 13h8m-8 4h5"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6 2.1-2.1"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2 12h5l3-8 4 16 3-8h5"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M8 8h8v8H8Z"/></symbol>
+    <symbol id="i-pan" viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 0 1 4 0v7-9a2 2 0 0 1 4 0v9-5a2 2 0 0 1 4 0v8c0 4-3 7-7 7h-1c-2 0-3-1-4-3l-5-6a2 2 0 0 1 3-3l2 2Z"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#workspace">Skip to inspection workspace</a>
+  <header class="topbar">
+    <a class="brand" href="#workspace" aria-label="REFLEX inspection studio"><img src="/assets-ui/reflex-solar-logo.webp" width="44" height="44" alt=""><span><span class="wordmark">REFLEX<span class="brand-period">.</span></span><small>VISUAL INSPECTION INTELLIGENCE</small></span></a>
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="nav-item active" href="#workspace" aria-current="page"><svg><use href="#i-inspect"/></svg>Inspect</a>
+      <a class="nav-item" href="#recent-inspections"><svg><use href="#i-history"/></svg>History</a>
+      <a class="nav-item" href="#report-controls"><svg><use href="#i-report"/></svg>Reports</a>
+      <button class="nav-item" id="open-settings" aria-haspopup="dialog"><svg><use href="#i-settings"/></svg>Settings</button>
+    </nav>
+    <a class="nav-item" href="/safety" aria-label="Open Safety Station">Safety Station &#8599;</a>
+    <div class="top-right"><span class="runtime-label"><i class="live-dot" id="runtime-dot"></i><span id="runtime">Connecting to vision</span></span><span class="version" id="cv-version">OpenCV —</span></div>
+  </header>
+  <main class="page" id="workspace">
+    <div class="heading"><div><div class="eyebrow"><span class="eyebrow-line"></span><span id="studio-mode">Inspection studio / local profile</span></div><h1>Every detail. <span>A closer look.</span></h1><p id="profile-description">Real photographs and traceable visual evidence.</p></div><div class="session-chip"><svg><use href="#i-inspect"/></svg><span>Evidence-led inspection</span><span class="chip-divider"></span><strong id="profile-name">Connecting…</strong></div></div>
+    <div id="runtime-notice" class="runtime-notice" hidden role="note">Live analysis runs on AWS in Sydney. Try the licensed VisA photographs or synthetic examples. Uploaded images and results expire after 24 hours; task replacement can remove them sooner. Do not upload private or production imagery.</div>
+    <div id="status" class="statusline" role="status" aria-live="polite"></div>
+    <section class="grid" aria-label="Inspection workspace">
+      <aside class="panel side">
+        <div class="section-head" id="demo-heading"><h2 id="demo-title"><span class="section-index">01</span>Capture library</h2><span class="tiny" id="case-count">Synthetic</span></div>
+        <p class="section-description">A starting point for your next inspection.</p>
+        <div class="cases" id="cases"><span class="tiny">Connecting to capture library…</span></div>
+        <p class="helper" id="demo-credit" hidden>VisA · Amazon Science · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Curated examples; analysis runs live.</p>
+        <div class="divider"></div>
+        <label class="small-label" for="category">Inspection profile</label><select class="profile" id="category" aria-label="Inspection profile"><option value="synthetic_machined_plate">Synthetic machined plate</option></select>
+        <div class="divider"></div>
+        <div class="upload" id="drop-zone"><span class="upload-icon"><svg><use href="#i-upload"/></svg></span><strong>Your capture. A new perspective.</strong><p>Drop an image here, or browse your files.</p><button class="button primary" id="browse">Choose image <svg><use href="#i-arrow"/></svg></button><input class="file-input" id="file-input" type="file" accept="image/png,image/jpeg,image/webp" aria-label="Choose an image file"><div class="helper">PNG, JPEG, WebP · up to 12 MB</div><div class="upload-privacy" id="upload-privacy">Processed by this local service.</div></div>
+        <div class="divider"></div>
+        <section id="recent-inspections" tabindex="-1"><div class="section-head"><h2><svg><use href="#i-history"/></svg>Recent inspections</h2><button class="icon-button" id="refresh-history" aria-label="Refresh inspection history" title="Refresh history">↻</button></div><div id="history" class="cases history-list"><span class="tiny">No inspections yet.</span></div></section>
+        <div class="sidebar-note"><svg><use href="#i-check"/></svg><span>Evidence retained. Decisions traceable.<br>Uploads never train the normal bank.</span></div>
+      </aside>
+      <section class="panel viewer" id="evidence-viewer" aria-label="Image evidence viewer">
+        <div class="viewer-top"><div class="viewer-title"><div><h2><svg><use href="#i-layers"/></svg>Evidence viewer</h2><span class="tiny" id="viewer-subtitle">Your next insight starts with an image.</span></div><span class="viewer-state" id="viewer-state">STANDBY</span></div>
+          <div class="segmented" role="group" aria-label="Evidence layer"><button class="active" data-layer="compare" aria-pressed="true">Compare</button><button data-layer="overlay" aria-pressed="false">Overlay</button><button data-layer="original" aria-pressed="false">Original</button><button data-layer="heatmap" aria-pressed="false">Heatmap</button><button data-layer="roi" id="roi-layer" disabled aria-pressed="false">ROI</button><button data-layer="aligned" id="aligned-layer" disabled aria-pressed="false">Aligned ref</button><button data-layer="difference" id="difference-layer" disabled aria-pressed="false">Difference</button></div>
+        </div>
+        <div class="canvas" id="canvas"><div class="empty"><span class="empty-coordinate coordinate-top">REFLEX / VISION SYSTEM</span><img class="orbital-planet" src="/assets-ui/reflex-orbital-planet.webp" width="1000" height="667" alt="" fetchpriority="high"><div class="empty-copy"><span class="empty-overline">READY WHEN YOU ARE</span><h3>No image loaded</h3><p>Upload an image or select a demo capture<br>to begin inspection.</p><span class="empty-step"><span>01 &nbsp; CAPTURE</span><span>→</span><span>02 &nbsp; ANALYZE</span><span>→</span><span>03 &nbsp; LOOK AGAIN</span></span></div><span class="empty-coordinate coordinate-bottom">OBSERVE. UNDERSTAND. VERIFY.</span></div></div>
+        <div class="viewer-toolbar"><div class="zoom-control" role="group" aria-label="Image zoom"><button class="icon-button" data-zoom="-1" aria-label="Zoom out" disabled>−</button><button class="zoom-value" data-zoom="reset" id="zoom-reset" aria-label="Reset zoom" disabled>100%</button><button class="icon-button" data-zoom="1" aria-label="Zoom in" disabled>+</button><span class="tool-divider"></span><button class="icon-button" id="fit-view" aria-label="Fit image to view" title="Fit image to view" disabled><svg><use href="#i-fit"/></svg></button><button class="icon-button" id="pan-mode" aria-label="Pan image" aria-pressed="false" title="Pan image" disabled><svg><use href="#i-pan"/></svg></button></div><div class="viewer-tools"><button class="button subtle" id="compare-reference" disabled>Compare reference</button><input class="file-input" id="reference-input" type="file" accept="image/png,image/jpeg,image/webp" aria-label="Choose a reference image"><button class="icon-button" id="fullscreen" aria-label="Enter fullscreen viewer" title="Fullscreen viewer"><svg><use href="#i-expand"/></svg></button></div></div>
+        <div class="image-meta"><span id="image-dimensions">No image loaded</span><span id="image-hash">—</span><span id="synthetic-label">—</span></div><div class="compare-hint tiny" id="compare-hint" aria-live="polite">Run an inspection before comparing a reference.</div>
+        <div class="viewer-bottom"><div><div class="metric-inline"><strong>Capture focus</strong><span id="focus-value">—</span></div><div class="meter"><i id="focus-meter"></i></div></div><div><div class="metric-inline"><strong>Clipped pixels</strong><span id="clipping-value">—</span></div><div class="meter"><i id="clipping-meter"></i></div></div></div>
+      </section>
+      <aside class="panel decision" aria-label="Inspection result and agent trace">
+        <div class="section-head"><h2><span class="section-index">02</span>Analysis & disposition</h2><svg class="section-activity"><use href="#i-activity"/></svg></div><div class="model-label"><span class="tiny">PROCESSING BANK</span><span class="tiny" id="model-mode">Awaiting service</span></div>
+        <div class="result-pill" id="result-pill" role="status" aria-live="polite"><span class="label"><svg><use href="#i-inspect"/></svg>Computer vision result</span><strong id="decision">Awaiting inspection</strong><p id="decision-text">The evidence comes first.<br>Select a capture to see what it reveals.</p></div>
+        <div class="score-box"><div class="small-label">Anomaly score <span class="measurement-icon">↗</span></div><div class="score-row"><strong id="score">—<span class="score-placeholder">.---</span></strong><small>threshold <span id="threshold">—</span></small></div><div class="scorebar"><i id="score-fill"></i><b id="threshold-mark"></b></div><div class="scale-labels"><span>LOWER DISTANCE</span><span>HIGHER DISTANCE</span></div><p class="note">Relative anomaly evidence, not a probability.</p><p class="note calibration-note" id="score-note">Calibrated on normal-only images.</p></div>
+        <div class="quality-card"><div class="quality"><strong><svg><use href="#i-activity"/></svg>Image quality</strong><strong id="quality-state">Awaiting image</strong></div><div id="quality-flags" class="flags"></div></div>
+        <div class="trace-head"><h2>Agent trace</h2><span class="tiny" id="trace-count">0 steps</span></div><div id="trace" class="trace"><div class="trace-empty"><span class="trace-idle-dot"></span><p>A clear trail, from observation<br>to the next best action.</p></div></div>
+        <div id="retake-box" hidden><label class="small-label" for="retake-input">Provide the requested new capture</label><button id="retake-button" class="button primary">Upload another view</button><input id="retake-input" class="file-input" type="file" accept="image/png,image/jpeg,image/webp" aria-label="Choose a new inspection capture"></div>
+        <div class="review" id="review-actions" hidden><button class="button" data-review="confirm_defect">Confirm anomaly</button><button class="button" data-review="override_acceptable">Override as acceptable</button><button class="button" data-review="request_retake">Request retake</button></div><div id="review-note-box" hidden><label class="sr-only" for="review-note">Optional reviewer note</label><input id="review-note" placeholder="Optional reviewer note" maxlength="1000"></div>
+        <div class="report-controls" id="report-controls" tabindex="-1"><div class="export-row"><button class="button" id="export-json" disabled><svg><use href="#i-code"/></svg>Evidence JSON</button><button class="button" id="export-html" title="Download the HTML evidence report for printing" disabled><svg><use href="#i-report"/></svg>Print report</button></div><p class="export-note">Every conclusion, backed by its evidence.</p></div>
+      </aside>
+    </section>
+    <section class="bottom-grid">
+      <article class="panel foot-panel"><div class="section-head"><h2 id="evaluation-heading"><svg><use href="#i-activity"/></svg>Evaluation</h2><span class="tiny" id="eval-status">Waiting for measured run</span></div><div id="evaluation"><p>Run the documented evaluation to populate these values. Synthetic results are kept separate from real industrial performance.</p></div></article>
+      <article class="panel foot-panel scope-panel"><div class="section-head"><h2><svg><use href="#i-check"/></svg>Intelligence with boundaries</h2><span class="scope-tag">HUMAN IN CONTROL</span></div><p>REFLEX is a visual anomaly triage prototype. A pass means no modeled anomaly was detected, not a safety certification or a guarantee of defect-free material. <span id="profile-scope">Evidence is specific to the selected profile.</span> An operator confirms consequential dispositions.</p></article>
+    </section>
+    <footer class="footer"><span><span class="footer-brand">REFLEX</span> / <span id="footer-build">Connecting to inspection runtime</span></span><span id="footer-storage">Local development storage · reviewer feedback never trains the model</span></footer>
+  </main>
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><div class="dialog-header"><div><div class="eyebrow">WORKSPACE</div><h2 id="settings-title">Inspection settings</h2></div><button class="icon-button" id="close-settings" aria-label="Close settings">×</button></div><p class="dialog-description">Runtime and processing boundaries for this studio.</p><dl class="settings-list"><div><dt>Vision runtime</dt><dd id="settings-runtime">Connecting…</dd></div><div><dt>Active profile</dt><dd id="settings-profile">Connecting…</dd></div><div><dt>Accepted images</dt><dd>PNG, JPEG, WebP · 12 MB maximum<br>4,096 px per edge · 20 million pixels</dd></div><div><dt>Storage</dt><dd id="settings-storage">Local service storage</dd></div><div><dt>Reviewer feedback</dt><dd>Stored separately. Never automatic training.</dd></div></dl><label class="setting-toggle"><span>Reduce ambient motion<small>Keep the empty-state planet still.</small></span><input id="reduce-motion" type="checkbox"></label><p class="note">Your system’s reduced-motion preference is always respected.</p><button class="button primary" id="settings-done">Done <svg><use href="#i-check"/></svg></button></dialog>
+  <script src="/app.js?v=solar-real-1" defer></script>
+</body>
+</html>

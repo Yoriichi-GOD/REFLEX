@@ -1,0 +1,2 @@
+# Graph preparation only; inference uses backend/requirements.txt (OpenCV 5).
+onnx==1.23.2

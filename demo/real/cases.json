@@ -1,0 +1,115 @@
+{
+  "cases": [
+    {
+      "id": "visa-candle-1",
+      "category": "candle",
+      "title": "Four-candle layout",
+      "description": "Real VisA photograph \u00b7 analyze live",
+      "image_url": "/demo/real/candle-1.jpg",
+      "sha256": "5c8fef83f6ea25d8659789cf2ffc5c3b17eaa7b8a0a8222e1b6a68682d67ff80",
+      "synthetic": false,
+      "attribution": {
+        "dataset": "VisA",
+        "credit": "Amazon Science; Zou et al., ECCV 2022",
+        "source": "https://github.com/amazon-science/spot-diff",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Original JPEG bytes preserved; model evidence computed live."
+      }
+    },
+    {
+      "id": "visa-candle-2",
+      "category": "candle",
+      "title": "Candle edge detail",
+      "description": "Real VisA photograph \u00b7 analyze live",
+      "image_url": "/demo/real/candle-2.jpg",
+      "sha256": "fd8588391603a3189beac07aa2b29b771657f02d9de4f5d412dc5d89dadbb9d4",
+      "synthetic": false,
+      "attribution": {
+        "dataset": "VisA",
+        "credit": "Amazon Science; Zou et al., ECCV 2022",
+        "source": "https://github.com/amazon-science/spot-diff",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Original JPEG bytes preserved; model evidence computed live."
+      }
+    },
+    {
+      "id": "visa-candle-3",
+      "category": "candle",
+      "title": "Small rim detail",
+      "description": "Real VisA photograph \u00b7 analyze live",
+      "image_url": "/demo/real/candle-3.jpg",
+      "sha256": "6b8ace3cb4bd8cfeb10706d70635d038f9e32fec6b002cd354fc8a195223987e",
+      "synthetic": false,
+      "attribution": {
+        "dataset": "VisA",
+        "credit": "Amazon Science; Zou et al., ECCV 2022",
+        "source": "https://github.com/amazon-science/spot-diff",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Original JPEG bytes preserved; model evidence computed live."
+      }
+    },
+    {
+      "id": "visa-cashew-1",
+      "category": "cashew",
+      "title": "Cashew surface",
+      "description": "Real VisA photograph \u00b7 analyze live",
+      "image_url": "/demo/real/cashew-1.jpg",
+      "sha256": "85a066d105d04caba4e3010297580174546a9394552035fc9c58c8517ccd2cae",
+      "synthetic": false,
+      "attribution": {
+        "dataset": "VisA",
+        "credit": "Amazon Science; Zou et al., ECCV 2022",
+        "source": "https://github.com/amazon-science/spot-diff",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Original JPEG bytes preserved; model evidence computed live."
+      }
+    },
+    {
+      "id": "visa-cashew-2",
+      "category": "cashew",
+      "title": "Cashew shape detail",
+      "description": "Real VisA photograph \u00b7 analyze live",
+      "image_url": "/demo/real/cashew-2.jpg",
+      "sha256": "da562ca3791862ac9b24d2de94ad43aee47dff52f85bf704f0c0344f4d7bc3f6",
+      "synthetic": false,
+      "attribution": {
+        "dataset": "VisA",
+        "credit": "Amazon Science; Zou et al., ECCV 2022",
+        "source": "https://github.com/amazon-science/spot-diff",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Original JPEG bytes preserved; model evidence computed live."
+      }
+    },
+    {
+      "id": "visa-cashew-3",
+      "category": "cashew",
+      "title": "Subtle surface detail",
+      "description": "Real VisA photograph \u00b7 analyze live",
+      "image_url": "/demo/real/cashew-3.jpg",
+      "sha256": "0ff644948f103d0a81d7d46e569e8f95d23c48bd5ef4c9f9c391bf75964e7bae",
+      "synthetic": false,
+      "attribution": {
+        "dataset": "VisA",
+        "credit": "Amazon Science; Zou et al., ECCV 2022",
+        "source": "https://github.com/amazon-science/spot-diff",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Original JPEG bytes preserved; model evidence computed live."
+      }
+    }
+  ],
+  "attribution": {
+    "dataset": "VisA",
+    "credit": "Amazon Science; Zou et al., ECCV 2022",
+    "source": "https://github.com/amazon-science/spot-diff",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "changes": "Original JPEG bytes preserved; model evidence computed live."
+  },
+  "selection": "Curated normal, conspicuous and subtle examples; not an accuracy estimate. No expected decisions or masks supplied to inference."
+}

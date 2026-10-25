@@ -1,0 +1,10 @@
+synthetic:
+  seed: 20261023
+  training_normals: 40
+  calibration_normals: 12
+  test_normals: 12
+  test_defect_count: 20
+  image_threshold_quantile: 0.95
+  map_image_score_quantile: 0.995
+  pixel_threshold_quantile: 0.995
+  labels_are_used_during_fit: false

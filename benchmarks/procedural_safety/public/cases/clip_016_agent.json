@@ -1,0 +1,1380 @@
+{
+  "agent_trace": [
+    {
+      "action": "OBSERVE_NEXT_FRAMES",
+      "budget_remaining": 1,
+      "capture_kind": "existing_replay_frame_not_new_camera_view",
+      "cost_ms": 3.8929000147618353,
+      "evidence_id": "frame-00001-b39b4e684722",
+      "executed": true,
+      "is_new_capture": true,
+      "observation_accepted": true,
+      "reason": "Uncertain or newly changed slot; seek a temporally distinct supporting frame",
+      "source_frame_index": 1,
+      "source_timestamp_ms": 100.0
+    },
+    {
+      "action": "OBSERVE_NEXT_FRAMES",
+      "budget_remaining": 0,
+      "capture_kind": "existing_replay_frame_not_new_camera_view",
+      "cost_ms": 4.841800022404641,
+      "evidence_id": "frame-00002-1fa924654816",
+      "executed": true,
+      "is_new_capture": true,
+      "observation_accepted": true,
+      "reason": "Uncertain or newly changed slot; seek a temporally distinct supporting frame",
+      "source_frame_index": 2,
+      "source_timestamp_ms": 200.0
+    }
+  ],
+  "benchmark_scope": "Not a real-world procedure benchmark. Upload provenance and evaluator labels must be supplied separately.",
+  "cv_version": "5.0.0",
+  "decision": {
+    "reason_codes": [
+      "SLOT_OCCLUDED_OR_GLARE",
+      "UNCONFIRMED_OR_OCCLUDED",
+      "PARTIAL_OBSERVATION"
+    ],
+    "required_human_action": "Review the supporting frames; correct the fixture or provide a fresh unobstructed view. This is an advisory teaching-fixture gate.",
+    "status": "HOLD_FOR_REVIEW",
+    "supporting_observation_ids": [
+      "frame-00000-401390915035:0",
+      "frame-00002-1fa924654816:0",
+      "frame-00000-401390915035:1",
+      "frame-00002-1fa924654816:1",
+      "frame-00000-401390915035:2",
+      "frame-00002-1fa924654816:2",
+      "frame-00000-401390915035:3",
+      "frame-00002-1fa924654816:3",
+      "frame-00000-401390915035:4",
+      "frame-00002-1fa924654816:4"
+    ],
+    "time_to_alert_ms": null
+  },
+  "events": [],
+  "evidence": [
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00000.jpg",
+      "benchmark_overlay_sha256": "3f7d2a95efc40cf478108f1fe87b3796210366ab7314f8c4e62c8f788bbca000",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 0,
+      "frame_sha256": "401390915035df6bf4c1de26e84419781855d333af2a516687e48239ff0ac358",
+      "id": "frame-00000-401390915035",
+      "processing_ms": 4.643599997507408,
+      "quality": {
+        "flags": [],
+        "focus_variance": 567.5943603515625,
+        "mean_gray": 217.68779296875,
+        "usable": true
+      },
+      "source_timestamp_ms": 0.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00001.jpg",
+      "benchmark_overlay_sha256": "fbcb8ee243f508dfe378a6ea87ed8c089df13a6a437ef776125bab173212ecaa",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 1,
+      "frame_sha256": "b39b4e68472296056e48ade5852baa8f67947f2c6f21bb7bfb1e2251578d7277",
+      "id": "frame-00001-b39b4e684722",
+      "processing_ms": 3.8929000147618353,
+      "quality": {
+        "flags": [],
+        "focus_variance": 564.2316284179688,
+        "mean_gray": 217.69689127604167,
+        "usable": true
+      },
+      "source_timestamp_ms": 100.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00002.jpg",
+      "benchmark_overlay_sha256": "1c0121f5c5d07b1ce61d4d51f06a01c3183c83548a680d13086812f3659deec1",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 2,
+      "frame_sha256": "1fa924654816de0fbd17e76a151c2522a4243054ac1288dcb05243e89673224b",
+      "id": "frame-00002-1fa924654816",
+      "processing_ms": 4.841800022404641,
+      "quality": {
+        "flags": [],
+        "focus_variance": 573.0353393554688,
+        "mean_gray": 217.69287109375,
+        "usable": true
+      },
+      "source_timestamp_ms": 200.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00003.jpg",
+      "benchmark_overlay_sha256": "d3ebd10e2fbe4c58f932fdcb0649d68f42752b6f0bd0ce969e4fd00a02f91e8b",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 3,
+      "frame_sha256": "b3a0935a6d031bf4366bd2c6e30254edd521e8be53db1b72b31812678cc0fb99",
+      "id": "frame-00003-b3a0935a6d03",
+      "processing_ms": 4.872799996519461,
+      "quality": {
+        "flags": [],
+        "focus_variance": 571.37158203125,
+        "mean_gray": 217.69135416666666,
+        "usable": true
+      },
+      "source_timestamp_ms": 300.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00006.jpg",
+      "benchmark_overlay_sha256": "cd43274e8bb23bb1e1708c2e13739882714748d1ebb2751d2977d9d173b7da16",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 6,
+      "frame_sha256": "5aa193fbcb11d5ae8c1e1460162e7297ff00f935eaae5a31cc013582ec428da1",
+      "id": "frame-00006-5aa193fbcb11",
+      "processing_ms": 3.8400000194087625,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 659.8412475585938,
+        "mean_gray": 125.68609049479167,
+        "usable": false
+      },
+      "source_timestamp_ms": 600.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00009.jpg",
+      "benchmark_overlay_sha256": "ed988936a18e3d6d82f75f2d7ac2dde5d361efbc426f58a77a0dce328f7f3941",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 9,
+      "frame_sha256": "0452eaea1fbdad05929097727755929f74685bf1e641fe0f8a57bdea04b2ecef",
+      "id": "frame-00009-0452eaea1fbd",
+      "processing_ms": 4.89670000388287,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 659.412841796875,
+        "mean_gray": 125.68787109375,
+        "usable": false
+      },
+      "source_timestamp_ms": 900.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00012.jpg",
+      "benchmark_overlay_sha256": "483aeed36203cb0a51630aff1cd4380c87f63014f595b69b44f0b6a856bc525a",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 12,
+      "frame_sha256": "8b556b6b29c1d29d1bffb90508c0f56b72c61300cfa523ac02dbba8079495f59",
+      "id": "frame-00012-8b556b6b29c1",
+      "processing_ms": 5.587500025285408,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 652.146484375,
+        "mean_gray": 125.70435221354167,
+        "usable": false
+      },
+      "source_timestamp_ms": 1200.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00015.jpg",
+      "benchmark_overlay_sha256": "3ea75a8b35fd8979b19d550ae66e2cc5dfbda994516624d9762752f187fde885",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 15,
+      "frame_sha256": "0c1161ed7742749ec7511da9b2b605be42a99dafaa613bbfc311296b08ec59f1",
+      "id": "frame-00015-0c1161ed7742",
+      "processing_ms": 5.199700011871755,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 649.8489379882812,
+        "mean_gray": 125.70261067708333,
+        "usable": false
+      },
+      "source_timestamp_ms": 1500.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00018.jpg",
+      "benchmark_overlay_sha256": "26fcaf2f7f3a7827d50d6dc7a916145671d6a53830fa69f0209a5d964ab9c27d",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 18,
+      "frame_sha256": "60f33e133a38f07ae7f1dffbece8b2809fa656a89ef40540fc5e7779d96e0cca",
+      "id": "frame-00018-60f33e133a38",
+      "processing_ms": 4.511599981924519,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 655.0052490234375,
+        "mean_gray": 125.697138671875,
+        "usable": false
+      },
+      "source_timestamp_ms": 1800.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00021.jpg",
+      "benchmark_overlay_sha256": "a427f865790cf014bef2fbd7733412d6c209e4c90645622e656711d8cfd8a3b5",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 21,
+      "frame_sha256": "91443d583bd6f44b1365ac37ef38590088a4a6e8fadbf44dbf12da720691e166",
+      "id": "frame-00021-91443d583bd6",
+      "processing_ms": 3.9744000241626054,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 653.2481079101562,
+        "mean_gray": 125.70416015625,
+        "usable": false
+      },
+      "source_timestamp_ms": 2100.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00024.jpg",
+      "benchmark_overlay_sha256": "928a092bc8602dd1b627244456b3821649d782cc530c75a194cd2a30d50c71de",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 24,
+      "frame_sha256": "5741204b26a7f7e3904df7f4a1d034e41ead82c857b66cc2997b8a35787167c6",
+      "id": "frame-00024-5741204b26a7",
+      "processing_ms": 5.3884999942965806,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 655.4663696289062,
+        "mean_gray": 125.69671549479166,
+        "usable": false
+      },
+      "source_timestamp_ms": 2400.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00027.jpg",
+      "benchmark_overlay_sha256": "43f341839c034f1ba0a97c9f225448a288d4d1446005f06bd25a797582a7f8c8",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 27,
+      "frame_sha256": "cba87ab05f2cee9af45530ba2c0cfe2ebea4f891a74320a5d01a01814ba08276",
+      "id": "frame-00027-cba87ab05f2c",
+      "processing_ms": 5.134100007126108,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 649.7564697265625,
+        "mean_gray": 125.70645182291666,
+        "usable": false
+      },
+      "source_timestamp_ms": 2700.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00030.jpg",
+      "benchmark_overlay_sha256": "1833f4a85b92ada97d8241452230d017096a6fe4676e58e5f8c63876aad97ab9",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 30,
+      "frame_sha256": "64195797888823e25fb728e467f2e5237269f98d957e47e768198b566643b3dc",
+      "id": "frame-00030-641957978888",
+      "processing_ms": 4.673900024499744,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 663.9999389648438,
+        "mean_gray": 125.68722981770833,
+        "usable": false
+      },
+      "source_timestamp_ms": 3000.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00033.jpg",
+      "benchmark_overlay_sha256": "198aeccf922c2e8ec16b544b82b9021ab5240dfdcbf90e06723881b25e27119f",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 33,
+      "frame_sha256": "286040e25f9c13f9d8353625a5bcabebeeda4acd812b8a92ec3e877f3e4dadfb",
+      "id": "frame-00033-286040e25f9c",
+      "processing_ms": 3.985799994552508,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 661.252197265625,
+        "mean_gray": 125.69666666666667,
+        "usable": false
+      },
+      "source_timestamp_ms": 3300.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00036.jpg",
+      "benchmark_overlay_sha256": "12c2f2ea65116e7f4535bccc6ab5c92c072365334028b0892478c62a33e465a0",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 36,
+      "frame_sha256": "7730f51c4a40f04962bb2d005617ae111cf86332664fc62a65daf367e0a6f5e7",
+      "id": "frame-00036-7730f51c4a40",
+      "processing_ms": 5.194600002141669,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 657.924072265625,
+        "mean_gray": 125.697060546875,
+        "usable": false
+      },
+      "source_timestamp_ms": 3600.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00039.jpg",
+      "benchmark_overlay_sha256": "2873c31000a42533582561ecbc34f416615d5a06b82bbe252c5cac0c4b6df2be",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 39,
+      "frame_sha256": "8e2fd8778f7a07361193339feac80c63efeab8c15dd09174df277e92fb792f34",
+      "id": "frame-00039-8e2fd8778f7a",
+      "processing_ms": 5.208500020671636,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 657.831298828125,
+        "mean_gray": 125.696962890625,
+        "usable": false
+      },
+      "source_timestamp_ms": 3900.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00042.jpg",
+      "benchmark_overlay_sha256": "2bc0ccfc9d3d0e07cabc359d620860b052629a4e8c345ddea6d690ba8b93e1a0",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 42,
+      "frame_sha256": "c1249d54adb29001a9e7eebd82b5b39ca4cb16b59b6681b8c4b9dd3de889da41",
+      "id": "frame-00042-c1249d54adb2",
+      "processing_ms": 4.60919999750331,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 656.49560546875,
+        "mean_gray": 125.69733723958333,
+        "usable": false
+      },
+      "source_timestamp_ms": 4200.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00045.jpg",
+      "benchmark_overlay_sha256": "95adb3a8eaeed81e4a0f2681680bed2a1516337ab635b3ca9b5e83b0596dce48",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 45,
+      "frame_sha256": "0844cfeef2dc7f9ff1afb95e3e2004cfd6ef50ade2731a9fc32a4d3ba4e26076",
+      "id": "frame-00045-0844cfeef2dc",
+      "processing_ms": 4.208600003039464,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 654.1372680664062,
+        "mean_gray": 125.69629231770833,
+        "usable": false
+      },
+      "source_timestamp_ms": 4500.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00048.jpg",
+      "benchmark_overlay_sha256": "3506a5c75a26bbb34766faf7308d9e38adcdfa1c7ff4fb441d8e81df98c012fa",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 48,
+      "frame_sha256": "a3c8221f66c9a8e8036f7bf71d25b3d5ee6ac769b11d0246d3dce3ed5b24d94a",
+      "id": "frame-00048-a3c8221f66c9",
+      "processing_ms": 4.966899985447526,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 659.7481079101562,
+        "mean_gray": 125.69282552083334,
+        "usable": false
+      },
+      "source_timestamp_ms": 4800.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00051.jpg",
+      "benchmark_overlay_sha256": "13ac497b24d041e7578effabac25d0eb1d8557f73833229697c8af6a182ad04a",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 51,
+      "frame_sha256": "8896b3b722dd75d38827a0e970ab3d39dd6ee8127e61ff3b93e674cf95ccbae8",
+      "id": "frame-00051-8896b3b722dd",
+      "processing_ms": 4.619600018486381,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 649.618408203125,
+        "mean_gray": 125.70190104166667,
+        "usable": false
+      },
+      "source_timestamp_ms": 5100.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00054.jpg",
+      "benchmark_overlay_sha256": "f3f94763828ef59a102463d793975cf4f2ff46c4c119de917c5ea1dd4f529d8d",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 54,
+      "frame_sha256": "b79cc6a0f5cd4c7fcaf56863d24f5586fbe948204efae80e52f40153486a1756",
+      "id": "frame-00054-b79cc6a0f5cd",
+      "processing_ms": 5.152600002475083,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 653.364013671875,
+        "mean_gray": 125.69627604166666,
+        "usable": false
+      },
+      "source_timestamp_ms": 5400.0
+    },
+    {
+      "benchmark_overlay": "../evidence/clip_016_agent/00057.jpg",
+      "benchmark_overlay_sha256": "29292a8d8ca389e78ce6526a844787c8d487292b7167c05d43a88e10e5a27e55",
+      "cv_functions": [
+        "getPerspectiveTransform",
+        "warpPerspective",
+        "cvtColor",
+        "Laplacian",
+        "inRange",
+        "findContours",
+        "boundingRect",
+        "rectangle",
+        "putText"
+      ],
+      "frame_index": 57,
+      "frame_sha256": "06cbe16cdc112a5bc459ced9b2789fea9552ac6d9d2ddf5f94ecc4718e595a36",
+      "id": "frame-00057-06cbe16cdc11",
+      "processing_ms": 4.599100007908419,
+      "quality": {
+        "flags": [
+          "SLOT_OCCLUDED_OR_GLARE"
+        ],
+        "focus_variance": 649.4064331054688,
+        "mean_gray": 125.70571940104166,
+        "usable": false
+      },
+      "source_timestamp_ms": 5700.0
+    }
+  ],
+  "model_version": "reflex-colored-panel-cv5-1.0.0",
+  "observations": [
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-401390915035",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-401390915035:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-401390915035",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-401390915035:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-401390915035",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-401390915035:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-401390915035",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-401390915035:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00000-401390915035",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 0,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00000-401390915035:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 0.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00001-b39b4e684722",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 1,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00001-b39b4e684722:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 100.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00001-b39b4e684722",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 1,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00001-b39b4e684722:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 100.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00001-b39b4e684722",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 1,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00001-b39b4e684722:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 100.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00001-b39b4e684722",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 1,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00001-b39b4e684722:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 100.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00001-b39b4e684722",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 1,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00001-b39b4e684722:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 100.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00002-1fa924654816",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 2,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00002-1fa924654816:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00002-1fa924654816",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 2,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00002-1fa924654816:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00002-1fa924654816",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 2,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00002-1fa924654816:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00002-1fa924654816",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 2,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00002-1fa924654816:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00002-1fa924654816",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 2,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00002-1fa924654816:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 200.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        105,
+        243,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-b3a0935a6d03",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-b3a0935a6d03:0",
+      "quality_flags": [],
+      "slot_id": "spacer_left",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        105,
+        524,
+        201
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-b3a0935a6d03",
+      "expected_classes": [
+        "short_spacer"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-b3a0935a6d03:1",
+      "quality_flags": [],
+      "slot_id": "spacer_right",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        230,
+        216,
+        409,
+        297
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-b3a0935a6d03",
+      "expected_classes": [
+        "cover_plate"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-b3a0935a6d03:2",
+      "quality_flags": [],
+      "slot_id": "cover",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        115,
+        321,
+        243,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-b3a0935a6d03",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-b3a0935a6d03:3",
+      "quality_flags": [],
+      "slot_id": "left_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    },
+    {
+      "bbox_xyxy": [
+        396,
+        321,
+        524,
+        417
+      ],
+      "capture_kind": "decoded_replay_frame",
+      "class_id": "missing",
+      "confidence": 0.9,
+      "confidence_kind": "heuristic color/shape support, not a calibrated probability",
+      "cv_version": "5.0.0",
+      "evidence_id": "frame-00003-b3a0935a6d03",
+      "expected_classes": [
+        "fastener"
+      ],
+      "frame_index": 3,
+      "image_quality": 1.0,
+      "is_new_capture": true,
+      "model_version": "reflex-colored-panel-cv5-1.0.0",
+      "object_id": null,
+      "observation_id": "frame-00003-b3a0935a6d03:4",
+      "quality_flags": [],
+      "slot_id": "right_fastener",
+      "source_id": "input",
+      "source_timestamp_ms": 300.0,
+      "status": "missing"
+    }
+  ],
+  "policy": "agent",
+  "processing": {
+    "analyzed_frames": 22,
+    "base_stride_frames": 3,
+    "cancelled": false,
+    "decoded_fps": 272.11711194482444,
+    "decoded_frames": 60,
+    "elapsed_ms": 220.49230002448894,
+    "extra_frame_budget": 2,
+    "extra_inspections": 2,
+    "fps_declared": 10.0,
+    "frame_processing_ms": [
+      4.643599997507408,
+      3.8929000147618353,
+      4.841800022404641,
+      4.872799996519461,
+      3.8400000194087625,
+      4.89670000388287,
+      5.587500025285408,
+      5.199700011871755,
+      4.511599981924519,
+      3.9744000241626054,
+      5.3884999942965806,
+      5.134100007126108,
+      4.673900024499744,
+      3.985799994552508,
+      5.194600002141669,
+      5.208500020671636,
+      4.60919999750331,
+      4.208600003039464,
+      4.966899985447526,
+      4.619600018486381,
+      5.152600002475083,
+      4.599100007908419
+    ],
+    "live_capture_to_alert_ms": null,
+    "source_duration_ms": 6000.0,
+    "timestamp_basis": "OpenCV POS_MSEC when monotonic, otherwise frame_index/declared_fps; not verified live capture timing",
+    "truncated": false
+  },
+  "recipe_sha256": "40a2aa6f9c1e32fc1570f23611025c609e135cc9a7a544d007cb1d5f649e78ae",
+  "recipe_state": {
+    "current_step": "mount_spacers",
+    "empty_start_verified": false,
+    "partial_observation": true,
+    "recipe_id": "demo_panel_v1",
+    "recipe_sha256": "40a2aa6f9c1e32fc1570f23611025c609e135cc9a7a544d007cb1d5f649e78ae",
+    "slots": [
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "short_spacer"
+        ],
+        "observed_class": "missing",
+        "slot_id": "spacer_left",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-401390915035:0",
+          "frame-00002-1fa924654816:0"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "short_spacer"
+        ],
+        "observed_class": "missing",
+        "slot_id": "spacer_right",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-401390915035:1",
+          "frame-00002-1fa924654816:1"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "cover_plate"
+        ],
+        "observed_class": "missing",
+        "slot_id": "cover",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-401390915035:2",
+          "frame-00002-1fa924654816:2"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "fastener"
+        ],
+        "observed_class": "missing",
+        "slot_id": "left_fastener",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-401390915035:3",
+          "frame-00002-1fa924654816:3"
+        ]
+      },
+      {
+        "confidence": 0.9,
+        "expected_classes": [
+          "fastener"
+        ],
+        "observed_class": "missing",
+        "slot_id": "right_fastener",
+        "state": "OBSERVED_CANDIDATE",
+        "supporting_observation_ids": [
+          "frame-00000-401390915035:4",
+          "frame-00002-1fa924654816:4"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "requires": [],
+        "slot_ids": [
+          "spacer_left",
+          "spacer_right"
+        ],
+        "state": "PENDING",
+        "step_id": "mount_spacers",
+        "title": "Place both blue short spacers"
+      },
+      {
+        "requires": [
+          "mount_spacers"
+        ],
+        "slot_ids": [
+          "cover"
+        ],
+        "state": "PENDING",
+        "step_id": "install_cover",
+        "title": "Place the green cover"
+      },
+      {
+        "requires": [
+          "install_cover"
+        ],
+        "slot_ids": [
+          "left_fastener",
+          "right_fastener"
+        ],
+        "state": "PENDING",
+        "step_id": "fit_fasteners",
+        "title": "Place both yellow fasteners"
+      }
+    ]
+  },
+  "source_mode": "STREAM_REPLAY",
+  "source_sha256": "32e23157483e2ae662f42c4c28ad1a0dd1514121bea08d4e788a8f01c8a313b1"
+}

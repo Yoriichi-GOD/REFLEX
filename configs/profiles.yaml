@@ -1,0 +1,10 @@
+profiles:
+  - category: synthetic_machined_plate
+    display_name: Synthetic machined plate
+    data_source: REFLEX seeded synthetic fixtures
+    model_mode: opencv_normal_bank
+    support_status: fitted_and_tested
+    score_is_probability: false
+    normal_train_count: 40
+    normal_calibration_count: 12
+    note: A development profile only; no real industrial category is supported yet.
