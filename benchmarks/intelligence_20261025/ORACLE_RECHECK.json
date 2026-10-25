@@ -1,0 +1,535 @@
+{
+  "rows": 88,
+  "passed": true,
+  "source_sha256": "703668d1582a222436fe39d4294c03948515f6e4a1277ccae518ccd196bdd5b6",
+  "checks": [
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "v1",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "classical_cv5",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense128_region",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense128_max",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense128_top4",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense512_max",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense128_pose",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense128_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense128_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense512_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "candle",
+      "population": "replay",
+      "arm": "dense512_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "v1",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "classical_cv5",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense128_region",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense128_max",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense128_top4",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense512_max",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense128_pose",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense128_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense128_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense512_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "cashew",
+      "population": "replay",
+      "arm": "dense512_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "v1",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "classical_cv5",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense128_region",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense128_max",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense128_top4",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense512_max",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense128_pose",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense128_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense128_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense512_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "development",
+      "arm": "dense512_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "v1",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "classical_cv5",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense128_region",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense128_max",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense128_top4",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense512_max",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense128_pose",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense128_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense128_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense512_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "pcb1",
+      "population": "final",
+      "arm": "dense512_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "v1",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "classical_cv5",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense128_region",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense128_max",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense128_top4",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense512_max",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense128_pose",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense128_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense128_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense512_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "development",
+      "arm": "dense512_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "v1",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "classical_cv5",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense128_region",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense128_max",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense128_top4",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense512_max",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense128_pose",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense128_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense128_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense512_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "capsules",
+      "population": "final",
+      "arm": "dense512_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "v1",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "classical_cv5",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense128_region",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense128_max",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense128_top4",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense512_max",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense128_pose",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense128_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense128_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense512_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "development",
+      "arm": "dense512_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "v1",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "classical_cv5",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense128_region",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense128_max",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense128_top4",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense512_max",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense128_pose",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense128_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense128_seed20261026",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense512_seed20261025",
+      "passed": true
+    },
+    {
+      "category": "chewinggum",
+      "population": "final",
+      "arm": "dense512_seed20261026",
+      "passed": true
+    }
+  ]
+}

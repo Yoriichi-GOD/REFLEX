@@ -60,3 +60,7 @@ No competition submission or judge video is claimed. Team details, video and sub
 ## Review materials
 
 The [ten-slide YMCA Theme 04 deck](submission/ymca_20261025/REFLEX_YMCA_Theme04_10_Slides.pptx) and [OpenCV paper/slides](submission/opencv_current) are editable review artifacts. Team details, the actual demonstration recording and competition submission receipt remain pending.
+
+## Technical intelligence audit
+
+The [85-question public intelligence report](docs/REFLEX_YMCA_PPT_INTELLIGENCE_PUBLIC.md) audits the implemented architecture, datasets, benchmarks, live AWS boundary and presentation claims. The [numeric ledger and licensed examples](benchmarks/intelligence_20261025) preserve measured results and their limitations. Fresh audit checks passed 138 Python tests, 14 frontend tests, 5 markup tests and 20 separate API assertions; these counts do not establish scientific accuracy or rendered-browser verification.
