@@ -1,66 +1,83 @@
+<p align="center"><img src="frontend/assets-ui/reflex-solar-logo.webp" width="64" height="64" alt="REFLEX sun emblem"></p>
+
 # REFLEX
 
-REFLEX is an OpenCV 5 visual inspection prototype with original-image, heatmap and overlay evidence. The additive **Safety Station** checks a calibrated colored-parts tabletop assembly and preserves timestamped findings for human review. It provides advisory decisions; it does not control machinery, identify employees, infer fatigue or provide safety certification.
+**Visual inspection with evidence you can review.**
 
-## Start locally
+REFLEX helps quality inspectors and engineering reviewers examine product photographs. OpenCV 5 compares visual patterns with normal references, highlights unusual regions, and keeps the original image, heatmap, decision and human review together.
 
-```text
+**[Watch the team demo](https://youtu.be/WvnKxOTxkvw)** · **[Try the AWS demo](https://re-c0a0c131729f4898bb80d160feb0ccc7.ecs.ap-southeast-2.on.aws/)** · **[One-minute reviewer tour](docs/REVIEWER_GUIDE.md)** · **[Run locally](docs/GETTING_STARTED.md)** · **[Documentation](docs/README.md)**
+
+> **Current status:** working research prototype and submitted [OpenCV competition entry](https://devpost.com/software/reflex-xqn8i7). The public AWS demo runs the **v1 candle/cashew detector**. Adaptive **v2 remains local and held from release**; Safety Station is a separate local prototype evaluated on generated clips. Neither is a factory safety system. [Status and limits →](docs/PROJECT_STATUS.md)
+
+![Actual REFLEX AWS inspection: original candle photograph, anomaly heatmap, overlay and measured decision](docs/media/inspection-candle-aws.jpg)
+
+*Working AWS v1 screen, captured 26 October 2026. Photograph: VisA / Amazon Science, CC BY 4.0; heatmap and overlay are derived outputs. This is a curated demonstration, not an accuracy estimate. [Screenshot provenance](docs/media/README.md).*
+
+## Why REFLEX
+
+A single score can hide a small defect or an unusable capture. The useful result is an inspection a person can check: what the system saw, where it found unusual evidence, which threshold it used, and what should happen next.
+
+1. **Capture:** select a product profile and a real example, or upload an authorized image.
+2. **Inspect:** compare normal-reference features and check image quality.
+3. **Review:** compare source, heatmap and overlay; inspect the score and tool trace.
+4. **Keep the evidence:** append an operator review and export JSON or printable HTML.
+
+The local v2 candidate can inspect **one calibrated crop of the same photograph** when its first score is inconclusive. A weak second look stays under review. It does not move a camera or obtain a new optical view. The live v1 real-image profiles do not run this v2 crop policy.
+
+## Start with a real photograph
+
+Open the [AWS demo](https://re-c0a0c131729f4898bb80d160feb0ccc7.ecs.ap-southeast-2.on.aws/), keep **VisA · candle** selected, and try:
+
+| Example | Recorded v1 score | Threshold | Recorded result |
+| --- | ---: | ---: | --- |
+| Four-candle layout | 1.547 | 2.815 | PASS |
+| Candle edge detail | 4.449 | 2.815 | DEFECT FOUND |
+
+Each click runs inference on the image bytes. Scores are anomaly distances, **not defect probabilities**. The library also includes subtle defective examples the detector misses. [Full walkthrough, UI controls and failure example →](docs/REVIEWER_GUIDE.md)
+
+Use only licensed, non-private images on the public service. It has no user login or tenant isolation. Records expire after 24 hours and can disappear earlier when its task is replaced.
+
+## What the measurements say
+
+The image study covers **860 unique VisA photographs**, five product categories and 88 method/group rows. Reused replay, development and final partitions are kept separate; reviews never count as detections.
+
+| Evaluation scope | Measured result | Source |
+| --- | --- | --- |
+| Reused replay: 350 images, including 200 defects | v1 detected **112/200**; primary v2 **155/200**, with 4 defect reviews | [Release assessment](benchmarks/anomaly_v2/RELEASE_ASSESSMENT.md) |
+| New-category final: 255 images, including 150 defects | v2 detected **105/150**, falsely cleared 42 and left 3 defects under review; macro image AUROC fell **0.8520 → 0.8410** | [All methods and limits](benchmarks/anomaly_v2/README.md) |
+| Dedicated Fargate CPU handler: 300 requests/version, 1 vCPU / 2 GiB | p95 **1.070 s → 1.256 s** from v1 to v2; excludes external network time | [Runtime evidence](benchmarks/anomaly_v2/RUNTIME.csv) |
+| Procedure software tests: 18 generated clips × 3 policies | All policies **15/18** final statuses; **no observed agent accuracy gain**. Real procedure evaluation: **NOT_RUN** | [Procedure findings](benchmarks/procedural_safety/public/FINDINGS.md) |
+
+Capsules remains a major failure: **34/50 final defects were falsely cleared**. The differently configured upstream PatchCore reference ranks higher in all eight measured groups. Historical custom AU-PRO values are invalid; read the [metric correction](benchmarks/anomaly_v2/METRIC_CORRECTION.md). These limits are why v2 stays local.
+
+## Run locally
+
+Use Python **3.12 or newer** with the [pinned dependencies](backend/requirements.txt); OpenCV major version 5 is required. Local recorded checks used Python 3.14, and the measured cloud image used 3.12. This is not a claim that every Python/platform combination has been tested.
+
+```powershell
 python -m venv .venv
 .venv\Scripts\python -m pip install -r backend/requirements.txt
-.venv\Scripts\python backend/scripts/dev.py
-```
-
-On Linux or macOS, replace `.venv\Scripts\python` with `.venv/bin/python`. The launcher prints the actual OS-selected loopback addresses for the Inspection Studio, Safety Station and same-origin API. It generates owned software-test clips when absent and does not stop other projects.
-
-Open the printed Safety Station URL, select a generated fixture, confirm permission and calibration, then process it. Generated samples are labeled **SYNTHETIC SOFTWARE TEST**. The original studio remains at `/`; Safety Station is at `/safety`.
-
-Optional real-photograph inspection uses the unchanged frozen v1 candle/cashew profiles and six attributed VisA JPEGs:
-
-```text
 .venv\Scripts\python backend/scripts/prepare_public_weights.py
 .venv\Scripts\python backend/scripts/dev.py --real
 ```
 
-The explicit download helper retrieves about 103 MB of public ONNX weights and verifies the pinned SHA-256. Raw dataset archives are excluded. VisA photographs and derived profiles retain CC BY 4.0 attribution; see [third-party notices](THIRD_PARTY_NOTICES.md). The existing live AWS demo remains v1. This extension has not deployed Safety Station to AWS.
+The weights helper explicitly downloads about 103 MB and verifies its pinned SHA-256. The launcher prints the actual loopback URLs. On Linux/macOS use `.venv/bin/python` instead. To start with generated samples and no weight download, omit the helper and `--real`.
 
-## Measured evidence
+**[Setup and troubleshooting](docs/GETTING_STARTED.md)** · **[Architecture and source map](docs/ARCHITECTURE_GUIDE.md)** · **[Verification commands](docs/GETTING_STARTED.md#verify-the-software)**
 
-| Evaluation | Completed work | Outcome and limit |
-|---|---|---|
-| Real image anomalies | 88 method/group rows over 860 distinct VisA cases | Replay improves, but new-category final AUROC falls and false alerts and cost increase. The primary v2 candidate remains local. Historical custom AU-PRO values are invalid; a correction is included. |
-| Procedural software tests | 18 generated held-out clips Ã— 3 policies = 54 actual runs | All three policies tie at 15/18 exact final statuses, zero false clears in this generated set and 5/7 timely supported error clips. Two of four normal clips incorrectly remain HOLD. **No observed agent accuracy gain.** |
-| Real procedural or external logical data | **NOT_RUN** | No physical fixture videos were available. Assembly101 video access requires approval; mistake-specific timestamp units remain unverified. Parsing annotations is not video evaluation. |
+## Explore the project
 
-Read the [anomaly study](benchmarks/anomaly_v2/README.md), [procedural findings](benchmarks/procedural_safety/public/FINDINGS.md), [full CSV](benchmarks/procedural_safety/public/results.csv) and [all 54 procedural cases](benchmarks/procedural_safety/public/index.html). Generated videos are software tests, not real or physically staged assembly benchmarks.
+| Looking for | Start here |
+| --- | --- |
+| What works, what is local, and what remains untested | [Current project status](docs/PROJECT_STATUS.md) |
+| Detailed implementation and claim provenance | [85-question technical report](docs/REFLEX_YMCA_PPT_INTELLIGENCE_PUBLIC.md) |
+| Protocol, comparisons, robustness and cloud measurements | [Anomaly study](benchmarks/anomaly_v2/README.md) · [numeric ledger](benchmarks/intelligence_20261025/README.md) |
+| Generated procedure results and every retained case | [Procedure findings](benchmarks/procedural_safety/public/FINDINGS.md) · [gallery instructions](docs/REVIEWER_GUIDE.md#review-the-generated-procedure-evidence) |
+| Paper, correction, slides and editable charts | [Deliverables index](docs/README.md#reports-and-presentations) |
 
-Safety Station displays actual API observations, events and evidence. Human review is appended separately from the machine finding. Video event time and processing duration are distinct. A new-view request waits for actual input; a still image cannot establish a temporal procedure. A calibrated frame is the result of a perspective transform, not the untouched original.
+## License and responsible use
 
-## Checks and reproduction
+[MIT](LICENSE) covers REFLEX source code. Data, model weights, fonts and artwork retain their own terms in [Third-party notices](THIRD_PARTY_NOTICES.md). Raw datasets, credentials, private uploads, databases and installed dependencies are excluded from the public source.
 
-```text
-.venv\Scripts\python -m pytest backend/tests/test_safety.py backend/tests/test_safety_benchmark.py backend/tests/test_core.py backend/tests/test_api.py backend/tests/test_frontend_assets.py -q
-node --check frontend/safety.js
-node --test ui/extension_20261025/test_safety_core.cjs ui/extension_20261025/test_safety_lifecycle.cjs
-.venv\Scripts\python ui/extension_20261025/test_safety_markup.py
-.venv\Scripts\python backend/scripts/benchmark_safety.py --output reports/my-new-software-run
-```
-
-The benchmark requires an empty output folder, retains all policies and failures, opens test labels after inference and labels its results **SYNTHETIC SOFTWARE TEST**. It does not overwrite published results. Full host regression also uses retained external datasets and ONNX weights; the commands above identify the source-clone core checks. Existing receipts do not establish compatibility on every fresh machine.
-
-Browser rendering, Playwright and physical-camera verification were **NOT_RUN** because available browser control was disabled. API and software checks do not prove responsive layout or browser codec support. An AVI unsupported by the browser can still be decoded by OpenCV and reviewed through JPEG timeline evidence.
-
-For authorized physical clips, align the board quadrilateral and component classes, record the empty-start context, keep annotations separate from inference and lock a new validation/test protocol. Do not retune against the published synthetic test. See [inventory](docs/extension_inventory.md), [architecture](docs/system_architecture.md), [limitations](docs/limitations_and_safety.md), [current status](STATUS.md) and the [original evaluation guide](docs/IMPROVEMENT_V2_GUIDE.md).
-
-## Licensing and submission status
-
-MIT covers REFLEX source code. Data, models, fonts and artwork retain separate terms in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Public source excludes credentials, private uploads and databases, raw dataset archives, feature caches, unlicensed user-fixture bytes, gated or noncommercial annotation assets and private cloud-bundle configuration.
-
-No competition submission or judge video is claimed. Team details, video and submission receipts remain human work.
-
-## Review materials
-
-The [ten-slide YMCA Theme 04 deck](submission/ymca_20261025/REFLEX_YMCA_Theme04_10_Slides.pptx) and [OpenCV paper/slides](submission/opencv_current) are editable review artifacts. Team details, the actual demonstration recording and competition submission receipt remain pending.
-
-## Technical intelligence audit
-
-The [85-question public intelligence report](docs/REFLEX_YMCA_PPT_INTELLIGENCE_PUBLIC.md) audits the implemented architecture, datasets, benchmarks, live AWS boundary and presentation claims. The [numeric ledger and licensed examples](benchmarks/intelligence_20261025) preserve measured results and their limitations. Fresh audit checks passed 138 Python tests, 14 frontend tests, 5 markup tests and 20 separate API assertions; these counts do not establish scientific accuracy or rendered-browser verification.
+`PASS` means no modeled anomaly was detected in that image. It is not a guarantee of a defect-free product, safety certification or an automatic reject command. Human review remains separate from the machine finding.
